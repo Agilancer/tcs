@@ -1,0 +1,4114 @@
+{
+ "id": "new_antioch",
+ "name": "Principality of New Antioch",
+ "alignment": "Faithful",
+ "source": "Warbands of Trench Crusade 1.0.2; Prussian Stosstruppen Warband booklet (Feb 2026); New Antioch Prussian Stosstruppen / Prussian Yeomen / Sniper Priests kit guides (Oct 2026, no rules); The Red Brigade v1.5; Carcass Front Errata",
+ "mercenariesAllowed": [
+  "combat_biologist",
+  "communicant_anti_tank_hunter",
+  "mamluk_faris",
+  "mendelist_ammo_monk",
+  "observer",
+  "scripture_guardian",
+  "witchburner"
+ ],
+ "variants": [
+  {
+   "id": "new_antioch_base",
+   "name": "New Antioch (base list)",
+   "specialRules": [
+    {
+     "name": "New Antioch Fireteams",
+     "text": "Up to 2 Fireteams of any two models each (FIRETEAM Keyword, free). Concentrated Attack: if a Fireteam model hits a target already hit earlier in the same joint Activation by its partner, spend 3 BLOOD MARKERS to turn the second Injury Roll into a Bloodbath Roll even if the target is not Down.",
+     "sim": {
+      "kind": "fireteams",
+      "max": 2,
+      "bloodbathCost": 3
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Automatic Pistol",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 3,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Automatic Rifle",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Automatic Shotgun",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Bolt-Action Rifle",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flamethrower",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Grenade Launcher",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Heavy Flamethrower",
+     "cost": 55,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Heavy Shotgun",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Pistol",
+     "cost": 6,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Semi-Automatic Rifle",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Shotgun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sniper Rifle",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Bayonet",
+     "cost": 2,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Hammer/Maul",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Misericordia",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Combat Medic only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "combat_medic"
+     ]
+    },
+    {
+     "item": "Polearm",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sword/Axe",
+     "cost": 4,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Club",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Knife",
+     "cost": 1,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Frag Grenades",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Grenades",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Satchel Charge",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable",
+      "1 per model"
+     ],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Heavy Ballistic Shield",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Models wearing Machine Armour only",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "Machine Armour"
+     ]
+    },
+    {
+     "item": "Trench Shield",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Engineer Body Armour",
+     "cost": 45,
+     "currency": "ducats",
+     "stip": [
+      "Combat Engineer only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "combat_engineer"
+     ]
+    },
+    {
+     "item": "Machine Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "ELITE & Mechanized Heavy Infantry only",
+      "Limit: 1 excluding Mechanized Heavy Infantry"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE",
+      "mechanized_heavy_infantry"
+     ]
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "ELITE & Mechanized Heavy Infantry only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE",
+      "mechanized_heavy_infantry"
+     ]
+    },
+    {
+     "item": "Standard Armour",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Binoculars",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Combat Helmet",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Headgear"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Field Shrine",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Mask",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Martyrdom Pills",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [
+      "Consumable",
+      "ELITE only"
+     ],
+     "limit": 2,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Medi-kit",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Mountaineer Kit",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 4,
+     "onlyFor": null
+    },
+    {
+     "item": "Musical Instrument",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Shovel",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Troop Flag",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Lieutenant",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Hold Your Fire! ACTION",
+       "text": "Pick 1 enemy model in Line of Sight that the opponent may Activate; the Lieutenant's Activation ends and the opponent must Activate that model next.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "sniper_priest",
+     "name": "Sniper Priest",
+     "min": 0,
+     "max": 2,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Absolute Faith",
+       "text": "The opponent cannot spend BLOOD MARKERS to add -DICE to this model's Ranged Attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aim ACTION",
+       "text": "Risky Success Roll with +2 DICE (failure ends the Activation). On a success, +2 DICE to its Ranged Attack Success Rolls for the rest of the Activation.",
+       "sim": {
+        "kind": "action",
+        "effect": "aim",
+        "roll": "risky",
+        "bonusDice": 2,
+        "value": 2
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "trench_cleric",
+     "name": "Trench Cleric",
+     "min": 0,
+     "max": 1,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "God is With Us! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success place 1 BLESSING MARKER beside the Cleric or a friendly model within 6\".",
+       "sim": {
+        "kind": "action",
+        "effect": "blessFriendly",
+        "range": 6,
+        "amount": 1,
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Onward Christian Soldiers!",
+       "text": "Friendly NEW ANTIOCH models within 8\" have NEGATE FEAR.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "friendly",
+        "effect": "negate",
+        "value": "FEAR"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "yeoman",
+     "name": "Yeoman",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any; may take its Bolt-Action Rifle for 5 ducats instead of 10",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Trench Mole",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains INFILTRATOR. Up to 2 per Warband (a 3rd if all other models cost 1,000 ducats or more).",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "grants": [
+        "INFILTRATOR"
+       ],
+       "limit": 2
+      }
+     ],
+     "kitDiscounts": {
+      "Bolt-Action Rifle": 5
+     }
+    },
+    {
+     "id": "shock_trooper",
+     "name": "Shock Trooper",
+     "min": 0,
+     "max": 5,
+     "cost": 45,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Assault Drill",
+       "text": "Ignores the HEAVY effect for 1 Melee Weapon it carries; still limited to 1 HEAVY weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Shock Charge",
+       "text": "Roll one extra D6 for its Charge Bonus and use the single highest die.",
+       "sim": {
+        "kind": "chargeBonus",
+        "value": "best of 2D6"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "combat_engineer",
+     "name": "Combat Engineer",
+     "min": 0,
+     "max": 2,
+     "cost": 80,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": -2,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "NEGATE MINED"
+     ],
+     "fixedKit": [
+      "Engineer Body Armour",
+      "Shovel"
+     ],
+     "kitRule": "any except Armour (armour already in profile)",
+     "abilities": [
+      {
+       "name": "Battlefield Demolition",
+       "text": "Ignores the HEAVY effect of 1 Satchel Charge; still limited to 1 HEAVY weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Set Mine ACTION",
+       "text": "In contact with a terrain piece up to 8\"x8\" without MINED: Success Roll with +2 DICE; on a success the piece gains MINED.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Defuse Mine",
+       "text": "On touching a MINED marker/terrain it may try to defuse: Risky Success Roll; failure detonates it and ends the Activation, success removes MINED. Mines it set itself are defused automatically.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fortify ACTION",
+       "text": "Risky Success Roll (failure ends the Activation); on a success it has COVER until it moves away.",
+       "sim": {
+        "kind": "none",
+        "effect": "cover"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "mechanized_heavy_infantry",
+     "name": "Mechanized Heavy Infantry",
+     "min": 0,
+     "max": 3,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 0,
+     "armour": -2,
+     "base": 40,
+     "keywords": [
+      "NEW ANTIOCH",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Reinforced Armour"
+     ],
+     "kitRule": "any except Armour; always has Reinforced Armour (85) or Machine Armour (95), modifier in profile",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Machine Armour",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Swap the fixed Reinforced Armour for Machine Armour (total 95): Armour -3, Bulky (D3\" Charge Bonus, no Trench Shield) and Standfast.",
+       "sim": {
+        "kind": "none",
+        "armour": -3
+       },
+       "replacesKit": "Reinforced Armour",
+       "setArmour": -3
+      }
+     ]
+    },
+    {
+     "id": "combat_medic",
+     "name": "Combat Medic",
+     "min": 0,
+     "max": 1,
+     "cost": 65,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": -1,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [
+      "Standard Armour",
+      "Gas Mask",
+      "Medi-kit",
+      "Misericordia"
+     ],
+     "kitRule": "any except Armour",
+     "abilities": [
+      {
+       "name": "Expert Medic",
+       "text": "+2 DICE to the Risky Success Roll when it uses a Medi-kit for a Treat ACTION.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 1,
+        "roll": "risky",
+        "bonusDice": 2
+       }
+      },
+      {
+       "name": "Finish the Fallen",
+       "text": "+1 INJURY DICE on its Melee Attacks against Down targets without BLACK GRAIL or DEMONIC.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "effect": "injuryDice",
+        "cond": "target is Down, not BLACK GRAIL/DEMONIC"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Engineer Body Armour",
+     "type": "Armour",
+     "range": "-",
+     "keywords": [
+      "-2 INJURY MODIFIER",
+      "NEGATE SHRAPNEL"
+     ],
+     "text": "Ballistic Box Armour: attacks with SHRAPNEL against the wearer get -1 INJURY DICE, even if they have IGNORE ARMOUR.",
+     "sim": {
+      "kind": "defence",
+      "vs": "shrapnel",
+      "value": -1,
+      "effect": "injuryDice"
+     }
+    },
+    {
+     "name": "Heavy Ballistic Shield",
+     "type": "Shield",
+     "range": "-",
+     "keywords": [
+      "COVER"
+     ],
+     "text": "Only for models wearing Machine Armour; Shield Combo. The bearer always counts as in cover.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Machine Armour",
+     "type": "Armour",
+     "range": "-",
+     "keywords": [
+      "-3 INJURY MODIFIER"
+     ],
+     "text": "Bulky: base becomes 40mm (if smaller), no Trench Shield, Charge Bonus D3\" instead of D6\". Standfast: a Down result on the Injury table counts as a Minor Hit instead.",
+     "sim": {
+      "kind": "none",
+      "standfast": true,
+      "chargeDie": "D3"
+     }
+    }
+   ]
+  },
+  {
+   "id": "na_papal_states",
+   "name": "Papal States Intervention Force",
+   "inherits": "new_antioch_base",
+   "changes": "Small elite force: a Trench Cleric (gaining LEADER and Arise and be Healed!) must lead and the Lieutenant becomes optional; no Trench Moles; in a one-off game it spends 200 fewer ducats and 11 more Glory; one model gets a free Supreme Pontiff's Crucifix; Lieutenant plus up to 4 models may take NEGATE FEAR for free.",
+   "removeModels": [],
+   "removeUpgrades": [
+    {
+     "model": "yeoman",
+     "upgrade": "Trench Mole"
+    }
+   ],
+   "budgetModifier": {
+    "ducats": -200,
+    "glory": 11
+   },
+   "specialRules": [
+    {
+     "name": "Far from Home",
+     "text": "Cannot include Trench Moles.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Lector",
+     "text": "Must include 1 Trench Cleric (LEADER, plus Arise and be Healed!); the Lieutenant is optional.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Specialist Force",
+     "text": "Campaign start 500 ducats + 11 Glory. For a one-off game, spend 200 fewer ducats and 11 more Glory than the agreed size.",
+     "sim": {
+      "kind": "budget",
+      "ducats": -200,
+      "glory": 11
+     }
+    },
+    {
+     "name": "Supreme Blessing",
+     "text": "One model receives the Supreme Pontiff's Crucifix for free at creation.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Swiss Guard",
+     "text": "The Lieutenant and up to 4 other models may have NEGATE FEAR for free.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Supreme Pontiff's Crucifix",
+     "cost": 3,
+     "currency": "glory",
+     "stip": [
+      "first one free at creation"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Lieutenant",
+     "min": 0,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Hold Your Fire! ACTION",
+       "text": "Pick 1 enemy model in Line of Sight that the opponent may Activate; the Lieutenant's Activation ends and the opponent must Activate that model next.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Swiss Guard",
+       "cost": 0,
+       "currency": "ducats",
+       "text": "Gains NEGATE FEAR.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "NEGATE FEAR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "trench_cleric",
+     "name": "Trench Cleric (Lector)",
+     "min": 1,
+     "max": 1,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "God is With Us! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success place 1 BLESSING MARKER beside the Cleric or a friendly model within 6\".",
+       "sim": {
+        "kind": "action",
+        "effect": "blessFriendly",
+        "range": 6,
+        "amount": 1,
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Onward Christian Soldiers!",
+       "text": "Friendly NEW ANTIOCH models within 8\" have NEGATE FEAR.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "friendly",
+        "effect": "negate",
+        "value": "FEAR"
+       }
+      },
+      {
+       "name": "Arise and be Healed! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success the model itself or a friendly model within 3\" may stand up for free and loses up to D3 BLOOD and/or INFECTION MARKERS.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 3,
+        "roll": "risky",
+        "amount": "D3"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Supreme Pontiff's Crucifix",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Inspiring Relic: the bearer's Activation does not end after a failed Risky Success Roll.",
+     "sim": {
+      "kind": "none",
+      "ignoreRiskyFail": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "na_eire_rangers",
+   "name": "Éire Rangers",
+   "inherits": "new_antioch_base",
+   "changes": "Light infantry: 0-1 Mechanized Heavy Infantry but 0-4 Combat Engineers and Satchel Charges Limit 4; at most 3 Great Swords/Axes (never on MHI); only MHI may carry other HEAVY weapons (Engineers may still take Satchel Charges) or Reinforced/Machine Armour; 0-2 Trench Clerics who swap Onward Christian Soldiers! for Arise and be Healed! and Away Serpents!; Lieutenant swaps Hold Your Fire! for SKIRMISHER; Shock Troopers can buy INFILTRATOR+SKIRMISHER (Fianna); Berserker upgrade; Armour-Piercing Bullets at 5 ducats.",
+   "removeModels": [],
+   "specialRules": [
+    {
+     "name": "Anointed Ammunition",
+     "text": "May buy Armour-Piercing Bullets for 5 ducats each, Limit: 2.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Berserker",
+     "text": "The Lieutenant or one Fianna may become a Berserker for +15 ducats: no Armour (Shields allowed), NEGATE FEAR, and never receives BLOOD MARKERS.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Carnyx",
+     "text": "One Musical Instrument may have FEAR for free.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Fianna",
+     "text": "Shock Troopers may buy INFILTRATOR and SKIRMISHER for +10 ducats each.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Followers of Saint Patrick",
+     "text": "Patron is always a Learned Saint (campaign).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Hit & Run Tactics",
+     "text": "Melee Attacks against a retreating model of this Warband get -1 DICE.",
+     "sim": {
+      "kind": "defence",
+      "vs": "melee",
+      "value": -1,
+      "cond": "while retreating"
+     }
+    },
+    {
+     "name": "Light Infantry",
+     "text": "Only 1 MHI, up to 4 Combat Engineers, Satchel Charge Limit 4; max 3 Great Swords/Axes and none on MHI; apart from Great Swords/Axes (and Engineers' Satchel Charges) only MHI may have HEAVY weapons; only MHI may have Reinforced or Machine Armour.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Loose Formation",
+     "text": "The Lieutenant has SKIRMISHER instead of Hold Your Fire!.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Strong in Faith",
+     "text": "0-2 Trench Clerics, each with Arise and be Healed! and Away Serpents! instead of Onward Christian Soldiers!.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Armour-Piercing Bullets",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Satchel Charge",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable",
+      "1 per model"
+     ],
+     "limit": 4,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [
+      "max 3 in Warband",
+      "not on MHI"
+     ],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "Mechanized Heavy Infantry only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "mechanized_heavy_infantry"
+     ]
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Mechanized Heavy Infantry only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "mechanized_heavy_infantry"
+     ]
+    }
+   ],
+   "kitRestrictions": "Other than Great Swords/Axes and Engineers' Satchel Charges, HEAVY weapons only on Mechanized Heavy Infantry.",
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Lieutenant",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH",
+      "SKIRMISHER"
+     ],
+     "fixedKit": [],
+     "kitRule": "any (no Reinforced/Machine Armour; HEAVY only Great Sword/Axe)",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Berserker",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "No Armour; NEGATE FEAR; BLOOD MARKERS are never placed on it. Only one Berserker per Warband.",
+       "sim": {
+        "kind": "none",
+        "noBlood": true
+       },
+       "grants": [
+        "NEGATE FEAR"
+       ],
+       "limit": 1
+      }
+     ]
+    },
+    {
+     "id": "trench_cleric",
+     "name": "Trench Cleric",
+     "min": 0,
+     "max": 2,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "God is With Us! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success place 1 BLESSING MARKER beside the Cleric or a friendly model within 6\".",
+       "sim": {
+        "kind": "action",
+        "effect": "blessFriendly",
+        "range": 6,
+        "amount": 1,
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Arise and be Healed! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success the model itself or a friendly model within 3\" may stand up for free and loses up to D3 BLOOD and/or INFECTION MARKERS.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 3,
+        "roll": "risky",
+        "amount": "D3"
+       }
+      },
+      {
+       "name": "Away Serpents! ACTION",
+       "text": "Pick an enemy within 12\" and take a Risky Success Roll (-1 DICE if the target's base is 40mm+); failure ends the Activation, success knocks the target Down.",
+       "sim": {
+        "kind": "action",
+        "effect": "knockDown",
+        "range": 12,
+        "roll": "risky"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "shock_trooper",
+     "name": "Shock Trooper",
+     "min": 0,
+     "max": 5,
+     "cost": 45,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Assault Drill",
+       "text": "Ignores the HEAVY effect for 1 Melee Weapon it carries; still limited to 1 HEAVY weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Shock Charge",
+       "text": "Roll one extra D6 for its Charge Bonus and use the single highest die.",
+       "sim": {
+        "kind": "chargeBonus",
+        "value": "best of 2D6"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Fianna",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains INFILTRATOR and SKIRMISHER.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "grants": [
+        "INFILTRATOR",
+        "SKIRMISHER"
+       ]
+      },
+      {
+       "name": "Berserker",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Fianna only. No Armour; NEGATE FEAR; never receives BLOOD MARKERS. Only one Berserker per Warband.",
+       "sim": {
+        "kind": "none",
+        "noBlood": true
+       },
+       "grants": [
+        "NEGATE FEAR"
+       ],
+       "limit": 1,
+       "requires": "Fianna"
+      }
+     ]
+    },
+    {
+     "id": "combat_engineer",
+     "name": "Combat Engineer",
+     "min": 0,
+     "max": 4,
+     "cost": 80,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": -2,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "NEGATE MINED"
+     ],
+     "fixedKit": [
+      "Engineer Body Armour",
+      "Shovel"
+     ],
+     "kitRule": "any except Armour",
+     "abilities": [
+      {
+       "name": "Battlefield Demolition",
+       "text": "Ignores the HEAVY effect of 1 Satchel Charge; still limited to 1 HEAVY weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Set Mine ACTION",
+       "text": "In contact with a terrain piece up to 8\"x8\" without MINED: Success Roll with +2 DICE; on a success the piece gains MINED.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Defuse Mine",
+       "text": "On touching a MINED marker/terrain it may try to defuse: Risky Success Roll; failure detonates it and ends the Activation, success removes MINED. Mines it set itself are defused automatically.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fortify ACTION",
+       "text": "Risky Success Roll (failure ends the Activation); on a success it has COVER until it moves away.",
+       "sim": {
+        "kind": "none",
+        "effect": "cover"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "mechanized_heavy_infantry",
+     "name": "Mechanized Heavy Infantry",
+     "min": 0,
+     "max": 1,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 0,
+     "armour": -2,
+     "base": 40,
+     "keywords": [
+      "NEW ANTIOCH",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Reinforced Armour"
+     ],
+     "kitRule": "any except Armour and Great Sword/Axe",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Machine Armour",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Swap to Machine Armour (total 95): Armour -3, Bulky, Standfast.",
+       "sim": {
+        "kind": "none",
+        "armour": -3
+       },
+       "replacesKit": "Reinforced Armour",
+       "setArmour": -3
+      }
+     ]
+    }
+   ],
+   "uniqueKit": []
+  },
+  {
+   "id": "na_alba",
+   "name": "Kingdom of Alba Assault Detachment",
+   "inherits": "new_antioch_base",
+   "changes": "Melee-first: Lieutenant and Shock Troopers are STRONG; Great Swords/Axes cost 7; the first purchase of each melee weapon is half price (rounded up); Lochaber Axe added; Dum-Dum Bullets at 5 ducats; only Lieutenant and MHI may wear Reinforced/Machine Armour; MHI become +0 Ranged/+1 Melee and keep a D6 Charge Bonus in Machine Armour; Automatic Shotguns, Grenade Launchers, Machine Guns, Sniper Rifles and SMGs are Limit 1; one Musical Instrument can be Bagpipes; +1 DICE on Morale; IGNORE DEFENDED OBSTACLE.",
+   "removeModels": [],
+   "specialRules": [
+    {
+     "name": "Bagpipes",
+     "text": "One Musical Instrument may be Bagpipes for free: friendly models within 8\" of it have NEGATE FEAR.",
+     "sim": {
+      "kind": "aura",
+      "range": 8,
+      "who": "friendly",
+      "effect": "negate",
+      "value": "FEAR"
+     }
+    },
+    {
+     "name": "Brave",
+     "text": "+1 DICE on Morale Checks.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Celtic Machine Armour",
+     "text": "Machine Armour does not reduce the Charge Bonus to D3\".",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Claymore Smiths",
+     "text": "Great Swords/Axes cost 7 ducats.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Cold Steel",
+     "text": "The first of each Melee Weapon bought for the Warband costs half (round up); later copies pay full price.",
+     "sim": {
+      "kind": "costRule",
+      "firstMeleeHalf": true
+     }
+    },
+    {
+     "name": "Dum-Dum Ammunition",
+     "text": "May buy Dum-Dum Bullets for 5 ducats, Limit: 3.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Highland Strength",
+     "text": "Lieutenant and Shock Troopers have STRONG for free.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Lightly-armoured",
+     "text": "Only the Lieutenant and MHI may have Reinforced or Machine Armour.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Melee-focused",
+     "text": "MHI have Ranged +0 DICE and Melee +1 DICE.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Rampant Charge",
+     "text": "All models have IGNORE DEFENDED OBSTACLE.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Strained Supply",
+     "text": "Automatic Shotgun, Grenade Launcher, Machine Gun, Sniper Rifle and Submachine Gun are each Limit: 1.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "costOverrides": {
+    "Great Sword/Axe": 7
+   },
+   "armoury": [
+    {
+     "item": "Great Sword/Axe",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Lochaber Axe",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Dum-Dum Bullets",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Automatic Shotgun",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Grenade Launcher",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Sniper Rifle",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "Lieutenant & Mechanized Heavy Infantry only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "lieutenant",
+      "mechanized_heavy_infantry"
+     ]
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Lieutenant & Mechanized Heavy Infantry only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "lieutenant",
+      "mechanized_heavy_infantry"
+     ]
+    }
+   ],
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Lieutenant",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH",
+      "STRONG",
+      "IGNORE DEFENDED OBSTACLE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Hold Your Fire! ACTION",
+       "text": "Pick 1 enemy model in Line of Sight that the opponent may Activate; the Lieutenant's Activation ends and the opponent must Activate that model next.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "shock_trooper",
+     "name": "Shock Trooper",
+     "min": 0,
+     "max": 5,
+     "cost": 45,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "STRONG",
+      "IGNORE DEFENDED OBSTACLE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Assault Drill",
+       "text": "Ignores the HEAVY effect for 1 Melee Weapon it carries; still limited to 1 HEAVY weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Shock Charge",
+       "text": "Roll one extra D6 for its Charge Bonus and use the single highest die.",
+       "sim": {
+        "kind": "chargeBonus",
+        "value": "best of 2D6"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "mechanized_heavy_infantry",
+     "name": "Mechanized Heavy Infantry",
+     "min": 0,
+     "max": 3,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": -2,
+     "base": 40,
+     "keywords": [
+      "NEW ANTIOCH",
+      "STRONG",
+      "IGNORE DEFENDED OBSTACLE"
+     ],
+     "fixedKit": [
+      "Reinforced Armour"
+     ],
+     "kitRule": "any except Armour",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Machine Armour",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Swap to Machine Armour (total 95): Armour -3, Standfast; keeps a D6 Charge Bonus (Celtic Machine Armour).",
+       "sim": {
+        "kind": "none",
+        "armour": -3
+       },
+       "replacesKit": "Reinforced Armour",
+       "setArmour": -3
+      }
+     ]
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Lochaber Axe",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "+2 INJURY DICE",
+      "BLOCK",
+      "CRITICAL",
+      "CUMBERSOME",
+      "HEAVY"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "na_stosstruppen",
+   "name": "Stosstruppen of the Free State of Prussia",
+   "inherits": "new_antioch_base",
+   "changes": "Book variant (Warbands 1.0.2) cross-checked against the Feb 2026 'Prussian Stosstruppen Warband' booklet, which restates the same variant as a full list with Prussian names (Hauptmann = Lieutenant, Feldkaplan = Trench Cleric, Stosstruppen = Shock Troopers); the Oct 2026 Prussian Stosstruppen / Prussian Yeomen / Sniper Priests PDFs are model assembly guides with no rules changes. Variant: 2-8 Shock Troopers (no Assault Drill), up to 3 Fireteams, +4\" grenade range, Rapid Assault (+5) for Hauptmann and Stosstruppen, up to 2 Stosstruppen INFILTRATOR (+10), max 1 Sniper Priest and 1 MHI, no Trench Moles, no Grenade Launchers or Martyrdom Pills, SMG Limit 4, Automatic Pistols lose ELITE only, Machine Gun Limit 1, only Hauptmann and MHI may wear Reinforced/Machine Armour; adds Tank-Splitter Sword and Holy Smoke. Conflict: the Feb 2026 booklet lists Sniper Rifle Limit 2, the newer book 1.0.2 (Sept 2026) keeps Limit 3, so Limit 3 is used.",
+   "removeModels": [],
+   "removeUpgrades": [
+    {
+     "model": "yeoman",
+     "upgrade": "Trench Mole"
+    }
+   ],
+   "removeArmoury": [
+    "Grenade Launcher",
+    "Martyrdom Pills"
+   ],
+   "specialRules": [
+    {
+     "name": "Expert Fireteams",
+     "text": "Up to 3 Fireteams instead of 2 (Concentrated Attack as normal).",
+     "sim": {
+      "kind": "fireteams",
+      "max": 3,
+      "bloodbathCost": 3
+     }
+    },
+    {
+     "name": "Masters of the Grenade",
+     "text": "+4\" Range to all Grenades used by the Warband.",
+     "sim": {
+      "kind": "grenadeRange",
+      "value": 4
+     }
+    },
+    {
+     "name": "Athleticism",
+     "text": "Hauptmann and Stosstruppen may buy Rapid Assault for +5 ducats each.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Forward Positions",
+     "text": "Up to 2 Stosstruppen may buy INFILTRATOR for +10 ducats each.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Feldkaplane",
+     "text": "The Feldkaplan (Trench Cleric) may carry Holy Smoke.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Lightly-armoured",
+     "text": "Only the Hauptmann and MHI may have Reinforced or Machine Armour.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Light Melee",
+     "text": "Stosstruppen lose Assault Drill but still cost 45.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Specialised Equipment",
+     "text": "SMG Limit 4; Automatic Pistols lose ELITE only; Machine Gun Limit 1; no Grenade Launchers or Martyrdom Pills.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Troop Selection",
+     "text": "Must include 2-8 Stosstruppen; no Trench Moles; max 1 Sniper Priest and 1 MHI.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Automatic Pistol",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": 4,
+     "onlyFor": null
+    },
+    {
+     "item": "Tank-Splitter Sword",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Smoke",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable",
+      "Feldkaplan (Trench Cleric) only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "trench_cleric"
+     ]
+    },
+    {
+     "item": "Machine Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "Hauptmann & Mechanized Heavy Infantry only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "lieutenant",
+      "mechanized_heavy_infantry"
+     ]
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Hauptmann & Mechanized Heavy Infantry only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "lieutenant",
+      "mechanized_heavy_infantry"
+     ]
+    }
+   ],
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Hauptmann (Lieutenant)",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Hold Your Fire! ACTION",
+       "text": "Pick 1 enemy model in Line of Sight that the opponent may Activate; the Lieutenant's Activation ends and the opponent must Activate that model next.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Rapid Assault",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "+1 DICE to its Risky Success Roll when it takes a Dash ACTION.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ]
+    },
+    {
+     "id": "sniper_priest",
+     "name": "Sniper Priest",
+     "min": 0,
+     "max": 1,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Absolute Faith",
+       "text": "The opponent cannot spend BLOOD MARKERS to add -DICE to this model's Ranged Attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aim ACTION",
+       "text": "Risky Success Roll with +2 DICE (failure ends the Activation). On a success, +2 DICE to its Ranged Attack Success Rolls for the rest of the Activation.",
+       "sim": {
+        "kind": "action",
+        "effect": "aim",
+        "roll": "risky",
+        "bonusDice": 2,
+        "value": 2
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "trench_cleric",
+     "name": "Feldkaplan (Trench Cleric)",
+     "min": 0,
+     "max": 1,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "God is With Us! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success place 1 BLESSING MARKER beside the Cleric or a friendly model within 6\".",
+       "sim": {
+        "kind": "action",
+        "effect": "blessFriendly",
+        "range": 6,
+        "amount": 1,
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Onward Christian Soldiers!",
+       "text": "Friendly NEW ANTIOCH models within 8\" have NEGATE FEAR.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "friendly",
+        "effect": "negate",
+        "value": "FEAR"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "shock_trooper",
+     "name": "Stosstruppen (Shock Trooper)",
+     "min": 2,
+     "max": 8,
+     "cost": 45,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Shock Charge",
+       "text": "Roll one extra D6 for its Charge Bonus and use the single highest die.",
+       "sim": {
+        "kind": "chargeBonus",
+        "value": "best of 2D6"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Rapid Assault",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "+1 DICE to its Risky Success Roll when it takes a Dash ACTION.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Forward Positions",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains INFILTRATOR (max 2 per Warband).",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "grants": [
+        "INFILTRATOR"
+       ],
+       "limit": 2
+      }
+     ]
+    },
+    {
+     "id": "mechanized_heavy_infantry",
+     "name": "Mechanized Heavy Infantry",
+     "min": 0,
+     "max": 1,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 0,
+     "armour": -2,
+     "base": 40,
+     "keywords": [
+      "NEW ANTIOCH",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Reinforced Armour"
+     ],
+     "kitRule": "any except Armour",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Machine Armour",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Swap to Machine Armour (total 95): Armour -3, Bulky, Standfast.",
+       "sim": {
+        "kind": "none",
+        "armour": -3
+       },
+       "replacesKit": "Reinforced Armour",
+       "setArmour": -3
+      }
+     ]
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Tank-Splitter Sword",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "CRITICAL",
+      "CUMBERSOME"
+     ],
+     "text": "Melt Armour: against a target with Armour -1 or better, or wearing Armour or carrying a Shield, one dice of the roll counts as a 6 automatically. Ignores the Dragonslayer Patron Skill.",
+     "sim": {
+      "kind": "none",
+      "autoSixVsArmoured": true
+     }
+    },
+    {
+     "name": "Holy Smoke",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "CONSUMABLE"
+     ],
+     "text": "Chemical Incense: may be consumed at deployment; for the game the bearer has NEGATE FEAR and attacks hitting it get -1 INJURY DICE.",
+     "sim": {
+      "kind": "defence",
+      "vs": "all",
+      "value": -1,
+      "effect": "injuryDice"
+     }
+    }
+   ]
+  },
+  {
+   "id": "na_abyssinia",
+   "name": "Expeditionary Forces of Abyssinia",
+   "inherits": "new_antioch_base",
+   "changes": "No Sniper Priests or Trench Moles; 0-2 Combat Medics and Misericordia Limit 2; 0-1 Trench Cleric plus 0-2 Holy Warriors (Cleric profile with Blessed Psalm and Arise and be Healed!); MHI cannot wear Machine Armour; Lieutenant and Yeomen get +1 DICE at Short Range (not Grenades/HEAVY); up to 4 Yeomen can Flank (+5); Shock Troopers and ELITE can buy Chewa (+5); max 3 HEAVY Ranged Weapons (Satchel Charges excluded); adds Shotel, Holy Water of Lalibela, Anfarro and Tabot.",
+   "removeModels": [
+    "sniper_priest"
+   ],
+   "removeUpgrades": [
+    {
+     "model": "yeoman",
+     "upgrade": "Trench Mole"
+    }
+   ],
+   "specialRules": [
+    {
+     "name": "Abyssinian Healers",
+     "text": "0-2 Combat Medics; Misericordia Limit 2.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Chieftain Panoply",
+     "text": "MHI cannot have Machine Armour.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Faith of Ethiopia",
+     "text": "No Sniper Priests.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Holy Warriors",
+     "text": "0-1 Trench Cleric and 0-2 Holy Warriors.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Short-Range Marksmanship",
+     "text": "Lieutenant and Yeomen get +1 DICE to Ranged Attacks at Short Range unless the weapon is a Grenade or HEAVY.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 1,
+      "cond": "Short Range, not Grenade/HEAVY; Lieutenant and Yeomen only"
+     }
+    },
+    {
+     "name": "Vanguard Forces",
+     "text": "No Trench Moles; up to 4 Yeomen may buy Flanking (+5).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Warrior Nobles",
+     "text": "Shock Troopers and ELITE models may buy Chewa (+5).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Weapons of Mobile Warfare",
+     "text": "Max 3 Ranged Weapons with HEAVY (Satchel Charges not counted).",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Misericordia",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Combat Medic only"
+     ],
+     "limit": 2,
+     "onlyFor": [
+      "combat_medic"
+     ]
+    },
+    {
+     "item": "Machine Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only (not MHI)"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Shotel",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Chewa & ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "Chewa",
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Holy Water of Lalibela",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 5,
+     "onlyFor": null
+    },
+    {
+     "item": "Anfarro (Warriors Crown)",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Chewa & ELITE only",
+      "Headgear"
+     ],
+     "limit": 6,
+     "onlyFor": [
+      "Chewa",
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Tabot",
+     "cost": 4,
+     "currency": "glory",
+     "stip": [
+      "Holy Warrior only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "holy_warrior"
+     ]
+    }
+   ],
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Lieutenant",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Hold Your Fire! ACTION",
+       "text": "Pick 1 enemy model in Line of Sight that the opponent may Activate; the Lieutenant's Activation ends and the opponent must Activate that model next.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Chewa",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "+1 DICE to its Melee Attacks for each other friendly model within 1\" of the target (max +2 DICE).",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "per other friendly model within 1\" of target, max +2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "trench_cleric",
+     "name": "Trench Cleric",
+     "min": 0,
+     "max": 1,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "God is With Us! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success place 1 BLESSING MARKER beside the Cleric or a friendly model within 6\".",
+       "sim": {
+        "kind": "action",
+        "effect": "blessFriendly",
+        "range": 6,
+        "amount": 1,
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Onward Christian Soldiers!",
+       "text": "Friendly NEW ANTIOCH models within 8\" have NEGATE FEAR.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "friendly",
+        "effect": "negate",
+        "value": "FEAR"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Chewa",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "+1 DICE to its Melee Attacks for each other friendly model within 1\" of the target (max +2 DICE).",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "per other friendly model within 1\" of target, max +2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "holy_warrior",
+     "name": "Holy Warrior",
+     "min": 0,
+     "max": 2,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "God is With Us! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success place 1 BLESSING MARKER beside the Cleric or a friendly model within 6\".",
+       "sim": {
+        "kind": "action",
+        "effect": "blessFriendly",
+        "range": 6,
+        "amount": 1,
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Onward Christian Soldiers!",
+       "text": "Friendly NEW ANTIOCH models within 8\" have NEGATE FEAR.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "friendly",
+        "effect": "negate",
+        "value": "FEAR"
+       }
+      },
+      {
+       "name": "Blessed Psalm ACTION",
+       "text": "Move 1 BLESSING MARKER from the Holy Warrior to a friendly model; no roll needed.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Arise and be Healed! ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). On a success the model itself or a friendly model within 3\" may stand up for free and loses up to D3 BLOOD and/or INFECTION MARKERS.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 3,
+        "roll": "risky",
+        "amount": "D3"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Chewa",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "+1 DICE to its Melee Attacks for each other friendly model within 1\" of the target (max +2 DICE).",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "per other friendly model within 1\" of target, max +2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "yeoman",
+     "name": "Yeoman",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any; may take its Bolt-Action Rifle for 5 ducats",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Flanking",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "May deploy touching any battlefield edge at least 8\" from enemies (after normal deployment, before INFILTRATORs). Max 4.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "edge"
+       },
+       "limit": 4
+      }
+     ],
+     "kitDiscounts": {
+      "Bolt-Action Rifle": 5
+     }
+    },
+    {
+     "id": "shock_trooper",
+     "name": "Shock Trooper",
+     "min": 0,
+     "max": 5,
+     "cost": 45,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Assault Drill",
+       "text": "Ignores the HEAVY effect for 1 Melee Weapon it carries; still limited to 1 HEAVY weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Shock Charge",
+       "text": "Roll one extra D6 for its Charge Bonus and use the single highest die.",
+       "sim": {
+        "kind": "chargeBonus",
+        "value": "best of 2D6"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Chewa",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "+1 DICE to its Melee Attacks for each other friendly model within 1\" of the target (max +2 DICE).",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "per other friendly model within 1\" of target, max +2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "mechanized_heavy_infantry",
+     "name": "Mechanized Heavy Infantry",
+     "min": 0,
+     "max": 3,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 0,
+     "armour": -2,
+     "base": 40,
+     "keywords": [
+      "NEW ANTIOCH",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Reinforced Armour"
+     ],
+     "kitRule": "any except Armour; Reinforced Armour only (no Machine Armour)",
+     "abilities": [],
+     "upgrades": []
+    },
+    {
+     "id": "combat_medic",
+     "name": "Combat Medic",
+     "min": 0,
+     "max": 2,
+     "cost": 65,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": -1,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "NEGATE FEAR"
+     ],
+     "fixedKit": [
+      "Standard Armour",
+      "Gas Mask",
+      "Medi-kit",
+      "Misericordia"
+     ],
+     "kitRule": "any except Armour",
+     "abilities": [
+      {
+       "name": "Expert Medic",
+       "text": "+2 DICE to the Risky Success Roll when it uses a Medi-kit for a Treat ACTION.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 1,
+        "roll": "risky",
+        "bonusDice": 2
+       }
+      },
+      {
+       "name": "Finish the Fallen",
+       "text": "+1 INJURY DICE on its Melee Attacks against Down targets without BLACK GRAIL or DEMONIC.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "effect": "injuryDice",
+        "cond": "target is Down, not BLACK GRAIL/DEMONIC"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Shotel",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "CRITICAL"
+     ],
+     "text": "Bypass Shield: ignores the -INJURY DICE/-INJURY MODIFIER of Shields on its Melee Attacks.",
+     "sim": {
+      "kind": "none",
+      "ignoreShield": true
+     }
+    },
+    {
+     "name": "Holy Water of Lalibela",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "CONSUMABLE"
+     ],
+     "text": "Healing Waters: +1 DICE on the bearer's Success Rolls for ACTIONS that remove BLOOD or INFECTION MARKERS.",
+     "sim": {
+      "kind": "none",
+      "healBonus": 1
+     }
+    },
+    {
+     "name": "Anfarro (Warriors Crown)",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "NEGATE FEAR"
+     ],
+     "text": "Token of Honour: +1 DICE to the bearer's Melee Characteristic. Headgear.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "melee",
+      "value": 1,
+      "cond": "always"
+     }
+    },
+    {
+     "name": "Tabot",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Virtuous Rewards: the bearer gains 1 BLESSING MARKER whenever a friendly ACTION removes BLOOD/INFECTION MARKERS from friendly models.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "na_red_brigade",
+   "name": "The Red Brigade",
+   "inherits": "new_antioch_base",
+   "changes": "Separate Warband Variant PDF (v1.5): adds Trench Dogs of the Red Brigade and the 0-1 Crimson Communicant; clergy is either 1 Trench Cleric + 1 Sniper Priest or 2 Sniper Priests; Lieutenant may buy Gunslinger (5); Molotov Cocktails at 5 each; no Troop Flags; no Retreat ACTION; starts each game with 1 BLOOD MARKER per 200 ducats of Warband cost; adds Blood Cloak and Red Banner. Dogs cannot outnumber the other models.",
+   "removeModels": [],
+   "removeArmoury": [
+    "Troop Flag"
+   ],
+   "specialRules": [
+    {
+     "name": "Displeasure of the Church",
+     "text": "Either up to 1 Trench Cleric and up to 1 Sniper Priest, or up to 2 Sniper Priests and no Trench Cleric.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Fury of Saint Ernest",
+     "text": "The Lieutenant may buy the Gunslinger Skill for 5 ducats. Any model may buy Molotov Cocktails at 5 ducats. No Troop Flags.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Glory Hounds",
+     "text": "May include Trench Dogs of the Red Brigade, never more than the other models. A dog's first two Glorious Deeds each battle earn 2 Glory instead of 1.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "No Retreat",
+     "text": "Models cannot take the Retreat ACTION unless forced.",
+     "sim": {
+      "kind": "none",
+      "noRetreat": true
+     }
+    },
+    {
+     "name": "Remember the Fallen",
+     "text": "Campaign only: may skip Reinforcement and Exploration to recover the kit of the dead.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Wear and Tear",
+     "text": "Starts each game with 1 BLOOD MARKER per full 200 ducats of Warband cost, spread by the opponent after deployment (no second marker on a model until all have one).",
+     "sim": {
+      "kind": "startBlood",
+      "per": 200
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Molotov Cocktail",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Blood Cloak",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 4,
+     "onlyFor": null
+    },
+    {
+     "item": "Red Banner",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "lieutenant",
+     "name": "Lieutenant",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Hold Your Fire! ACTION",
+       "text": "Pick 1 enemy model in Line of Sight that the opponent may Activate; the Lieutenant's Activation ends and the opponent must Activate that model next.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Gunslinger",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Skill: with 2 PISTOL weapons it may Shoot with one then immediately the other; its PISTOL weapons gain ASSAULT and IGNORE OFF-HAND WEAPON.",
+       "sim": {
+        "kind": "none",
+        "doublePistolShoot": true
+       }
+      }
+     ]
+    },
+    {
+     "id": "sniper_priest",
+     "name": "Sniper Priest",
+     "min": 0,
+     "max": 2,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Absolute Faith",
+       "text": "The opponent cannot spend BLOOD MARKERS to add -DICE to this model's Ranged Attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aim ACTION",
+       "text": "Risky Success Roll with +2 DICE (failure ends the Activation). On a success, +2 DICE to its Ranged Attack Success Rolls for the rest of the Activation.",
+       "sim": {
+        "kind": "action",
+        "effect": "aim",
+        "roll": "risky",
+        "bonusDice": 2,
+        "value": 2
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "trench_dog",
+     "name": "Trench Dog of the Red Brigade",
+     "min": 0,
+     "max": null,
+     "cost": 35,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "NEW ANTIOCH"
+     ],
+     "fixedKit": [],
+     "kitRule": "only Frag Grenades or Molotov Cocktails, at 5 ducats",
+     "abilities": [
+      {
+       "name": "The Dogs of War",
+       "text": "Cannot be Promoted; counts as part of the Warband for Morale.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Four Paws",
+       "text": "+1 DICE when it Climbs, Jumps, Falls or Dashes.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Grenade Harness",
+       "text": "Cannot throw its own Frag Grenades/Molotov Cocktails, but a friendly non-dog model that was within 1\" of it during its Activation may Shoot with them.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Loyal Hound",
+       "text": "Up to 2 dogs may each form an extra FIRETEAM with a non-dog model for 5 ducats per model (on top of the normal 2 Fireteams).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Teeth and Claws",
+       "text": "Can make Melee Attacks without a Melee Weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Attack Dog",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Special Training: +1 DICE Melee Characteristic. One training per dog.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "always"
+       }
+      },
+      {
+       "name": "Guard Dog",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Special Training (Limit 1): enemy INFILTRATORs cannot deploy within 16\"; may charge enemies it cannot see.",
+       "sim": {
+        "kind": "none"
+       },
+       "limit": 1
+      },
+      {
+       "name": "Mercy Dog",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Special Training (Limit 2): has and uses a Medi-kit; can drag a Down friend it starts touching (half Move; not when charging or retreating).",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 1,
+        "roll": "risky"
+       },
+       "limit": 2
+      },
+      {
+       "name": "Loyal Hound",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "This dog joins an extra FIRETEAM with one non-dog model (that partner also pays 5). Max 2 such Fireteams.",
+       "sim": {
+        "kind": "none"
+       },
+       "limit": 2
+      }
+     ],
+     "kitDiscounts": {
+      "Frag Grenades": 5,
+      "Molotov Cocktail": 5
+     },
+     "kitAllowed": [
+      "Frag Grenades",
+      "Molotov Cocktail"
+     ]
+    },
+    {
+     "id": "crimson_communicant",
+     "name": "Crimson Communicant",
+     "min": 0,
+     "max": 1,
+     "cost": 75,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -1,
+     "melee": 1,
+     "armour": 0,
+     "base": 40,
+     "keywords": [
+      "NEW ANTIOCH",
+      "ELITE",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Atonement Bell"
+     ],
+     "kitRule": "any from the New Antioch Armoury; always carries an Atonement Bell (HELD)",
+     "abilities": [
+      {
+       "name": "Strength through Pain",
+       "text": "+1 DICE Melee for each BLOOD MARKER on it; the opponent cannot spend its BLOOD MARKERS to add -DICE to its Fight ACTION rolls.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "per BLOOD MARKER on itself"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "nonDogPartnerUpgrade": {
+    "name": "Loyal Hound partner",
+    "cost": 5
+   },
+   "uniqueKit": [
+    {
+     "name": "Blood Cloak",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "SKIRMISHER"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Red Banner",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "BLOCK",
+      "HELD"
+     ],
+     "text": "Blood of Martyrs: +2 DICE to the Warband's Morale Checks while the bearer is not Down or Out of Action.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Atonement Bell",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "HELD"
+     ],
+     "text": "Channelled Sorrow: only for off-hand attacks; a hit moves the target D3\" in a straight line in any direction (can force Retreat, Climb, Jump or Jump Down) instead of an Injury Roll. Cannot target a Retreating model.",
+     "sim": {
+      "kind": "action",
+      "effect": "pushModel",
+      "range": 1,
+      "distance": "D3",
+      "roll": "success"
+     }
+    }
+   ]
+  }
+ ],
+ "lists": [
+  {
+   "id": "na_iron_wall",
+   "name": "The Iron Wall of the Seventy-Seven Towers",
+   "variant": "new_antioch_base",
+   "ducats": 880,
+   "glory": 8,
+   "style": "Gunline: two Machine-Gun walkers, twin blind Sniper Priests and a rifle picket hold the line while the Communicant's anti-materiel rifle cracks armour; the Cleric keeps them steady.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Lt. Aurelia Varga",
+     "kit": [
+      "Automatic Rifle",
+      "Sword/Axe",
+      "Reinforced Armour",
+      "Combat Helmet",
+      "Frag Grenades",
+      "Martyrdom Pills"
+     ],
+     "upgrades": [],
+     "ducats": 166,
+     "glory": 1
+    },
+    {
+     "model": "sniper_priest",
+     "label": "Brother Longinus the Unseeing",
+     "kit": [
+      "Sniper Rifle",
+      "Standard Armour",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 105,
+     "glory": 0
+    },
+    {
+     "model": "sniper_priest",
+     "label": "Sister Lucia of the Black Scapular",
+     "kit": [
+      "Sniper Rifle",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 100,
+     "glory": 0
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Father Odo",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Standard Armour",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 92,
+     "glory": 0
+    },
+    {
+     "model": "mechanized_heavy_infantry",
+     "label": "Walker 'Bastion'",
+     "kit": [
+      "Machine Armour",
+      "Machine Gun",
+      "Combat Helmet"
+     ],
+     "upgrades": [
+      "Machine Armour"
+     ],
+     "ducats": 150,
+     "glory": 0
+    },
+    {
+     "model": "mechanized_heavy_infantry",
+     "label": "Walker 'Rampart'",
+     "kit": [
+      "Reinforced Armour",
+      "Machine Gun",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 140,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Yeoman Petrov",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 40,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Yeoman Haddad",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Combat Helmet",
+      "Field Shrine"
+     ],
+     "upgrades": [],
+     "ducats": 40,
+     "glory": 2
+    },
+    {
+     "model": "yeoman",
+     "label": "Yeoman Okafor",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Combat Helmet",
+      "Medi-kit"
+     ],
+     "upgrades": [],
+     "ducats": 47,
+     "glory": 0
+    },
+    {
+     "model": "MERC:communicant_anti_tank_hunter",
+     "label": "Communicant Brother Tobias",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 5
+    }
+   ]
+  },
+  {
+   "id": "na_trench_moles",
+   "name": "Moles of No Man's Land",
+   "variant": "new_antioch_base",
+   "ducats": 899,
+   "glory": 8,
+   "style": "Infiltration assault: three Trench Moles pop up forward, Combat Engineers lob Satchel Charges into strongpoints and Shock Troopers with greatswords and SMGs pair up as Fireteams for Bloodbath kills; the Witchburner marks targets.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Lt. Casimir Wren",
+     "kit": [
+      "Automatic Pistol",
+      "Sword/Axe",
+      "Reinforced Armour",
+      "Frag Grenades",
+      "Martyrdom Pills"
+     ],
+     "upgrades": [],
+     "ducats": 141,
+     "glory": 1
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Chaplain Ignatius",
+     "kit": [
+      "Shotgun",
+      "Bayonet",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 87,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Trooper Halvard",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Trooper Bertrand",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Trooper Nadia",
+     "kit": [
+      "Submachine Gun",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 97,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Trooper Esdras",
+     "kit": [
+      "Submachine Gun",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 97,
+     "glory": 0
+    },
+    {
+     "model": "combat_engineer",
+     "label": "Sapper Kowal",
+     "kit": [
+      "Satchel Charge",
+      "Shotgun"
+     ],
+     "upgrades": [],
+     "ducats": 105,
+     "glory": 0
+    },
+    {
+     "model": "combat_engineer",
+     "label": "Sapper Dumont",
+     "kit": [
+      "Satchel Charge",
+      "Shotgun"
+     ],
+     "upgrades": [],
+     "ducats": 105,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Mole Grigor",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [
+      "Trench Mole"
+     ],
+     "ducats": 57,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Mole Abebe",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Trench Mole"
+     ],
+     "ducats": 52,
+     "glory": 0
+    },
+    {
+     "model": "MERC:witchburner",
+     "label": "Inquisitor Malachai Thorne",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 5
+    },
+    {
+     "model": "MERC:mendelist_ammo_monk",
+     "label": "Brother Cartridge",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 2
+    }
+   ]
+  },
+  {
+   "id": "na_fianna",
+   "name": "The Fianna of Connacht",
+   "variant": "na_eire_rangers",
+   "ducats": 891,
+   "glory": 8,
+   "style": "Guerrilla raiders: infiltrating, skirmishing Fianna with claymores lead a Berserker Lieutenant into the flank while two warrior-priests heal and knock enemies flat, and an anointed-round sniper picks off officers.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Lt. Niamh O'Rourke, the Red Hound",
+     "kit": [
+      "Great Sword/Axe",
+      "Automatic Pistol",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [
+      "Berserker"
+     ],
+     "ducats": 129,
+     "glory": 0
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Father Colm",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Standard Armour",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 92,
+     "glory": 0
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Mother Brigid",
+     "kit": [
+      "Shotgun",
+      "Trench Shield",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 0
+    },
+    {
+     "model": "sniper_priest",
+     "label": "Brother Fintan",
+     "kit": [
+      "Sniper Rifle",
+      "Armour-Piercing Bullets",
+      "Standard Armour",
+      "Martyrdom Pills"
+     ],
+     "upgrades": [],
+     "ducats": 105,
+     "glory": 1
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Fian Oisin",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Fianna"
+     ],
+     "ducats": 89,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Fian Caoilte",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Fianna"
+     ],
+     "ducats": 89,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Fian Diarmuid",
+     "kit": [
+      "Shotgun",
+      "Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Fianna"
+     ],
+     "ducats": 91,
+     "glory": 0
+    },
+    {
+     "model": "combat_engineer",
+     "label": "Sapper Ruairi",
+     "kit": [
+      "Satchel Charge",
+      "Bolt-Action Rifle"
+     ],
+     "upgrades": [],
+     "ducats": 105,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Ranger Seamus",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Armour-Piercing Bullets",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 45,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Carnyx-bearer Aoife",
+     "kit": [
+      "Pistol",
+      "Musical Instrument"
+     ],
+     "upgrades": [],
+     "ducats": 51,
+     "glory": 0
+    },
+    {
+     "model": "MERC:observer",
+     "label": "The Silent Watcher",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 3
+    },
+    {
+     "model": "MERC:mamluk_faris",
+     "label": "Faris Baybars",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  },
+  {
+   "id": "na_alba_claymores",
+   "name": "Claymores of Dùn Èideann",
+   "variant": "na_alba",
+   "ducats": 886,
+   "glory": 8,
+   "style": "All-in Highland charge: STRONG Shock Troopers with cheap claymores and shield-polearms, a Lochaber-axe Lieutenant and a Machine-Armoured walker that keeps its full charge, piped forward fearless by the bagpipes.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Lt. Ewan MacGregor",
+     "kit": [
+      "Lochaber Axe",
+      "Pistol",
+      "Reinforced Armour",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 138,
+     "glory": 0
+    },
+    {
+     "model": "mechanized_heavy_infantry",
+     "label": "Walker 'Bruce'",
+     "kit": [
+      "Machine Armour",
+      "Great Sword/Axe",
+      "Pistol",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [
+      "Machine Armour"
+     ],
+     "ducats": 117,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Highlander Angus",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Highlander Morag",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Highlander Fergus",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Highlander Isla",
+     "kit": [
+      "Polearm",
+      "Trench Shield",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 81,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Highlander Duncan",
+     "kit": [
+      "Polearm",
+      "Trench Shield",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 84,
+     "glory": 0
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Reverend Knox",
+     "kit": [
+      "Sword/Axe",
+      "Pistol",
+      "Standard Armour",
+      "Combat Helmet",
+      "Martyrdom Pills"
+     ],
+     "upgrades": [],
+     "ducats": 88,
+     "glory": 1
+    },
+    {
+     "model": "yeoman",
+     "label": "Piper Hamish (Bagpipes)",
+     "kit": [
+      "Pistol",
+      "Musical Instrument"
+     ],
+     "upgrades": [],
+     "ducats": 51,
+     "glory": 0
+    },
+    {
+     "model": "sniper_priest",
+     "label": "Brother Columba",
+     "kit": [
+      "Sniper Rifle",
+      "Dum-Dum Bullets"
+     ],
+     "upgrades": [],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "MERC:observer",
+     "label": "The Watcher of Iona",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 3
+    },
+    {
+     "model": "MERC:mamluk_faris",
+     "label": "Faris Qutuz",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  },
+  {
+   "id": "na_gardekorps",
+   "name": "The 6th Gardekorps of Königsberg",
+   "variant": "na_stosstruppen",
+   "ducats": 897,
+   "glory": 8,
+   "style": "Blitz assault: five Stosstruppen with Rapid Assault and long-range grenades, three as SMG Fireteam gunners (two infiltrating), chained with a Tank-Splitter Hauptmann and Feldkaplan on Holy Smoke; a single Sniper Priest covers the approach.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Hauptmann Frederica von Goltz",
+     "kit": [
+      "Tank-Splitter Sword",
+      "Automatic Pistol",
+      "Reinforced Armour",
+      "Frag Grenades",
+      "Combat Helmet"
+     ],
+     "upgrades": [
+      "Rapid Assault"
+     ],
+     "ducats": 162,
+     "glory": 0
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Feldkaplan Rudolf Leopold",
+     "kit": [
+      "Tank-Splitter Sword",
+      "Standard Armour",
+      "Holy Smoke",
+      "Frag Grenades",
+      "Gas Mask"
+     ],
+     "upgrades": [],
+     "ducats": 117,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Stosstruppe Ludwig",
+     "kit": [
+      "Submachine Gun",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Rapid Assault",
+      "Forward Positions"
+     ],
+     "ducats": 97,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Stosstruppe Lars",
+     "kit": [
+      "Submachine Gun",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Rapid Assault",
+      "Forward Positions"
+     ],
+     "ducats": 97,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Stosstruppe Jens",
+     "kit": [
+      "Submachine Gun",
+      "Frag Grenades",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Rapid Assault"
+     ],
+     "ducats": 102,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Stosstruppe Karl",
+     "kit": [
+      "Sword/Axe",
+      "Trench Club",
+      "Frag Grenades",
+      "Standard Armour",
+      "Combat Helmet"
+     ],
+     "upgrades": [
+      "Rapid Assault"
+     ],
+     "ducats": 84,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Stosstruppe Erich",
+     "kit": [
+      "Automatic Pistol",
+      "Sword/Axe",
+      "Frag Grenades",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Rapid Assault"
+     ],
+     "ducats": 96,
+     "glory": 0
+    },
+    {
+     "model": "sniper_priest",
+     "label": "Pater Albrecht",
+     "kit": [
+      "Sniper Rifle",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 100,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Yeoman Hugo",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Frag Grenades"
+     ],
+     "upgrades": [],
+     "ducats": 42,
+     "glory": 0
+    },
+    {
+     "model": "MERC:witchburner",
+     "label": "Hexenrichter Konrad",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 5
+    },
+    {
+     "model": "MERC:observer",
+     "label": "The Watcher of Marienburg",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 3
+    }
+   ]
+  },
+  {
+   "id": "na_abyssinia_chewa",
+   "name": "Chewa of the Solomonic Throne",
+   "variant": "na_abyssinia",
+   "ducats": 897,
+   "glory": 8,
+   "style": "Half-moon envelopment: Flanking Yeomen hit from the table edges with short-range fire while Chewa Shock Troopers gang up in melee; two Holy Warriors and two Medics with Lalibela water keep everyone standing, the Tabot turning every heal into blessings.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Ras Tewodros",
+     "kit": [
+      "Shotel",
+      "Pistol",
+      "Anfarro (Warriors Crown)",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Chewa"
+     ],
+     "ducats": 118,
+     "glory": 0
+    },
+    {
+     "model": "holy_warrior",
+     "label": "Abba Gebre",
+     "kit": [
+      "Shotgun",
+      "Standard Armour",
+      "Holy Water of Lalibela",
+      "Tabot"
+     ],
+     "upgrades": [],
+     "ducats": 88,
+     "glory": 4
+    },
+    {
+     "model": "holy_warrior",
+     "label": "Abba Yohannes",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Standard Armour",
+      "Holy Water of Lalibela"
+     ],
+     "upgrades": [],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "combat_medic",
+     "label": "Healer Mekdes",
+     "kit": [
+      "Pistol",
+      "Holy Water of Lalibela"
+     ],
+     "upgrades": [],
+     "ducats": 74,
+     "glory": 0
+    },
+    {
+     "model": "combat_medic",
+     "label": "Healer Dawit",
+     "kit": [
+      "Pistol",
+      "Holy Water of Lalibela"
+     ],
+     "upgrades": [],
+     "ducats": 74,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Chewa Alemu",
+     "kit": [
+      "Sword/Axe",
+      "Trench Club",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Chewa"
+     ],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Chewa Bekele",
+     "kit": [
+      "Sword/Axe",
+      "Trench Club",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Chewa"
+     ],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Chewa Tsegaye",
+     "kit": [
+      "Sword/Axe",
+      "Trench Club",
+      "Standard Armour",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Chewa"
+     ],
+     "ducats": 79,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Flanker Kebede",
+     "kit": [
+      "Shotgun",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Flanking"
+     ],
+     "ducats": 52,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Flanker Girma",
+     "kit": [
+      "Shotgun",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Flanking"
+     ],
+     "ducats": 52,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Flanker Haile",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Flanking"
+     ],
+     "ducats": 47,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Flanker Desta",
+     "kit": [
+      "Flamethrower"
+     ],
+     "upgrades": [
+      "Flanking"
+     ],
+     "ducats": 65,
+     "glory": 0
+    },
+    {
+     "model": "MERC:mamluk_faris",
+     "label": "Faris al-Zahir",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  },
+  {
+   "id": "na_red_brigade",
+   "name": "Blood Pledges of Saint Ernest",
+   "variant": "na_red_brigade",
+   "ducats": 886,
+   "glory": 8,
+   "style": "Suicidal deep strike: a two-pistol Gunslinger Lieutenant with his attack dog, SMG troopers and a Crimson Communicant who grows stronger as the starting Blood Markers pile on; dogs ferry Molotovs and drag the fallen, and nobody ever retreats.",
+   "models": [
+    {
+     "model": "lieutenant",
+     "label": "Captain Wilhelm Ernestson",
+     "kit": [
+      "Automatic Pistol",
+      "Automatic Pistol",
+      "Reinforced Armour",
+      "Molotov Cocktail",
+      "Blood Cloak",
+      "Martyrdom Pills"
+     ],
+     "upgrades": [
+      "Gunslinger",
+      "Loyal Hound partner"
+     ],
+     "ducats": 170,
+     "glory": 1
+    },
+    {
+     "model": "crimson_communicant",
+     "label": "Communicant Penitence",
+     "kit": [
+      "Atonement Bell",
+      "Sword/Axe",
+      "Standard Armour",
+      "Molotov Cocktail",
+      "Combat Helmet"
+     ],
+     "upgrades": [],
+     "ducats": 104,
+     "glory": 0
+    },
+    {
+     "model": "trench_cleric",
+     "label": "Father Anselm",
+     "kit": [
+      "Shotgun",
+      "Standard Armour",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "sniper_priest",
+     "label": "Brother Wilhelm the Blind",
+     "kit": [
+      "Sniper Rifle",
+      "Blood Cloak"
+     ],
+     "upgrades": [],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Pledge Marta",
+     "kit": [
+      "Submachine Gun",
+      "Standard Armour",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Pledge Corvin",
+     "kit": [
+      "Submachine Gun",
+      "Standard Armour",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 0
+    },
+    {
+     "model": "shock_trooper",
+     "label": "Pledge Ulric",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 77,
+     "glory": 0
+    },
+    {
+     "model": "yeoman",
+     "label": "Standard-bearer Greta",
+     "kit": [
+      "Red Banner",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 35,
+     "glory": 2
+    },
+    {
+     "model": "trench_dog",
+     "label": "Wolfhound 'Acre'",
+     "kit": [
+      "Frag Grenades"
+     ],
+     "upgrades": [
+      "Attack Dog",
+      "Loyal Hound"
+     ],
+     "ducats": 50,
+     "glory": 0
+    },
+    {
+     "model": "trench_dog",
+     "label": "Mastiff 'Mercy'",
+     "kit": [],
+     "upgrades": [
+      "Mercy Dog"
+     ],
+     "ducats": 40,
+     "glory": 0
+    },
+    {
+     "model": "trench_dog",
+     "label": "Malinois 'Sentry'",
+     "kit": [],
+     "upgrades": [
+      "Guard Dog"
+     ],
+     "ducats": 40,
+     "glory": 0
+    },
+    {
+     "model": "MERC:witchburner",
+     "label": "Inquisitor Hesper Vane",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 5
+    }
+   ]
+  }
+ ]
+}

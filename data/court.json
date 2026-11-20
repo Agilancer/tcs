@@ -1,0 +1,2554 @@
+{
+ "id": "court",
+ "name": "The Court of the Seven-Headed Serpent",
+ "alignment": "Fallen",
+ "source": "Warbands of Trench Crusade 1.0.2",
+ "variants": [
+  {
+   "id": "court_base",
+   "name": "Court of the Seven-Headed Serpent (base list)",
+   "specialRules": [
+    {
+     "name": "Seven Deadly Sins",
+     "text": "Before recruiting choose Wrath, Envy, Lust, Pride, Sloth, Gluttony or Greed; this sets the Goetic Powers available and the Desecrated Saint's aura. Use one of the Sin variants to build a list.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Goetic Powers",
+     "text": "ELITE models can buy Goetic Powers up to the number on their entry. Abilities work like normal abilities; Spells are cast by paying BLOOD MARKERS (no Success Roll), taken from any non-BLACK GRAIL, non-DEMONIC models anywhere, friend or foe. A model cannot cast the same spell twice per Activation; some need a Cast Spell ACTION.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Command",
+     "text": "Must include a Praetor or a Sorcerer, or both. Fallen.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Arquebus",
+     "cost": 8,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Blunderbuss",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flamethrower",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Heavy Flamethrower",
+     "cost": 55,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Ophidian Rifle",
+     "cost": 25,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 3,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Pistol",
+     "cost": 6,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Serpent Assault Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Shotgun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Hammer/Maul",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Headtaker",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Hellblade",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Malebranche Sword",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Polearm",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sword/Axe",
+     "cost": 4,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Torture Instrument",
+     "cost": 8,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Club",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Knife",
+     "cost": 1,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Grenades",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Grenades",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Shield",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Infernal Iron Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "hell_knight"
+     ]
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Standard Armour",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Combat Helmet",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Headgear"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Crown of Hellfire",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE & Pit Locusts only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE",
+      "pit_locust"
+     ]
+    },
+    {
+     "item": "Gas Mask",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Ammunition",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Musical Instrument",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Restraining Muzzle",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": [
+      "yoke_fiend"
+     ]
+    },
+    {
+     "item": "Shovel",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "wretched",
+      "yoke_fiend"
+     ]
+    },
+    {
+     "item": "Troop Flag",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Unholy Relic",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Unholy Trinket",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Burning Inferno",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "sorcerer"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Slavemaster",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "praetor",
+     "name": "Praetor",
+     "min": 0,
+     "max": 1,
+     "cost": 115,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Flying",
+     "ranged": 3,
+     "melee": 3,
+     "armour": 0,
+     "base": 50,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "ELITE",
+      "FEAR",
+      "FLYING",
+      "LEADER",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any Court kit; up to 2 Goetic Powers (1 if dedicated to Wrath)",
+     "abilities": [
+      {
+       "name": "Command",
+       "text": "A Court warband must include a Praetor or a Sorcerer (or both).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 2
+    },
+    {
+     "id": "sorcerer",
+     "name": "Sorcerer",
+     "min": 0,
+     "max": 1,
+     "cost": 75,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Flying",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 50,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "ELITE",
+      "FEAR",
+      "FLYING"
+     ],
+     "fixedKit": [
+      "Blessing of the Serpent Moon"
+     ],
+     "kitRule": "any Court kit except Ranged Weapons and Grenades; up to 3 Goetic Powers plus free Blessing of the Serpent Moon",
+     "abilities": [
+      {
+       "name": "Command",
+       "text": "A Court warband must include a Praetor or a Sorcerer (or both).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 3
+    },
+    {
+     "id": "hunter_of_the_left_hand_path",
+     "name": "Hunter of the Left-Hand Path",
+     "min": 0,
+     "max": 1,
+     "cost": 110,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "ELITE",
+      "INFILTRATOR"
+     ],
+     "fixedKit": [
+      "Bow of Lethe",
+      "Left-Hand Path",
+      "Oracle Beast Cloak",
+      "Shadow-walker"
+     ],
+     "kitRule": "always holds the Bow of Lethe in one hand; any Court kit except 2-Handed Weapons; no other Goetic Powers",
+     "abilities": [],
+     "upgrades": [],
+     "maxPowers": 0
+    },
+    {
+     "id": "hell_knight",
+     "name": "Hell Knight",
+     "min": 0,
+     "max": 3,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 2,
+     "armour": -2,
+     "base": 40,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "ELITE",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Infernal Iron Armour",
+      "Blood Magic"
+     ],
+     "kitRule": "always wears Infernal Iron Armour (in profile); any Court kit except Armour; 1 Goetic Power besides the free Blood Magic",
+     "abilities": [],
+     "upgrades": [],
+     "maxPowers": 1
+    },
+    {
+     "id": "wretched",
+     "name": "Wretched",
+     "min": 0,
+     "max": null,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -1,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "THE COURT"
+     ],
+     "fixedKit": [],
+     "kitRule": "only Court kit costing 10 ducats or less per item; must carry at least 1 Weapon; must be outnumbered by DEMONIC models",
+     "abilities": [
+      {
+       "name": "Law of Hell",
+       "text": "If its attack takes an ELITE enemy Out of Action, it is freed and removed from the game (and roster).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    },
+    {
+     "id": "pit_locust",
+     "name": "Pit Locust",
+     "min": 0,
+     "max": 3,
+     "cost": 90,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Flying",
+     "ranged": 0,
+     "melee": 2,
+     "armour": -2,
+     "base": "30x60",
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "FEAR",
+      "FLYING"
+     ],
+     "fixedKit": [],
+     "kitRule": "Crown of Hellfire only",
+     "abilities": [
+      {
+       "name": "Poison Stingers",
+       "text": "Melee Attacks without a weapon with CLEAVE 2 and SHRAPNEL.",
+       "sim": {
+        "kind": "meleeCleave",
+        "value": 2
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    },
+    {
+     "id": "yoke_fiend",
+     "name": "Yoke Fiend",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC"
+     ],
+     "fixedKit": [],
+     "kitRule": "1 Ranged Weapon costing 30 ducats or less; any other Court kit except Ranged Weapons",
+     "abilities": [
+      {
+       "name": "Hateful",
+       "text": "On Activation, if not in melee and a visible non-BLACK GRAIL, non-DEMONIC enemy is within 12\", it must Charge the closest such enemy (standing up first if Down).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Torturer",
+       "text": "May make a Melee Attack against a friendly non-DEMONIC model (then no further attacks that Activation).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    },
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Demonic Aura",
+       "text": "Aura set by the warband's Sin (see the Sin variant).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Arquebus",
+     "type": "2H",
+     "range": 18,
+     "keywords": [
+      "CUMBERSOME"
+     ],
+     "text": "Batter: can also be used as a 2-Handed Melee Weapon.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Bow of Lethe",
+     "type": "1H",
+     "range": 24,
+     "keywords": [
+      "ASSAULT"
+     ],
+     "text": "Hunter only, always carried. Before each Injury Roll choose +2 INJURY DICE or IGNORE ARMOUR.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Crown of Hellfire",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [],
+     "text": "Searing Flames: when the wearer ends an Activation, 1 BLOOD MARKER on each enemy within 1\" (not NEGATE FIRE).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Headtaker",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [],
+     "text": "Ambush Weapon: +2 INJURY MODIFIER if the target has not Activated yet this Turn.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Hellblade",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "FIRE"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Infernal Iron Armour",
+     "type": "Armour",
+     "range": null,
+     "keywords": [
+      "-2 INJURY MODIFIER",
+      "IMPERVIOUS"
+     ],
+     "text": "Hell Knights only.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Malebranche Sword",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "DEADLY",
+      "HEAVY"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Ophidian Rifle",
+     "type": "2H",
+     "range": 30,
+     "keywords": [
+      "HEAVY"
+     ],
+     "text": "Unnatural Inversion: Cover and Long Range each give +1 DICE instead of -1 DICE.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 2,
+      "cond": "target in Cover or at Long Range (+1 each instead of -1)"
+     }
+    },
+    {
+     "name": "Restraining Muzzle",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [],
+     "text": "Brought to Heel: Yoke Fiend gets +1 DICE on Ranged Attacks and ignores Hateful.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 1,
+      "cond": "Yoke Fiend"
+     }
+    },
+    {
+     "name": "Serpent Assault Gun",
+     "type": "2H",
+     "range": 36,
+     "keywords": [
+      "ASSAULT",
+      "AUTOMATIC 2",
+      "GAS",
+      "HEAVY"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Torture Instrument",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [],
+     "text": "Agonising Injuries: Injury Roll uses 1D6 (Bloodbath 2D6) and BLOOD MARKERS caused are doubled; +/-INJURY DICE pick the single best/worst die.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Burning Inferno",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: 36\" Ranged Attack with BLAST (radius = BLOOD MARKERS paid), FIRE and SCATTER; a hit or scatter onto a model gives that Injury Roll IGNORE ARMOUR.",
+     "sim": {
+      "kind": "action",
+      "effect": "attack",
+      "range": 36,
+      "injury": "BLAST 1-3 (markers paid), FIRE, SCATTER; IGNORE ARMOUR on the model hit",
+      "bloodCost": "1-3"
+     },
+     "power": "Spell",
+     "spellCost": "1-3",
+     "cost": 15,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "sorcerer"
+     ],
+     "sin": null
+    },
+    {
+     "name": "Slavemaster",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: a Yoke Fiend within 18\" immediately kills itself, fights, moves (no Charge/Retreat) or shoots; it can still Activate normally.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "1",
+     "cost": 10,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": null
+    },
+    {
+     "name": "Blessing of the Serpent Moon",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast before an Injury Roll against the Sorcerer: -1 INJURY MODIFIER per 2 BLOOD MARKERS paid (2/4/6). Free for Sorcerers.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "2/4/6",
+     "cost": 0,
+     "currency": "ducats",
+     "onlyFor": [
+      "sorcerer"
+     ]
+    },
+    {
+     "name": "Blood Magic",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast before the Hell Knight's Injury Rolls for an attack: +1 INJURY DICE to all of them. Free for Hell Knights.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "1",
+     "cost": 0,
+     "currency": "ducats",
+     "onlyFor": [
+      "hell_knight"
+     ]
+    },
+    {
+     "name": "Left-Hand Path",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "When moving into contact with terrain, vanish and reappear touching another terrain piece more than 1\" from enemies (closer to the target if charging); repeatable at cost each time.",
+     "sim": {
+      "kind": "action",
+      "effect": "teleport",
+      "range": 12,
+      "roll": "none",
+      "bonusDice": 0,
+      "takeEnemy": false,
+      "bloodCost": "2"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 0,
+     "currency": "ducats",
+     "onlyFor": [
+      "hunter_of_the_left_hand_path"
+     ]
+    },
+    {
+     "name": "Oracle Beast Cloak",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Once per Turn after an Injury Roll on the Hunter, change it to No Effect.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "3",
+     "cost": 0,
+     "currency": "ducats",
+     "onlyFor": [
+      "hunter_of_the_left_hand_path"
+     ]
+    },
+    {
+     "name": "Shadow-walker",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast before Retreating: enemies get no Melee Attack on the Hunter.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 0,
+     "currency": "ducats",
+     "onlyFor": [
+      "hunter_of_the_left_hand_path"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "court_wrath",
+   "name": "Court of the Seven-Headed Serpent - Wrath",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Wrath: unlocks the Wrath Goetic Powers and gives the Desecrated Saint the Aura of Wrath. Praetors may have only 1 Goetic Power.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Wrath",
+     "text": "Only Wrath Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Wrath",
+     "text": "Friendly models within 8\" (and the Saint) get +1 DICE to Melee Attacks and Dash Risky Success Rolls.",
+     "sim": {
+      "kind": "aura",
+      "range": 8,
+      "who": "friendly",
+      "effect": "dice",
+      "value": 1
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Blind Rage",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 3,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Charge of Hatred",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 3,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Lesser Mark of Cain",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Wrath",
+       "text": "Friendly models within 8\" (and the Saint) get +1 DICE to Melee Attacks and Dash Risky Success Rolls.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "friendly",
+        "effect": "dice",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    },
+    {
+     "id": "praetor",
+     "name": "Praetor",
+     "min": 0,
+     "max": 1,
+     "cost": 115,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Flying",
+     "ranged": 3,
+     "melee": 3,
+     "armour": 0,
+     "base": 50,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "ELITE",
+      "FEAR",
+      "FLYING",
+      "LEADER",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any Court kit; only 1 Goetic Power (Wrath)",
+     "abilities": [
+      {
+       "name": "Command",
+       "text": "A Court warband must include a Praetor or a Sorcerer (or both).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 1
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Blind Rage",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "+1 DICE to Dash Risky Success Rolls.",
+     "sim": {
+      "kind": "dashBonus",
+      "value": 1
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 10,
+     "currency": "ducats",
+     "limit": 3,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "wrath"
+    },
+    {
+     "name": "Charge of Hatred",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "Charges as if Movement were 12\" with no D6 Charge Bonus; charging anything but the closest visible enemy needs a Risky Success Roll first (failure ends the Activation).",
+     "sim": {
+      "kind": "chargeBonus",
+      "value": 6,
+      "cond": "charge reach fixed at 12\", no D6"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 10,
+     "currency": "ducats",
+     "limit": 3,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "wrath"
+    },
+    {
+     "name": "Lesser Mark of Cain",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "The model has -1 INJURY DICE (Injury Rolls against it are worse).",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 20,
+     "currency": "ducats",
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "wrath"
+    }
+   ]
+  },
+  {
+   "id": "court_envy",
+   "name": "Court of the Seven-Headed Serpent - Envy",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Envy: unlocks the Envy Goetic Powers and gives the Desecrated Saint the Aura of Envy.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Envy",
+     "text": "Only Envy Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Envy",
+     "text": "Enemies within 12\" cannot charge a friendly model that is within 1\" of one of their own models.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Coveted Position",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Envious Eyes",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "What is Yours is Mine",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Envy",
+       "text": "Enemies within 12\" cannot charge a friendly model that is within 1\" of one of their own models.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Coveted Position",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: swap places with a model within 12\" in Line of Sight that is more than 1\" from other models (works even in melee).",
+     "sim": {
+      "kind": "action",
+      "effect": "teleport",
+      "range": 12,
+      "roll": "none",
+      "bonusDice": 0,
+      "takeEnemy": false,
+      "bloodCost": "2"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 10,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "envy"
+    },
+    {
+     "name": "Envious Eyes",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "May buy 1 item from the New Antioch, Trench Pilgrims or Iron Sultanate armoury, obeying its stipulations.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 5,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "envy"
+    },
+    {
+     "name": "What is Yours is Mine",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: move 1 BLOOD MARKER or BLESSING MARKER from a model in Line of Sight onto the spellcaster.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "1",
+     "cost": 10,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "envy"
+    }
+   ]
+  },
+  {
+   "id": "court_lust",
+   "name": "Court of the Seven-Headed Serpent - Lust",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Lust: unlocks the Lust Goetic Powers and gives the Desecrated Saint the Aura of Lust.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Lust",
+     "text": "Only Lust Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Lust",
+     "text": "Enemies within 4\" wearing non-IMPERVIOUS Armour can have its keywords and rules negated (except base size).",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Call of the Flesh",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Exquisite Pain",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Forbidden Pleasures",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Lust",
+       "text": "Enemies within 4\" wearing non-IMPERVIOUS Armour can have its keywords and rules negated (except base size).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Call of the Flesh",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION (ends the caster's Activation): the next enemy model to Activate must first Move/Charge/Retreat to end as close as possible to the caster, and cannot attack the caster that Turn.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 15,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "lust"
+    },
+    {
+     "name": "Exquisite Pain",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: the BLOOD MARKERS paid are placed on a model in Line of Sight.",
+     "sim": {
+      "kind": "action",
+      "effect": "bloodMarkers",
+      "range": 48,
+      "los": true,
+      "amount": 2,
+      "critAmount": 2,
+      "roll": "none",
+      "bloodCost": "1-2"
+     },
+     "power": "Spell",
+     "spellCost": "1-2",
+     "cost": 15,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "lust"
+    },
+    {
+     "name": "Forbidden Pleasures",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "Before deployment, for each model with this ability, place 3 BLOOD MARKERS on one friendly non-DEMONIC model (fuel for spells).",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 10,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "lust"
+    }
+   ]
+  },
+  {
+   "id": "court_pride",
+   "name": "Court of the Seven-Headed Serpent - Pride",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Pride: unlocks the Pride Goetic Powers and gives the Desecrated Saint the Aura of Pride.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Pride",
+     "text": "Only Pride Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Pride",
+     "text": "When the Saint's Activation ends, 1 BLOOD MARKER on every enemy within 8\".",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Light of Samael",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Proud Defiance",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Too Proud to Fall",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Pride",
+       "text": "When the Saint's Activation ends, 1 BLOOD MARKER on every enemy within 8\".",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Light of Samael",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: Injury Roll on an enemy within 24\" in Line of Sight; if on a 32mm or smaller base it is driven back D6\".",
+     "sim": {
+      "kind": "action",
+      "effect": "attack",
+      "range": 24,
+      "injury": "standard Injury Roll, then push D6\" if base 32mm or less",
+      "bloodCost": "2"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 15,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "pride"
+    },
+    {
+     "name": "Proud Defiance",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "The warband takes no Morale Checks while a model with this ability is on the battlefield.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 15,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "pride"
+    },
+    {
+     "name": "Too Proud to Fall",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast when the caster is taken Down: it stays standing but suffers the other effects (BLOOD MARKERS, TOUGH used, etc.).",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 10,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "pride"
+    }
+   ]
+  },
+  {
+   "id": "court_sloth",
+   "name": "Court of the Seven-Headed Serpent - Sloth",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Sloth: unlocks the Sloth Goetic Powers and gives the Desecrated Saint the Aura of Sloth.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Sloth",
+     "text": "Only Sloth Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Sloth",
+     "text": "Enemies within 8\" treat Minor Hit results as Down (even those that normally downgrade Down to Minor Hit).",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Charm of Acedia",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Daemonium Meridianum",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Morphean Mind",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 2,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Sloth",
+       "text": "Enemies within 8\" treat Minor Hit results as Down (even those that normally downgrade Down to Minor Hit).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Charm of Acedia",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: the first Success or Risky Success Roll of the caster's next ACTION this Activation is an automatic Success.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "1",
+     "cost": 15,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "sloth"
+    },
+    {
+     "name": "Daemonium Meridianum",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "Enemies treat Open or Dangerous terrain within 6\" of this model as DIFFICULT TERRAIN.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 20,
+     "currency": "ducats",
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "sloth"
+    },
+    {
+     "name": "Morphean Mind",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "The opponent may spend at most 1 BLOOD MARKER for -1 DICE on this model's Success Rolls.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 15,
+     "currency": "ducats",
+     "limit": 2,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "sloth"
+    }
+   ]
+  },
+  {
+   "id": "court_gluttony",
+   "name": "Court of the Seven-Headed Serpent - Gluttony",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Gluttony: unlocks the Gluttony Goetic Powers and gives the Desecrated Saint the Aura of Gluttony.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Gluttony",
+     "text": "Only Gluttony Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Gluttony",
+     "text": "Enemies within 8\" get -1 DICE to their rolls unless BLACK GRAIL or ARTIFICIAL.",
+     "sim": {
+      "kind": "aura",
+      "range": 8,
+      "who": "enemy",
+      "effect": "dice",
+      "value": -1
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Belly of the Beast",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Eater of the Flesh",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Praetors & Sorcerers only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Uncaring Gluttony",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Gluttony",
+       "text": "Enemies within 8\" get -1 DICE to their rolls unless BLACK GRAIL or ARTIFICIAL.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "enemy",
+        "effect": "dice",
+        "value": -1
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Belly of the Beast",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "A model that places BLOOD MARKERS on it with a Melee Attack gets 1 BLOOD MARKER itself.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 5,
+     "currency": "ducats",
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "gluttony"
+    },
+    {
+     "name": "Eater of the Flesh",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "After its Melee Attack, remove 1 BLOOD MARKER from itself per BLOOD MARKER placed on the target (not vs BLACK GRAIL or DEMONIC).",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 10,
+     "currency": "ducats",
+     "limit": 1,
+     "onlyFor": [
+      "praetor",
+      "sorcerer"
+     ],
+     "sin": "gluttony"
+    },
+    {
+     "name": "Uncaring Gluttony",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast Spell ACTION: one non-Consumable piece of Equipment on an enemy that has not Activated this Turn is unusable for the game.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Spell",
+     "spellCost": "2",
+     "cost": 10,
+     "currency": "ducats",
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "gluttony"
+    }
+   ]
+  },
+  {
+   "id": "court_greed",
+   "name": "Court of the Seven-Headed Serpent - Greed",
+   "inherits": "court_base",
+   "removeModels": [],
+   "changes": "Warband dedicated to Greed: unlocks the Greed Goetic Powers and gives the Desecrated Saint the Aura of Greed.",
+   "specialRules": [
+    {
+     "name": "Dedicated to Greed",
+     "text": "Only Greed Goetic Powers (plus the any-warband ones) can be bought.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Aura of Greed",
+     "text": "Enemies within 12\" that Charge must charge the Saint if it is within 12\", visible and reachable without dangerous terrain or climbing/jumping.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Black Heart",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 2,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Body of Gold",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    },
+    {
+     "item": "Greedy Hearts",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "goetic": true
+    }
+   ],
+   "models": [
+    {
+     "id": "desecrated_saint",
+     "name": "Desecrated Saint",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 3,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "THE COURT",
+      "DEMONIC",
+      "IGNORE OFF-HAND WEAPON",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to three 1-Handed Melee Weapons, or two 1-Handed and one 2-Handed Melee Weapon; nothing else",
+     "abilities": [
+      {
+       "name": "Annihilator",
+       "text": "One Fight ACTION per Activation with each Melee Weapon it carries.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Aura of Greed",
+       "text": "Enemies within 12\" that Charge must charge the Saint if it is within 12\", visible and reachable without dangerous terrain or climbing/jumping.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [],
+     "maxPowers": 0
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Black Heart",
+     "type": "Goetic Spell",
+     "range": null,
+     "keywords": [],
+     "text": "Cast before a Success or Risky Success Roll for the caster: +1 DICE.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "melee",
+      "value": 1,
+      "cond": "pay 1 BLOOD MARKER; any Success Roll of the caster",
+      "bloodCost": "1"
+     },
+     "power": "Spell",
+     "spellCost": "1",
+     "cost": 5,
+     "currency": "ducats",
+     "limit": 2,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "greed"
+    },
+    {
+     "name": "Body of Gold",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "Gains GOLEM; loses and can never gain TOUGH.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 15,
+     "currency": "ducats",
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "greed"
+    },
+    {
+     "name": "Greedy Hearts",
+     "type": "Goetic Ability",
+     "range": null,
+     "keywords": [],
+     "text": "After deployment gain 1 BLESSING MARKER per enemy model worth 150 ducats or more.",
+     "sim": {
+      "kind": "none"
+     },
+     "power": "Ability",
+     "spellCost": null,
+     "cost": 15,
+     "currency": "ducats",
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ],
+     "sin": "greed"
+    }
+   ]
+  }
+ ],
+ "lists": [
+  {
+   "id": "court_wrath_host",
+   "name": "The Red Hunt of Satan",
+   "variant": "court_wrath",
+   "ducats": 896,
+   "glory": 7,
+   "style": "Fast melee tide: Praetor with Charge of Hatred and two raging Hell Knights crash in under the Desecrated Saint's Aura of Wrath while Yoke Fiends and Wretched soak fire.",
+   "models": [
+    {
+     "model": "praetor",
+     "label": "Praetor Ira-Vel",
+     "kit": [
+      "Malebranche Sword",
+      "Pistol",
+      "Reinforced Armour",
+      "Charge of Hatred"
+     ],
+     "upgrades": [],
+     "ducats": 221,
+     "glory": 0
+    },
+    {
+     "model": "desecrated_saint",
+     "label": "The Saint of Burning Scourges",
+     "kit": [
+      "Hellblade",
+      "Headtaker",
+      "Sword/Axe"
+     ],
+     "upgrades": [],
+     "ducats": 174,
+     "glory": 0
+    },
+    {
+     "model": "hell_knight",
+     "label": "Hell Knight of the Red Banner",
+     "kit": [
+      "Hellblade",
+      "Blind Rage"
+     ],
+     "upgrades": [],
+     "ducats": 125,
+     "glory": 0
+    },
+    {
+     "model": "hell_knight",
+     "label": "Hell Knight of the Black Banner",
+     "kit": [
+      "Hellblade",
+      "Blind Rage"
+     ],
+     "upgrades": [],
+     "ducats": 125,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Yoke Fiend 1",
+     "kit": [
+      "Arquebus",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 53,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Yoke Fiend 2",
+     "kit": [
+      "Arquebus",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 53,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Yoke Fiend 3",
+     "kit": [
+      "Arquebus",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 53,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Wretched Flag-slave",
+     "kit": [
+      "Trench Club",
+      "Troop Flag"
+     ],
+     "upgrades": [],
+     "ducats": 23,
+     "glory": 1
+    },
+    {
+     "model": "wretched",
+     "label": "Wretched 2",
+     "kit": [
+      "Trench Club"
+     ],
+     "upgrades": [],
+     "ducats": 23,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Wretched 3",
+     "kit": [
+      "Trench Club"
+     ],
+     "upgrades": [],
+     "ducats": 23,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Wretched 4",
+     "kit": [
+      "Trench Club"
+     ],
+     "upgrades": [],
+     "ducats": 23,
+     "glory": 0
+    },
+    {
+     "model": "MERC:sin_eater",
+     "label": "Sin Eater",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 6
+    }
+   ]
+  },
+  {
+   "id": "court_pride_magi",
+   "name": "Choir of the Fallen Star",
+   "variant": "court_pride",
+   "ducats": 886,
+   "glory": 5,
+   "style": "Spell battery: Sorcerer and Praetor hurl Burning Inferno and Light of Samael fuelled by blood, the Hunter stalks through terrain, Pit Locusts and a Warlock harvest markers; Proud Defiance ignores morale.",
+   "models": [
+    {
+     "model": "praetor",
+     "label": "Praetor Lucifuge",
+     "kit": [
+      "Ophidian Rifle",
+      "Sword/Axe",
+      "Reinforced Armour",
+      "Proud Defiance",
+      "Light of Samael"
+     ],
+     "upgrades": [],
+     "ducats": 214,
+     "glory": 0
+    },
+    {
+     "model": "sorcerer",
+     "label": "Sorcerer of the Morning Star",
+     "kit": [
+      "Polearm",
+      "Reinforced Armour",
+      "Burning Inferno",
+      "Too Proud to Fall",
+      "Slavemaster"
+     ],
+     "upgrades": [],
+     "ducats": 157,
+     "glory": 0
+    },
+    {
+     "model": "hunter_of_the_left_hand_path",
+     "label": "Hunter of the Left-Hand Path",
+     "kit": [
+      "Headtaker",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 140,
+     "glory": 0
+    },
+    {
+     "model": "pit_locust",
+     "label": "Pit Locust (crowned)",
+     "kit": [
+      "Crown of Hellfire"
+     ],
+     "upgrades": [],
+     "ducats": 105,
+     "glory": 0
+    },
+    {
+     "model": "pit_locust",
+     "label": "Pit Locust",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Yoke Fiend 1",
+     "kit": [
+      "Arquebus",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 53,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Yoke Fiend 2",
+     "kit": [
+      "Arquebus",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 53,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Yoke Fiend 3",
+     "kit": [
+      "Arquebus",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 53,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Wretched Flag-slave",
+     "kit": [
+      "Trench Knife",
+      "Troop Flag"
+     ],
+     "upgrades": [],
+     "ducats": 21,
+     "glory": 1
+    },
+    {
+     "model": "MERC:goetic_warlock",
+     "label": "Goetic Warlock",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  },
+  {
+   "id": "court_greed_guns",
+   "name": "Mammon's Toll-Collectors",
+   "variant": "court_greed",
+   "ducats": 886,
+   "glory": 8,
+   "style": "Gunline: Serpent Assault Guns and an Ophidian Rifle on armoured demons, muzzled Yoke Fiends shooting straight, Black Heart for key rolls and a Scripture Guardian anchoring the objective.",
+   "models": [
+    {
+     "model": "praetor",
+     "label": "Praetor Mammonite",
+     "kit": [
+      "Serpent Assault Gun",
+      "Sword/Axe",
+      "Reinforced Armour",
+      "Greedy Hearts",
+      "Black Heart"
+     ],
+     "upgrades": [],
+     "ducats": 229,
+     "glory": 0
+    },
+    {
+     "model": "sorcerer",
+     "label": "Sorcerer of the Golden Calf",
+     "kit": [
+      "Polearm",
+      "Standard Armour",
+      "Burning Inferno",
+      "Body of Gold",
+      "Black Heart"
+     ],
+     "upgrades": [],
+     "ducats": 132,
+     "glory": 0
+    },
+    {
+     "model": "hell_knight",
+     "label": "Hell Knight Tax-Gatherer",
+     "kit": [
+      "Serpent Assault Gun",
+      "Hellblade"
+     ],
+     "upgrades": [],
+     "ducats": 165,
+     "glory": 0
+    },
+    {
+     "model": "hell_knight",
+     "label": "Hell Knight Usurer",
+     "kit": [
+      "Ophidian Rifle",
+      "Hellblade"
+     ],
+     "upgrades": [],
+     "ducats": 140,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Muzzled Yoke Fiend 1",
+     "kit": [
+      "Arquebus",
+      "Restraining Muzzle",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 63,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Muzzled Yoke Fiend 2",
+     "kit": [
+      "Arquebus",
+      "Restraining Muzzle",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 63,
+     "glory": 0
+    },
+    {
+     "model": "yoke_fiend",
+     "label": "Muzzled Yoke Fiend 3",
+     "kit": [
+      "Arquebus",
+      "Restraining Muzzle",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 63,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Wretched Flag-slave",
+     "kit": [
+      "Trench Knife",
+      "Troop Flag"
+     ],
+     "upgrades": [],
+     "ducats": 21,
+     "glory": 1
+    },
+    {
+     "model": "MERC:scripture_guardian",
+     "label": "Scripture Guardian of the Ledger",
+     "kit": [
+      "Great Hammer/Maul"
+     ],
+     "upgrades": [],
+     "ducats": 10,
+     "glory": 7
+    }
+   ]
+  }
+ ]
+}
