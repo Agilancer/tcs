@@ -1,0 +1,4350 @@
+{
+ "id": "trench_pilgrims",
+ "name": "Trench Pilgrims",
+ "alignment": "Faithful",
+ "source": "Warbands of Trench Crusade 1.0.2; Procession of the Sacred Affliction Warband 1.0.2 (2026); Carcass Front Errata",
+ "mercenaries": {
+  "allowed": [
+   "communicant_anti_tank_hunter",
+   "mendelist_ammo_monk",
+   "observer",
+   "scripture_guardian",
+   "sister_of_saint_cosmas",
+   "witchburner"
+  ],
+  "note": "Faithful mercenaries hireable by Trench Pilgrim warbands (costs in Glory). War Pilgrimage of Saint Methodius bans Ammo Monks and Communicant Anti-Tank Hunters."
+ },
+ "variants": [
+  {
+   "id": "tp_base",
+   "name": "Trench Pilgrims (base list)",
+   "specialRules": [],
+   "armoury": [
+    {
+     "item": "Automatic Pistol",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Blunderbuss",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Bolt-Action Rifle",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flamethrower",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Musket",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Pistol",
+     "cost": 6,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Punt Gun",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Semi-Automatic Rifle",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Shotgun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sniper Rifle",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Anti-Tank Hammer",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Bayonet",
+     "cost": 2,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flail/Scourge",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Hammer/Maul",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Misericordia",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Polearm",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sword/Axe",
+     "cost": 4,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Club",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Knife",
+     "cost": 1,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Grenades",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Molotov Cocktail",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Warcross",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Icon Shield",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Shield",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Standard Armour",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Blessed Icon",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Field Shrine",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Mask",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Relic",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Ammunition",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Iron Capirote",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Headgear"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Martyrdom Pills",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Medi-kit",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Mountaineer Kit",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Musical Instrument",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Troop Flag",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "war_prophet",
+     "name": "War Prophet",
+     "min": 1,
+     "max": 1,
+     "cost": 80,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "LEADER"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Loudspeakers ACTION",
+       "text": "Risky Success Roll at +2 DICE (failure ends the Activation). On success every friendly model within 8\" may move up to 3\" and must end as close as possible to the nearest enemy it could see; reaching 1\" counts as a charge.",
+       "sim": {
+        "kind": "action",
+        "effect": "pushModel",
+        "who": "friendly",
+        "range": 8,
+        "distance": "3",
+        "roll": "risky",
+        "bonusDice": 2,
+        "towardEnemy": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Laying on of Hands ACTION",
+       "text": "Success Roll: on a success remove 1 BLOOD MARKER from a friendly model within 6\" (3 on a critical); may target itself.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 6,
+        "roll": "success",
+        "amount": 1,
+        "critAmount": 3
+       }
+      },
+      {
+       "name": "Memento Mori",
+       "text": "The first Out of Action result this model suffers counts as No Effect. It can never have the TOUGH Keyword.",
+       "sim": {
+        "kind": "tough"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "communicant",
+     "name": "Communicant",
+     "min": 0,
+     "max": 1,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -3,
+     "melee": 2,
+     "armour": 0,
+     "base": 40,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "REGENERATE 1",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Iron Capirote",
+      "Gas Mask"
+     ],
+     "kitRule": "any, plus a free Communicant Cross (counts as Iron Capirote and Gas Mask, cannot be lost)",
+     "abilities": [
+      {
+       "name": "Bodyguard",
+       "text": "When a friendly PILGRIM within 1\" is hit by a ranged or melee attack, this model may take the Injury Roll instead. Not against BLAST attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "The Communicant Cross",
+       "text": "Counts as having an Iron Capirote (Headgear) and a Gas Mask at no cost.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "castigator",
+     "name": "Castigator",
+     "min": 0,
+     "max": 1,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Enforced Orthodoxy ACTION",
+       "text": "Risky Success Roll at +1 DICE (failure ends the Activation). On success all Down friendly models within 8\" stand up at no movement cost.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 8,
+        "roll": "risky",
+        "bonusDice": 1,
+        "standUpOnly": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Whip of God",
+       "text": "May make melee attacks against a friendly model within 1\". Each friendly model it takes Out of Action this way banks +1 DICE for the warband's next Morale Check.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the STRONG Keyword.",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG"
+       }
+      }
+     ]
+    },
+    {
+     "id": "trench_pilgrim",
+     "name": "Trench Pilgrim",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Resurrection",
+       "text": "Campaign only: a Pilgrim killed after a game may return as a Martyr Penitent (Melee +1 DICE, -1 INJURY DICE to its Injury Rolls, Martyrdom Pills useless) for 45 ducats.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains STRONG and moves to a 32mm base. Only 1 Trench Pilgrim/Martyr Penitent per warband.",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG",
+        "base": 32,
+        "warbandMax": 1
+       }
+      }
+     ]
+    },
+    {
+     "id": "stigmatic_nun",
+     "name": "Stigmatic Nun",
+     "min": 0,
+     "max": 4,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM",
+      "REGENERATE 1"
+     ],
+     "fixedKit": [],
+     "kitRule": "armoury, but only Automatic Pistols and Pistols as ranged weapons and only Warcrosses as grenades",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Blessed Stigmata",
+       "text": "Each BLOOD MARKER removed by REGENERATE 1 is replaced by 1 BLESSING MARKER.",
+       "sim": {
+        "kind": "regenerate",
+        "value": 1,
+        "blessOnRegen": true
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "ecclesiastic_prisoner",
+     "name": "Ecclesiastic Prisoner",
+     "min": 0,
+     "max": null,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [
+      "Iron Capirote"
+     ],
+     "kitRule": "always has an Iron Capirote; up to 4 may buy a Martyrdom Device; nothing else",
+     "abilities": [
+      {
+       "name": "Awaited",
+       "text": "A Prisoner taken Out of Action by its own Martyrdom Device does not count towards Morale Checks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Feeble Flailing",
+       "text": "Can make melee attacks with no melee weapon at -1 DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Mad Dash",
+       "text": "+1 DICE to Risky Success Rolls to Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Martyrdom Device",
+       "cost": 35,
+       "currency": "ducats",
+       "text": "Up to 4 per warband. See Martyrdom Device in uniqueKit.",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 3,
+        "injury": "all within 3\", self 4D6",
+        "warbandMax": 4
+       }
+      }
+     ]
+    },
+    {
+     "id": "anchorite_shrine",
+     "name": "Anchorite Shrine",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 2,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "PILGRIM",
+      "FEAR",
+      "NEGATE SHRAPNEL",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Bonebreaker Mace",
+      "Catherine Wheel"
+     ],
+     "kitRule": "only its built-in Bonebreaker Mace and Catherine Wheel",
+     "abilities": [
+      {
+       "name": "Broken on the Wheel",
+       "text": "Before deployment you may sacrifice one Trench Pilgrim or Ecclesiastic Prisoner (removed from the warband permanently; in a campaign its kit can be redistributed at the next Quartermaster Step). Until the Shrine's first Out of Action result: Armour 0, no NEGATE SHRAPNEL or TOUGH, Down results count as Minor Hits, and that first Out of Action counts as No Effect (remove its BLOOD MARKERS); afterwards normal profile (Armour -3, NEGATE SHRAPNEL, TOUGH) applies.",
+       "sim": {
+        "kind": "none",
+        "sacrifice": "Trench Pilgrim or Ecclesiastic Prisoner",
+        "preVictim": {
+         "armour": 0,
+         "downAsMinor": true,
+         "ignoreFirstOOA": true
+        }
+       }
+      },
+      {
+       "name": "Symphony of Slaughter",
+       "text": "Attacks once with either built-in weapon, or twice: Catherine Wheel then Bonebreaker Mace (off-hand modifier on the second). Both are RISKY.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fear",
+       "text": "Has the FEAR Keyword.",
+       "sim": {
+        "kind": "fear"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Holy Icon Shield",
+     "type": "Shield",
+     "range": "-",
+     "keywords": [
+      "-1 INJURY MODIFIER",
+      "IMPERVIOUS"
+     ],
+     "text": "Miracle-working icon on blessed wood used as a shield.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Iron Capirote",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "NEGATE FEAR",
+      "NEGATE SHRAPNEL"
+     ],
+     "text": "Blessed conical helmet; counts as Headgear.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Punt Gun",
+     "type": "2H",
+     "range": 18,
+     "keywords": [
+      "+1 DICE",
+      "+1 INJURY DICE",
+      "HEAVY",
+      "SHOTGUN",
+      "SHRAPNEL"
+     ],
+     "text": "Overcharge: before shooting, a STRONG model or one touching a friendly model may overcharge; the attack gains BLAST 3 and RELOAD, then the shooter takes 1 BLOOD MARKER and its Activation ends.",
+     "sim": {
+      "kind": "none",
+      "overcharge": {
+       "add": [
+        "BLAST 3",
+        "RELOAD"
+       ],
+       "selfBlood": 1,
+       "endsActivation": true,
+       "needs": "STRONG or friendly model in contact"
+      }
+     }
+    },
+    {
+     "name": "Warcross",
+     "type": "Grenade",
+     "range": 8,
+     "keywords": [
+      "ASSAULT",
+      "IGNORE LONG RANGE"
+     ],
+     "text": "Prayer-engraved throwing cross.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Bonebreaker Mace",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "RISKY"
+     ],
+     "text": "Built into the Anchorite Shrine.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Catherine Wheel",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+1 DICE",
+      "DEADLY",
+      "HEAVY",
+      "RISKY"
+     ],
+     "text": "Built into the Anchorite Shrine.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Martyrdom Device",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Trigger ACTION (one use): Injury Roll for every model within 3\" (friend or foe, the Prisoner included); the Prisoner rolls 4D6 summed; others within 1\" get +1 INJURY DICE.",
+     "sim": {
+      "kind": "action",
+      "effect": "attack",
+      "range": 3,
+      "injury": "all models within 3\" incl. self (self rolls 4D6); +1 INJURY DICE within 1\"",
+      "roll": "none",
+      "selfDestruct": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "tp_procession_book",
+   "name": "Procession of the Sacred Affliction (Warbands book version)",
+   "inherits": "tp_base",
+   "removeModels": [],
+   "removeArmoury": [
+    "Machine Gun",
+    "Iron Capirote"
+   ],
+   "changes": "Older book version, superseded by the standalone Procession PDF. No Iron Capirotes (Prisoners lose theirs, same cost), no Machine Guns, Punt Gun Limit 1, Anti-Tank Hammers and Holy Icon Shields lose ELITE only, Holy Icon Shield costs 20 ducats, Holy Icon Armour available, Wrath of God upgrade, up to 3 Zealot Strength Pilgrims, millstone bonus vs Down targets.",
+   "specialRules": [
+    {
+     "name": "Face thy Fears",
+     "text": "No Iron Capirotes; Ecclesiastic Prisoners lose theirs but keep their cost.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Hammer and the Anvil",
+     "text": "Anti-Tank Hammers are not ELITE only.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Melee-focused",
+     "text": "No Machine Guns; Punt Guns are Limit: 1.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Punishing Millstones",
+     "text": "+1 INJURY DICE to melee attacks against Down targets (not for Ecclesiastic Prisoners).",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "melee",
+      "value": 0,
+      "injuryDice": 1,
+      "cond": "target is Down"
+     }
+    },
+    {
+     "name": "Reliquary Armoury",
+     "text": "Holy Icon Shields cost 20 ducats and are not ELITE only.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Wrath of God",
+     "text": "One Castigator, Trench Pilgrim or Martyr Penitent may buy Wrath of God for 15 ducats. Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+     "sim": {
+      "kind": "none",
+      "immuneBlood": true,
+      "addKeyword": "NEGATE FEAR",
+      "base": 32,
+      "warbandMax": 1,
+      "noRanged": true,
+      "noArmour": true
+     }
+    },
+    {
+     "name": "Zealot Strength",
+     "text": "Up to three Trench Pilgrims/Martyr Penitents may take Zealot Strength.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Anti-Tank Hammer",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Punt Gun",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Icon Shield",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Icon Armour",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "castigator",
+     "name": "Castigator",
+     "min": 0,
+     "max": 1,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Enforced Orthodoxy ACTION",
+       "text": "Risky Success Roll at +1 DICE (failure ends the Activation). On success all Down friendly models within 8\" stand up at no movement cost.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 8,
+        "roll": "risky",
+        "bonusDice": 1,
+        "standUpOnly": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Whip of God",
+       "text": "May make melee attacks against a friendly model within 1\". Each friendly model it takes Out of Action this way banks +1 DICE for the warband's next Morale Check.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the STRONG Keyword.",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG"
+       }
+      },
+      {
+       "name": "Wrath of God",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+       "sim": {
+        "kind": "none",
+        "immuneBlood": true,
+        "addKeyword": "NEGATE FEAR",
+        "base": 32,
+        "warbandMax": 1,
+        "noRanged": true,
+        "noArmour": true
+       }
+      }
+     ]
+    },
+    {
+     "id": "trench_pilgrim",
+     "name": "Trench Pilgrim",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Resurrection",
+       "text": "Campaign only: a Pilgrim killed after a game may return as a Martyr Penitent (Melee +1 DICE, -1 INJURY DICE to its Injury Rolls, Martyrdom Pills useless) for 45 ducats.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains STRONG and a 32mm base. Up to 3 per warband in this variant.",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG",
+        "base": 32,
+        "warbandMax": 3
+       }
+      },
+      {
+       "name": "Wrath of God",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+       "sim": {
+        "kind": "none",
+        "immuneBlood": true,
+        "addKeyword": "NEGATE FEAR",
+        "base": 32,
+        "warbandMax": 1,
+        "noRanged": true,
+        "noArmour": true
+       }
+      }
+     ]
+    },
+    {
+     "id": "ecclesiastic_prisoner",
+     "name": "Ecclesiastic Prisoner",
+     "min": 0,
+     "max": null,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [],
+     "kitRule": "no Iron Capirote in this variant (cost unchanged); up to 4 may buy a Martyrdom Device",
+     "abilities": [
+      {
+       "name": "Awaited",
+       "text": "A Prisoner taken Out of Action by its own Martyrdom Device does not count towards Morale Checks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Feeble Flailing",
+       "text": "Can make melee attacks with no melee weapon at -1 DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Mad Dash",
+       "text": "+1 DICE to Risky Success Rolls to Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Martyrdom Device",
+       "cost": 35,
+       "currency": "ducats",
+       "text": "Up to 4 per warband. See Martyrdom Device in uniqueKit.",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 3,
+        "injury": "all within 3\", self 4D6",
+        "warbandMax": 4
+       }
+      }
+     ]
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Holy Icon Armour",
+     "type": "Armour",
+     "range": "-",
+     "keywords": [
+      "-1 INJURY MODIFIER",
+      "IMPERVIOUS"
+     ],
+     "text": "Armour of blessed icons and scripture.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tp_methodius",
+   "name": "War Pilgrimage of Saint Methodius",
+   "inherits": "tp_base",
+   "removeModels": [
+    "communicant"
+   ],
+   "removeArmoury": [
+    "Machine Gun",
+    "Submachine Gun"
+   ],
+   "changes": "Up to two Anchorite Shrines with Ranged +0 DICE that may swap the Catherine Wheel for a heavy gun and take up to 2 Anchorite upgrades; ducat-cost Machine Guns, SMGs and Automatic Rifles; Nuns (max 3) must wear Standard Armour; no Communicants, Ammo Monks or Communicant Anti-Tank Hunters; no Martyrdom Devices; nobody can be Broken on the Wheel; patron always Learned Saint; no Martyr Penitents.",
+   "specialRules": [
+    {
+     "name": "Anchorite Armoury",
+     "text": "Anchorite Shrines have Ranged +0 DICE and may take Anchorite Ranged Weapons and Anchorite Battlekit.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Anchorite Cloister",
+     "text": "Up to two Anchorite Shrines.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Chaste Order",
+     "text": "Every Stigmatic Nun must have Standard Armour (cannot fight without it); max 3 Nuns.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Communicant Heresy",
+     "text": "No Communicants, Mendelist Ammo Monks or Communicant Anti-Tank Hunters.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Followers of Saint Methodius",
+     "text": "Patron is always a Learned Saint (campaign).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Mortal Sin",
+     "text": "Prisoners cannot have Martyrdom Devices; no model can be Broken on the Wheel.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Treasure in Heaven",
+     "text": "Trench Pilgrims cannot become Martyr Penitents.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Automatic Rifle",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Anti-Materiel Rifle",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Ranged Weapon: replaces Catherine Wheel, counts as 1-Handed"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Autocannon",
+     "cost": 55,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Ranged Weapon: replaces Catherine Wheel, counts as 1-Handed"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Gas Censer",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Ranged Weapon: replaces Catherine Wheel, counts as 1-Handed"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Heavy Flamethrower",
+     "cost": 45,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Ranged Weapon: replaces Catherine Wheel, counts as 1-Handed"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Punt Gun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Ranged Weapon: replaces Catherine Wheel, counts as 1-Handed"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Trench Mortar",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Ranged Weapon: replaces Catherine Wheel, counts as 1-Handed"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Gas Filters",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Grand Anchorite",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": 1,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Hallowed Anchorite",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": 1,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Holy Diesel Engine",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Piston Legs",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Sacred Geometry",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": 1,
+     "onlyFor": "anchorite_shrine"
+    },
+    {
+     "item": "Wrathful Cherub Face",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "Anchorite Battlekit (max 2 per Shrine)"
+     ],
+     "limit": null,
+     "onlyFor": "anchorite_shrine"
+    }
+   ],
+   "models": [
+    {
+     "id": "stigmatic_nun",
+     "name": "Stigmatic Nun",
+     "min": 0,
+     "max": 3,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM",
+      "REGENERATE 1"
+     ],
+     "fixedKit": [],
+     "kitRule": "must have Standard Armour; otherwise only Automatic Pistols/Pistols as ranged and Warcrosses as grenades",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Blessed Stigmata",
+       "text": "Each BLOOD MARKER removed by REGENERATE 1 is replaced by 1 BLESSING MARKER.",
+       "sim": {
+        "kind": "regenerate",
+        "value": 1,
+        "blessOnRegen": true
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "ecclesiastic_prisoner",
+     "name": "Ecclesiastic Prisoner",
+     "min": 0,
+     "max": null,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [
+      "Iron Capirote"
+     ],
+     "kitRule": "always has an Iron Capirote; no Martyrdom Device in this variant",
+     "abilities": [
+      {
+       "name": "Awaited",
+       "text": "A Prisoner taken Out of Action by its own Martyrdom Device does not count towards Morale Checks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Feeble Flailing",
+       "text": "Can make melee attacks with no melee weapon at -1 DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Mad Dash",
+       "text": "+1 DICE to Risky Success Rolls to Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "anchorite_shrine",
+     "name": "Anchorite Shrine",
+     "min": 0,
+     "max": 2,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 2,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "PILGRIM",
+      "FEAR",
+      "NEGATE SHRAPNEL",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Bonebreaker Mace",
+      "Catherine Wheel"
+     ],
+     "kitRule": "built-in Bonebreaker Mace and Catherine Wheel; may replace the Catherine Wheel with one Anchorite Ranged Weapon and take up to 2 Anchorite Battlekit",
+     "abilities": [
+      {
+       "name": "Symphony of Slaughter",
+       "text": "Attacks once with either built-in weapon, or twice: Catherine Wheel then Bonebreaker Mace (off-hand modifier on the second). Both are RISKY.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fear",
+       "text": "Has the FEAR Keyword.",
+       "sim": {
+        "kind": "fear"
+       }
+      },
+      {
+       "name": "No Wheel",
+       "text": "Cannot use Broken on the Wheel in this variant (Mortal Sin).",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Autocannon (Bursts)",
+     "type": "2H",
+     "range": 48,
+     "keywords": [
+      "+1 INJURY DICE",
+      "AUTOMATIC 3",
+      "HEAVY"
+     ],
+     "text": "Choose Bursts or Full Auto each Shoot ACTION. Counts as 1-Handed on an Anchorite.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Autocannon (Full Auto)",
+     "type": "2H",
+     "range": 48,
+     "keywords": [
+      "+1 INJURY DICE",
+      "AUTOMATIC 5",
+      "HEAVY",
+      "RELOAD",
+      "RISKY"
+     ],
+     "text": "Full Auto profile of the Autocannon.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Gas Censer",
+     "type": "2H",
+     "range": 6,
+     "keywords": [
+      "GAS",
+      "IGNORE ARMOUR",
+      "RELOAD"
+     ],
+     "text": "Cloud of Gas: instead of an attack roll, every other model within 6\" (friend or foe, no LoS needed) is hit and takes an Injury Roll.",
+     "sim": {
+      "kind": "action",
+      "effect": "attack",
+      "range": 6,
+      "injury": "every other model within 6\", GAS, IGNORE ARMOUR",
+      "roll": "none"
+     }
+    },
+    {
+     "name": "Trench Mortar",
+     "type": "2H",
+     "range": 36,
+     "keywords": [
+      "+1 INJURY DICE",
+      "BLAST 3",
+      "FIRE",
+      "HEAVY",
+      "IGNORE COVER",
+      "SCATTER"
+     ],
+     "text": "Range 6\"-36\": target cannot be within 6\" of the firer (scatter may still land closer).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Gas Filters",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "NEGATE GAS"
+     ],
+     "text": "Anchorite Battlekit.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Grand Anchorite",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Enemies cannot strike it as it retreats, and it may Move or Charge while starting within 1\" of enemies.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Hallowed Anchorite",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Campaign: the Shrine may be promoted to ELITE.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Holy Diesel Engine",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "When Dashing may add +2 DICE to the roll at the cost of 1 BLOOD MARKER.",
+     "sim": {
+      "kind": "dashBonus",
+      "value": 2,
+      "cost": "1 BLOOD MARKER"
+     }
+    },
+    {
+     "name": "Piston Legs",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Grind to Dust ACTION: weaponless melee attack against a Down enemy on 32mm or smaller within 1\".",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Sacred Geometry",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "+1 DICE to the Shrine's Ranged Characteristic.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 1,
+      "cond": "always"
+     }
+    },
+    {
+     "name": "Wrathful Cherub Face",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Non-FEAR enemies starting an Activation within 1\" must Retreat and cannot take Risky actions while within 1\".",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tp_cavalcade",
+   "name": "Cavalcade of the Tenth Plague",
+   "inherits": "tp_base",
+   "removeModels": [],
+   "removeArmoury": [],
+   "changes": "Castigators get TOUGH free; the War Prophet swaps Laying on of Hands for Day of His Wrath; 1 free BLESSING MARKER each turn; PILGRIM models (not Prisoners) may buy Sacrificial Lambs; Communicants cost 3 Glory instead of ducats; 0-2 Ecclesiastic Prisoners; no Martyr Penitents.",
+   "specialRules": [
+    {
+     "name": "Blood of the Lamb",
+     "text": "Castigators have TOUGH at no cost.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Day of His Wrath",
+     "text": "The War Prophet's Laying on of Hands is replaced by Day of His Wrath.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Favour of the Lord",
+     "text": "At the start of each Turn place 1 BLESSING MARKER on a model of this warband.",
+     "sim": {
+      "kind": "none",
+      "turnStartBless": 1
+     }
+    },
+    {
+     "name": "Heaven Awaits",
+     "text": "Trench Pilgrims cannot become Martyr Penitents.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Only the Righteous",
+     "text": "Any PILGRIM model except Ecclesiastic Prisoners (the Anchorite included) may buy a Sacrificial Lamb for 5 ducats.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Stolen Communicants",
+     "text": "Communicants cost 3 Glory and no ducats.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "The Unclean",
+     "text": "Only 0-2 Ecclesiastic Prisoners.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Sacrificial Lamb",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Consumable",
+      "PILGRIM models except Ecclesiastic Prisoners; Anchorite Shrine allowed"
+     ],
+     "limit": null,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "war_prophet",
+     "name": "War Prophet",
+     "min": 1,
+     "max": 1,
+     "cost": 80,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "LEADER"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Loudspeakers ACTION",
+       "text": "Risky Success Roll at +2 DICE (failure ends the Activation). On success every friendly model within 8\" may move up to 3\" and must end as close as possible to the nearest enemy it could see; reaching 1\" counts as a charge.",
+       "sim": {
+        "kind": "action",
+        "effect": "pushModel",
+        "who": "friendly",
+        "range": 8,
+        "distance": "3",
+        "roll": "risky",
+        "bonusDice": 2,
+        "towardEnemy": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Day of His Wrath ACTION",
+       "text": "Risky Success Roll (failure ends the Activation). Success: Injury Roll with IGNORE ARMOUR on one enemy within 3\"; critical: also +1 INJURY DICE.",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 3,
+        "injury": "IGNORE ARMOUR; critical adds +1 INJURY DICE",
+        "roll": "risky"
+       }
+      },
+      {
+       "name": "Memento Mori",
+       "text": "The first Out of Action result this model suffers counts as No Effect. It can never have the TOUGH Keyword.",
+       "sim": {
+        "kind": "tough"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "communicant",
+     "name": "Communicant",
+     "min": 0,
+     "max": 1,
+     "cost": 3,
+     "currency": "glory",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -3,
+     "melee": 2,
+     "armour": 0,
+     "base": 40,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "REGENERATE 1",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Iron Capirote",
+      "Gas Mask"
+     ],
+     "kitRule": "any, plus a free Communicant Cross (counts as Iron Capirote and Gas Mask, cannot be lost)",
+     "abilities": [
+      {
+       "name": "Bodyguard",
+       "text": "When a friendly PILGRIM within 1\" is hit by a ranged or melee attack, this model may take the Injury Roll instead. Not against BLAST attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "The Communicant Cross",
+       "text": "Counts as having an Iron Capirote (Headgear) and a Gas Mask at no cost.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "castigator",
+     "name": "Castigator",
+     "min": 0,
+     "max": 1,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Enforced Orthodoxy ACTION",
+       "text": "Risky Success Roll at +1 DICE (failure ends the Activation). On success all Down friendly models within 8\" stand up at no movement cost.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 8,
+        "roll": "risky",
+        "bonusDice": 1,
+        "standUpOnly": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Whip of God",
+       "text": "May make melee attacks against a friendly model within 1\". Each friendly model it takes Out of Action this way banks +1 DICE for the warband's next Morale Check.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the STRONG Keyword.",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ecclesiastic_prisoner",
+     "name": "Ecclesiastic Prisoner",
+     "min": 0,
+     "max": 2,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [
+      "Iron Capirote"
+     ],
+     "kitRule": "always has an Iron Capirote; up to 4 may buy a Martyrdom Device; nothing else",
+     "abilities": [
+      {
+       "name": "Awaited",
+       "text": "A Prisoner taken Out of Action by its own Martyrdom Device does not count towards Morale Checks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Feeble Flailing",
+       "text": "Can make melee attacks with no melee weapon at -1 DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Mad Dash",
+       "text": "+1 DICE to Risky Success Rolls to Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Martyrdom Device",
+       "cost": 35,
+       "currency": "ducats",
+       "text": "Up to 4 per warband. See Martyrdom Device in uniqueKit.",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 3,
+        "injury": "all within 3\", self 4D6",
+        "warbandMax": 4
+       }
+      }
+     ]
+    },
+    {
+     "id": "anchorite_shrine",
+     "name": "Anchorite Shrine",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 2,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "PILGRIM",
+      "FEAR",
+      "NEGATE SHRAPNEL",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Bonebreaker Mace",
+      "Catherine Wheel"
+     ],
+     "kitRule": "only its built-in weapons, plus an optional Sacrificial Lamb",
+     "abilities": [
+      {
+       "name": "Broken on the Wheel",
+       "text": "Before deployment you may sacrifice one Trench Pilgrim or Ecclesiastic Prisoner (removed from the warband permanently; in a campaign its kit can be redistributed at the next Quartermaster Step). Until the Shrine's first Out of Action result: Armour 0, no NEGATE SHRAPNEL or TOUGH, Down results count as Minor Hits, and that first Out of Action counts as No Effect (remove its BLOOD MARKERS); afterwards normal profile (Armour -3, NEGATE SHRAPNEL, TOUGH) applies.",
+       "sim": {
+        "kind": "none",
+        "sacrifice": "Trench Pilgrim or Ecclesiastic Prisoner",
+        "preVictim": {
+         "armour": 0,
+         "downAsMinor": true,
+         "ignoreFirstOOA": true
+        }
+       }
+      },
+      {
+       "name": "Symphony of Slaughter",
+       "text": "Attacks once with either built-in weapon, or twice: Catherine Wheel then Bonebreaker Mace (off-hand modifier on the second). Both are RISKY.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fear",
+       "text": "Has the FEAR Keyword.",
+       "sim": {
+        "kind": "fear"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Sacrificial Lamb",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "CONSUMABLE"
+     ],
+     "text": "Warded by Blood: when deploying, sacrifice it to ignore the first BLOOD MARKER placed on the model.",
+     "sim": {
+      "kind": "none",
+      "ignoreFirstBlood": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "psa_base",
+   "name": "Procession of the Sacred Affliction (standalone 1.0.2, Carcass Front errata)",
+   "source": "Procession of the Sacred Affliction Warband 1.0.2 + Carcass Front Errata",
+   "changes": "Current version of the Procession; a complete list of its own (does not inherit the Trench Pilgrim armoury).",
+   "specialRules": [
+    {
+     "name": "Punishing Millstones",
+     "text": "+1 INJURY DICE to melee attacks against Down targets (on top of the usual Down bonus, +2 in total).",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "melee",
+      "value": 0,
+      "injuryDice": 1,
+      "cond": "target is Down"
+     }
+    },
+    {
+     "name": "Wrath of God",
+     "text": "One Lazarist Castigator, Leper-Pilgrim or Martyr Penitent may buy it for 15 ducats. Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+     "sim": {
+      "kind": "none",
+      "immuneBlood": true,
+      "addKeyword": "NEGATE FEAR",
+      "base": 32,
+      "warbandMax": 1,
+      "noRanged": true,
+      "noArmour": true
+     }
+    },
+    {
+     "name": "Mercenaries",
+     "text": "May hire any Faithful Mercenary available to PILGRIM warbands.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Automatic Pistol",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Blunderbuss",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Bolt-Action Rifle",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flamethrower",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Musket",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Pistol",
+     "cost": 6,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Punt Gun",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Semi-Automatic Rifle",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Shotgun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sniper Rifle",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Anti-Tank Hammer",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Bayonet",
+     "cost": 2,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flail/Scourge",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Flail/Scourge",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Hammer/Maul",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Misericordia",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Polearm",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sword/Axe",
+     "cost": 4,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Club",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Knife",
+     "cost": 1,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Grenades",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Molotov Cocktail",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Warcross",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Icon Shield",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Shield",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Icon Armour",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Ragged Vestments",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Standard Armour",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Bells of Warding",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Blessed Icon",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Blessed Millstone",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Leper-Pilgrims only"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Field Shrine",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Mask",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Relic",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Ammunition",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Martyrdom Pills",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Medi-kit",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Mountaineer Kit",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Musical Instrument",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Penitent's Phylactery",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Troop Flag",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "lazarist_prophet",
+     "name": "Lazarist Prophet",
+     "min": 1,
+     "max": 1,
+     "cost": 90,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "LEADER"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Gift of the Sacrament ACTION",
+       "text": "Success Roll: remove 1 BLOOD or INFECTION MARKER from a friendly model within 6\" (3 on a critical); may target itself.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 6,
+        "roll": "success",
+        "amount": 1,
+        "critAmount": 3
+       }
+      },
+      {
+       "name": "Loudspeakers ACTION",
+       "text": "Risky Success Roll at +2 DICE (failure ends the Activation). On success every friendly model within 8\" may move up to 3\" and must end as close as possible to the nearest enemy it could see; reaching 1\" counts as a charge.",
+       "sim": {
+        "kind": "action",
+        "effect": "pushModel",
+        "who": "friendly",
+        "range": 8,
+        "distance": "3",
+        "roll": "risky",
+        "bonusDice": 2,
+        "towardEnemy": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Memento Mori",
+       "text": "The first Out of Action result counts as No Effect. Cannot have TOUGH (Carcass Front errata).",
+       "sim": {
+        "kind": "tough"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "lazarist_communicant",
+     "name": "Lazarist Communicant",
+     "min": 0,
+     "max": 1,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -3,
+     "melee": 2,
+     "armour": 0,
+     "base": 40,
+     "keywords": [
+      "PILGRIM",
+      "ELITE",
+      "REGENERATE 1",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Iron Capirote",
+      "Gas Mask"
+     ],
+     "kitRule": "any except Martyrdom Pills; free Communicant Cross or Helm (counts as Iron Capirote and Gas Mask)",
+     "abilities": [
+      {
+       "name": "Bodyguard",
+       "text": "When a friendly PILGRIM within 1\" is hit by a ranged or melee attack, this model may take the Injury Roll instead. Not against BLAST attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "The Communicant Cross or Helm",
+       "text": "Counts as having an Iron Capirote and a Gas Mask at no cost.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "lazarist_castigator",
+     "name": "Lazarist Castigator",
+     "min": 0,
+     "max": 1,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Enforced Orthodoxy ACTION",
+       "text": "Risky Success Roll at +1 DICE (failure ends the Activation). On success all Down friendly models within 8\" stand up at no movement cost.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 8,
+        "roll": "risky",
+        "bonusDice": 1,
+        "standUpOnly": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Whip of God",
+       "text": "May melee a friendly model within 1\" (optionally at -1 INJURY DICE). Each friend it takes Out of Action banks +1 DICE for the next Morale Check.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the STRONG Keyword (counts towards the warband's 3 Zealot Strength models).",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG"
+       }
+      },
+      {
+       "name": "Wrath of God",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Up to 1 Lazarist Castigator, Leper-Pilgrim or Martyr Penitent per warband. Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+       "sim": {
+        "kind": "none",
+        "immuneBlood": true,
+        "addKeyword": "NEGATE FEAR",
+        "base": 32,
+        "warbandMax": 1,
+        "noRanged": true,
+        "noArmour": true
+       }
+      }
+     ]
+    },
+    {
+     "id": "leper_pilgrim",
+     "name": "Leper-Pilgrim",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Resurrection",
+       "text": "Campaign only: may return as a Martyr Penitent (Melee +1 DICE, -1 INJURY DICE to its Injury Rolls, Martyrdom Pills useless) for 45 ducats.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains STRONG and a 32mm base. No more than 3 models with Zealot Strength in the warband.",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG",
+        "base": 32,
+        "warbandMax": 3
+       }
+      },
+      {
+       "name": "Wrath of God",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Up to 1 Lazarist Castigator, Leper-Pilgrim or Martyr Penitent per warband. Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+       "sim": {
+        "kind": "none",
+        "immuneBlood": true,
+        "addKeyword": "NEGATE FEAR",
+        "base": 32,
+        "warbandMax": 1,
+        "noRanged": true,
+        "noArmour": true
+       }
+      }
+     ]
+    },
+    {
+     "id": "stigmatic_nun",
+     "name": "Stigmatic Nun",
+     "min": 0,
+     "max": 4,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM",
+      "REGENERATE 1"
+     ],
+     "fixedKit": [],
+     "kitRule": "armoury, but only Automatic Pistols and Pistols as ranged weapons and only Warcrosses as grenades",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Blessed Stigmata",
+       "text": "Each BLOOD MARKER removed by REGENERATE 1 is replaced by 1 BLESSING MARKER.",
+       "sim": {
+        "kind": "regenerate",
+        "value": 1,
+        "blessOnRegen": true
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "ecclesiastic_prisoner",
+     "name": "Ecclesiastic Prisoner",
+     "min": 0,
+     "max": null,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to 4 may buy a Martyrdom Device (25), which may be upgraded to a Minenhelm (+10); nothing else",
+     "abilities": [
+      {
+       "name": "Awaited",
+       "text": "A Prisoner taken Out of Action by its own Martyrdom Device does not count towards Morale Checks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Feeble Flailing",
+       "text": "Can make melee attacks with no melee weapon at -1 DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Mad Dash",
+       "text": "+1 DICE to Risky Success Rolls to Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Martyrdom Device",
+       "cost": 25,
+       "currency": "ducats",
+       "text": "Up to 4 per warband. See Martyrdom Device (Procession) in uniqueKit.",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 3,
+        "injury": "SHRAPNEL hit on all models within 3\" in LoS; self 4D6",
+        "warbandMax": 4
+       }
+      },
+      {
+       "name": "Minenhelm",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Requires a Martyrdom Device. +1 more INJURY DICE within 1\" on detonation (total +2); the Prisoner always dies when it detonates; can make weaponless melee attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ]
+    },
+    {
+     "id": "anchorite_shrine",
+     "name": "Anchorite Shrine",
+     "min": 0,
+     "max": 1,
+     "cost": 140,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 2,
+     "armour": -3,
+     "base": 60,
+     "keywords": [
+      "PILGRIM",
+      "FEAR",
+      "NEGATE SHRAPNEL",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Bonebreaker Mace",
+      "Catherine Wheel"
+     ],
+     "kitRule": "only its built-in Bonebreaker Mace and Catherine Wheel",
+     "abilities": [
+      {
+       "name": "Broken on the Wheel",
+       "text": "Before deployment you may sacrifice one Leper-Pilgrim or Ecclesiastic Prisoner (removed from the warband permanently; in a campaign its kit can be redistributed at the next Quartermaster Step). Until the Shrine's first Out of Action result: Armour 0, no NEGATE SHRAPNEL or TOUGH, Down results count as Minor Hits, and that first Out of Action counts as No Effect (remove its BLOOD MARKERS); afterwards normal profile (Armour -3, NEGATE SHRAPNEL, TOUGH) applies.",
+       "sim": {
+        "kind": "none",
+        "sacrifice": "Leper-Pilgrim or Ecclesiastic Prisoner",
+        "preVictim": {
+         "armour": 0,
+         "downAsMinor": true,
+         "ignoreFirstOOA": true
+        }
+       }
+      },
+      {
+       "name": "Symphony of Slaughter",
+       "text": "Attacks once with either built-in weapon, or twice: Catherine Wheel then Bonebreaker Mace (off-hand modifier on the second). Both are RISKY.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fear",
+       "text": "Has the FEAR Keyword.",
+       "sim": {
+        "kind": "fear"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Bells of Warding",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "HELD",
+      "LEADER"
+     ],
+     "text": "Gathering Call: friendly models within 4\" of Bells of Warding or a Musical Instrument get +1 DICE to Dash rolls.",
+     "sim": {
+      "kind": "aura",
+      "range": 4,
+      "who": "friendly",
+      "effect": "dash",
+      "value": 1
+     }
+    },
+    {
+     "name": "Blessed Millstone",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "-1\" Movement, but Punishing Millstones gives +2 INJURY DICE instead of +1. After taking an enemy Out of Action in melee it may drop the stone: normal millstone bonus and +1\" Movement from then on.",
+     "sim": {
+      "kind": "none",
+      "move": -1,
+      "millstoneInjuryDice": 2
+     }
+    },
+    {
+     "name": "Great Flail/Scourge",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "+1 DICE",
+      "+1 INJURY DICE",
+      "CUMBERSOME",
+      "HEAVY"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Holy Icon Armour",
+     "type": "Armour",
+     "range": "-",
+     "keywords": [
+      "-1 INJURY MODIFIER",
+      "IMPERVIOUS"
+     ],
+     "text": "Armour of blessed icons and scripture.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Holy Icon Shield",
+     "type": "Shield",
+     "range": "-",
+     "keywords": [
+      "-1 INJURY MODIFIER",
+      "IMPERVIOUS"
+     ],
+     "text": "Profile taken from the Warbands book (the Procession PDF lists it without a profile).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Penitent's Phylactery",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Melee attacks against HERETIC, THE COURT or BLACK GRAIL targets add 1 extra BLOOD MARKER after the Injury Roll, even on No Effect.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Punt Gun",
+     "type": "2H",
+     "range": 18,
+     "keywords": [
+      "+1 DICE",
+      "+1 INJURY DICE",
+      "HEAVY",
+      "SHOTGUN",
+      "SHRAPNEL"
+     ],
+     "text": "Overcharge: a STRONG model or one in base contact with a friend may overcharge: gains BLAST 3 and RELOAD, then shooter takes 1 BLOOD MARKER and its Activation ends.",
+     "sim": {
+      "kind": "none",
+      "overcharge": {
+       "add": [
+        "BLAST 3",
+        "RELOAD"
+       ],
+       "selfBlood": 1,
+       "endsActivation": true,
+       "needs": "STRONG or friendly model in contact"
+      }
+     }
+    },
+    {
+     "name": "Ragged Vestments",
+     "type": "Armour",
+     "range": "-",
+     "keywords": [],
+     "text": "Leap of Faith: +1 DICE to Climb, Jump, Diving Charge and Dash rolls if the model has no Shield and no HEAVY weapon.",
+     "sim": {
+      "kind": "dashBonus",
+      "value": 1,
+      "cond": "no Shield, no HEAVY weapon"
+     }
+    },
+    {
+     "name": "Warcross",
+     "type": "Grenade",
+     "range": 8,
+     "keywords": [
+      "ASSAULT",
+      "IGNORE LONG RANGE"
+     ],
+     "text": "Prayer-engraved throwing cross.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Bonebreaker Mace",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "RISKY"
+     ],
+     "text": "Built into the Anchorite Shrine.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Catherine Wheel",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+1 DICE",
+      "DEADLY",
+      "HEAVY",
+      "RISKY"
+     ],
+     "text": "Built into the Anchorite Shrine.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Martyrdom Device",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [
+      "BLAST 3",
+      "SHRAPNEL"
+     ],
+     "text": "Detonate ACTION (one use): all models within 3\" and in LoS are hit by a SHRAPNEL ranged attack, +1 INJURY DICE within 1\"; the Prisoner takes an Injury Roll of 4D6 summed.",
+     "sim": {
+      "kind": "action",
+      "effect": "attack",
+      "range": 3,
+      "injury": "SHRAPNEL hit on all within 3\" in LoS, +1 INJURY DICE within 1\"; self 4D6",
+      "roll": "none",
+      "selfDestruct": true
+     }
+    },
+    {
+     "name": "Minenhelm",
+     "type": "Equipment",
+     "range": "-",
+     "keywords": [],
+     "text": "Upgrade to a Martyrdom Device: +2 INJURY DICE in total within 1\" when detonating; the Prisoner always dies; allows weaponless melee attacks.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "psa_knights_of_saint_lazarus",
+   "name": "The Knights of Saint Lazarus",
+   "inherits": "psa_base",
+   "removeModels": [
+    "lazarist_communicant",
+    "lazarist_castigator"
+   ],
+   "removeArmoury": [
+    "Flamethrower",
+    "Punt Gun",
+    "Semi-Automatic Rifle",
+    "Sniper Rifle",
+    "Submachine Gun"
+   ],
+   "changes": "Must take 1-6 Stigmatic Nuns and 1-3 Leper-Knights (Castigator entry with Melee +2 DICE, required Armour, Knightly Code); no Communicants or Castigators; no voluntary Retreats; Automatic Pistols 15 and Great Swords 7; no ranged weapons above 15 ducats or costing Glory; may take a Temporal Lord patron.",
+   "specialRules": [
+    {
+     "name": "Sacred Code",
+     "text": "Must include 1-6 Stigmatic Nuns; no Lazarist Communicants or Castigators; models may not voluntarily Retreat.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Knightly Order",
+     "text": "Must include 1-3 Leper-Knights.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Blessed Armoury",
+     "text": "Automatic Pistols cost 15, Great Swords cost 7; no Ranged Weapons costing more than 15 ducats or any Glory.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Followers of Saint Lazarus",
+     "text": "May choose a Temporal Lord patron (campaign).",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Automatic Pistol",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "stigmatic_nun",
+     "name": "Stigmatic Nun",
+     "min": 1,
+     "max": 6,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM",
+      "REGENERATE 1"
+     ],
+     "fixedKit": [],
+     "kitRule": "armoury, but only Automatic Pistols and Pistols as ranged weapons and only Warcrosses as grenades",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Blessed Stigmata",
+       "text": "Each BLOOD MARKER removed by REGENERATE 1 is replaced by 1 BLESSING MARKER.",
+       "sim": {
+        "kind": "regenerate",
+        "value": 1,
+        "blessOnRegen": true
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "leper_knight",
+     "name": "Leper-Knight",
+     "min": 1,
+     "max": 3,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any, but must wear a suit of Armour",
+     "abilities": [
+      {
+       "name": "Enforced Orthodoxy ACTION",
+       "text": "Risky Success Roll at +1 DICE (failure ends the Activation). On success all Down friendly models within 8\" stand up at no movement cost.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 8,
+        "roll": "risky",
+        "bonusDice": 1,
+        "standUpOnly": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Knightly Code",
+       "text": "When it takes an enemy Out of Action in melee, remove 1 BLOOD MARKER from itself or a friend within 3\"; against an ELITE victim it may instead gain 1 BLESSING MARKER.",
+       "sim": {
+        "kind": "none",
+        "onKill": {
+         "healRange": 3,
+         "eliteBless": 1
+        }
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains STRONG (counts towards the 3 Zealot Strength models).",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG"
+       }
+      },
+      {
+       "name": "Wrath of God",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Up to 1 Lazarist Castigator, Leper-Pilgrim or Martyr Penitent per warband. Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+       "sim": {
+        "kind": "none",
+        "immuneBlood": true,
+        "addKeyword": "NEGATE FEAR",
+        "base": 32,
+        "warbandMax": 1,
+        "noRanged": true,
+        "noArmour": true
+       }
+      }
+     ]
+    }
+   ],
+   "uniqueKit": []
+  },
+  {
+   "id": "psa_blessed_flock",
+   "name": "Procession of the Blessed Flock",
+   "inherits": "psa_base",
+   "removeModels": [
+    "leper_pilgrim",
+    "anchorite_shrine"
+   ],
+   "removeArmoury": [
+    "Automatic Pistol",
+    "Semi-Automatic Rifle",
+    "Sniper Rifle",
+    "Submachine Gun",
+    "Incendiary Grenades",
+    "Reinforced Armour"
+   ],
+   "changes": "1-3 Lazarist Castigators and 1-6 Lazarist Communicants (not ELITE, same cost; one Castigator per 2 Communicants or part); Communicants activating more than 6\" from a Castigator make every Success Roll Risky; 0-2 Nuns; no Anchorites or Leper-Pilgrims; Prisoners get Ranged -1 DICE and may buy Muskets, Blunderbusses, Warcrosses, Flails, Ragged Vestments and Trench Shields; no Automatic Pistols, Semi-Auto Rifles, Sniper Rifles, SMGs, Incendiary Grenades or Reinforced Armour.",
+   "specialRules": [
+    {
+     "name": "Shepherds and Lambs",
+     "text": "1-3 Castigators and 1-6 Communicants; one Castigator per 2 Communicants (or part); Communicants lose ELITE.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Guidance",
+     "text": "A Communicant that activates not within 6\" of a friendly Castigator treats all its Success Rolls that Activation as Risky.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Dishevelled Procession",
+     "text": "0-2 Stigmatic Nuns; no Anchorite Shrines or Leper-Pilgrims.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Flagellant Flock",
+     "text": "Prisoners have Ranged -1 DICE and may buy Muskets, Blunderbusses, Warcrosses, Flails/Scourges, Ragged Vestments and Trench Shields.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Scavenged Armoury",
+     "text": "No Automatic Pistols, Semi-Automatic Rifles, Sniper Rifles, Submachine Guns, Incendiary Grenades or Reinforced Armour.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [],
+   "models": [
+    {
+     "id": "lazarist_communicant",
+     "name": "Lazarist Communicant",
+     "min": 1,
+     "max": 6,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -3,
+     "melee": 2,
+     "armour": 0,
+     "base": 40,
+     "keywords": [
+      "PILGRIM",
+      "REGENERATE 1",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Iron Capirote",
+      "Gas Mask"
+     ],
+     "kitRule": "any except Martyrdom Pills; free Communicant Cross or Helm (counts as Iron Capirote and Gas Mask)",
+     "abilities": [
+      {
+       "name": "Bodyguard",
+       "text": "When a friendly PILGRIM within 1\" is hit by a ranged or melee attack, this model may take the Injury Roll instead. Not against BLAST attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "The Communicant Cross or Helm",
+       "text": "Counts as having an Iron Capirote and a Gas Mask at no cost.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Guidance",
+       "text": "Activating more than 6\" from a friendly Lazarist Castigator makes its Success Rolls Risky.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "lazarist_castigator",
+     "name": "Lazarist Castigator",
+     "min": 1,
+     "max": 3,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "PILGRIM",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Enforced Orthodoxy ACTION",
+       "text": "Risky Success Roll at +1 DICE (failure ends the Activation). On success all Down friendly models within 8\" stand up at no movement cost.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 8,
+        "roll": "risky",
+        "bonusDice": 1,
+        "standUpOnly": true,
+        "allInRange": true
+       }
+      },
+      {
+       "name": "Whip of God",
+       "text": "May melee a friendly model within 1\" (optionally at -1 INJURY DICE). Each friend it takes Out of Action banks +1 DICE for the next Morale Check.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Zealot Strength",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the STRONG Keyword (counts towards the warband's 3 Zealot Strength models).",
+       "sim": {
+        "kind": "none",
+        "addKeyword": "STRONG"
+       }
+      },
+      {
+       "name": "Wrath of God",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Up to 1 Lazarist Castigator, Leper-Pilgrim or Martyr Penitent per warband. Up to 1 per warband. Never receives BLOOD MARKERS, gains NEGATE FEAR, cannot be Broken on the Wheel, cannot have Ranged Weapons or Armour (Shields allowed), base becomes 32mm.",
+       "sim": {
+        "kind": "none",
+        "immuneBlood": true,
+        "addKeyword": "NEGATE FEAR",
+        "base": 32,
+        "warbandMax": 1,
+        "noRanged": true,
+        "noArmour": true
+       }
+      }
+     ]
+    },
+    {
+     "id": "stigmatic_nun",
+     "name": "Stigmatic Nun",
+     "min": 0,
+     "max": 2,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM",
+      "REGENERATE 1"
+     ],
+     "fixedKit": [],
+     "kitRule": "armoury, but only Automatic Pistols and Pistols as ranged weapons and only Warcrosses as grenades",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Blessed Stigmata",
+       "text": "Each BLOOD MARKER removed by REGENERATE 1 is replaced by 1 BLESSING MARKER.",
+       "sim": {
+        "kind": "regenerate",
+        "value": 1,
+        "blessOnRegen": true
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "ecclesiastic_prisoner",
+     "name": "Ecclesiastic Prisoner",
+     "min": 0,
+     "max": null,
+     "cost": 20,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -1,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "PILGRIM"
+     ],
+     "fixedKit": [],
+     "kitRule": "up to 4 Martyrdom Devices (Minenhelm upgrade); may also buy Musket, Blunderbuss, Warcross, Flail/Scourge, Ragged Vestments, Trench Shield",
+     "abilities": [
+      {
+       "name": "Awaited",
+       "text": "A Prisoner taken Out of Action by its own Martyrdom Device does not count towards Morale Checks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Feeble Flailing",
+       "text": "Can make melee attacks with no melee weapon at -1 DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Mad Dash",
+       "text": "+1 DICE to Risky Success Rolls to Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Martyrdom Device",
+       "cost": 25,
+       "currency": "ducats",
+       "text": "Up to 4 per warband. See Martyrdom Device (Procession) in uniqueKit.",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 3,
+        "injury": "SHRAPNEL hit on all models within 3\" in LoS; self 4D6",
+        "warbandMax": 4
+       }
+      },
+      {
+       "name": "Minenhelm",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Requires a Martyrdom Device. +1 more INJURY DICE within 1\" on detonation (total +2); the Prisoner always dies when it detonates; can make weaponless melee attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ]
+    }
+   ],
+   "uniqueKit": []
+  }
+ ],
+ "lists": [
+  {
+   "id": "tp_pilgrim_host",
+   "name": "The Pilgrim Host of the Last Trumpet",
+   "variant": "tp_base",
+   "ducats": 896,
+   "glory": 8,
+   "style": "Classic Pilgrim tide: Loudspeakers hurl the mob forward behind a Communicant bodyguard and a wheel-bound Anchorite, two Punt Guns and a Machine Gun soften the line.",
+   "models": [
+    {
+     "model": "war_prophet",
+     "label": "War Prophet Ezekiel of the Ashes",
+     "kit": [
+      "Anti-Tank Hammer",
+      "Pistol",
+      "Molotov Cocktail",
+      "Reinforced Armour",
+      "Iron Capirote",
+      "Holy Relic"
+     ],
+     "upgrades": [],
+     "ducats": 173,
+     "glory": 2
+    },
+    {
+     "model": "communicant",
+     "label": "Communicant Brother Marrow",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 127,
+     "glory": 0
+    },
+    {
+     "model": "castigator",
+     "label": "Castigator Hollis Rod-of-Iron",
+     "kit": [
+      "Punt Gun",
+      "Trench Club",
+      "Standard Armour",
+      "Iron Capirote",
+      "Field Shrine"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 100,
+     "glory": 2
+    },
+    {
+     "model": "anchorite_shrine",
+     "label": "Anchorite Shrine 'Our Lady of Sorrows'",
+     "kit": [
+      "Bonebreaker Mace",
+      "Catherine Wheel"
+     ],
+     "upgrades": [],
+     "ducats": 140,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Prisoner Abel (for the Wheel)",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 20,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Prisoner Who-Must-Burn",
+     "kit": [],
+     "upgrades": [
+      "Martyrdom Device"
+     ],
+     "ducats": 55,
+     "glory": 0
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Pilgrim Goliath the Ox",
+     "kit": [
+      "Punt Gun",
+      "Iron Capirote"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 62,
+     "glory": 0
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Pilgrim Ignatius Firebearer",
+     "kit": [
+      "Flamethrower",
+      "Iron Capirote"
+     ],
+     "upgrades": [],
+     "ducats": 67,
+     "glory": 0
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Pilgrim Simeon the Gunner",
+     "kit": [
+      "Machine Gun",
+      "Iron Capirote"
+     ],
+     "upgrades": [],
+     "ducats": 37,
+     "glory": 2
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Pilgrim Jubal Trumpeter",
+     "kit": [
+      "Musical Instrument",
+      "Sword/Axe",
+      "Trench Shield",
+      "Iron Capirote"
+     ],
+     "upgrades": [],
+     "ducats": 66,
+     "glory": 0
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Pilgrim Ruth",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Iron Capirote"
+     ],
+     "upgrades": [],
+     "ducats": 49,
+     "glory": 0
+    },
+    {
+     "model": "MERC:sister_of_saint_cosmas",
+     "label": "Sister Agathe of Saint Cosmas",
+     "kit": [
+      "Standard Armour",
+      "Gas Mask",
+      "Medi-kit",
+      "Misericordia"
+     ],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 2
+    }
+   ]
+  },
+  {
+   "id": "tp_athos_cloister",
+   "name": "Iron Cloister of Mount Athos",
+   "variant": "tp_methodius",
+   "ducats": 893,
+   "glory": 8,
+   "style": "Gun-line of two modified Anchorites (Autocannon with Sacred Geometry, Heavy Flamethrower) anchored by a ducat Machine Gun; armoured Nuns and an Observer screen the advance.",
+   "models": [
+    {
+     "model": "war_prophet",
+     "label": "War Prophet Akakios the Younger",
+     "kit": [
+      "Semi-Automatic Rifle",
+      "Sword/Axe",
+      "Reinforced Armour",
+      "Iron Capirote",
+      "Holy Relic"
+     ],
+     "upgrades": [],
+     "ducats": 146,
+     "glory": 2
+    },
+    {
+     "model": "anchorite_shrine",
+     "label": "Anchorite 'Saint Methodius' Hammer'",
+     "kit": [
+      "Autocannon",
+      "Bonebreaker Mace",
+      "Sacred Geometry"
+     ],
+     "upgrades": [],
+     "ducats": 205,
+     "glory": 0
+    },
+    {
+     "model": "anchorite_shrine",
+     "label": "Anchorite 'Censer of Velehrad'",
+     "kit": [
+      "Heavy Flamethrower",
+      "Bonebreaker Mace",
+      "Gas Filters"
+     ],
+     "upgrades": [],
+     "ducats": 190,
+     "glory": 0
+    },
+    {
+     "model": "castigator",
+     "label": "Castigator Gregorios",
+     "kit": [
+      "Machine Gun",
+      "Standard Armour",
+      "Iron Capirote",
+      "Field Shrine"
+     ],
+     "upgrades": [],
+     "ducats": 122,
+     "glory": 2
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Theodora",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 73,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Irene",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 73,
+     "glory": 0
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Lay Brother Nikon",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Iron Capirote",
+      "Troop Flag"
+     ],
+     "upgrades": [],
+     "ducats": 49,
+     "glory": 1
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Lay Brother Pavlos",
+     "kit": [
+      "Musket"
+     ],
+     "upgrades": [],
+     "ducats": 35,
+     "glory": 0
+    },
+    {
+     "model": "MERC:observer",
+     "label": "Observer of the Temple of the Word",
+     "kit": [
+      "Standard Armour",
+      "Combat Helmet",
+      "Gas Mask",
+      "Medi-kit",
+      "Polearm"
+     ],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 3
+    }
+   ]
+  },
+  {
+   "id": "tp_blood_of_the_lamb",
+   "name": "Cavalcade of the Blood-Marked Door",
+   "variant": "tp_cavalcade",
+   "ducats": 890,
+   "glory": 8,
+   "style": "Every Pilgrim warded by a sacrificed lamb and a free blessing each turn; a stolen Communicant (Glory) and four Nuns crash in while the Prophet's Day of His Wrath smites armour.",
+   "models": [
+    {
+     "model": "war_prophet",
+     "label": "War Prophet Moshe of the Tenth Night",
+     "kit": [
+      "Anti-Tank Hammer",
+      "Automatic Pistol",
+      "Reinforced Armour",
+      "Iron Capirote",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 187,
+     "glory": 0
+    },
+    {
+     "model": "communicant",
+     "label": "Stolen Communicant 'Penance'",
+     "kit": [
+      "Great Hammer/Maul",
+      "Standard Armour",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 30,
+     "glory": 3
+    },
+    {
+     "model": "castigator",
+     "label": "Castigator Aaron Lambsblood",
+     "kit": [
+      "Punt Gun",
+      "Flail/Scourge",
+      "Standard Armour",
+      "Iron Capirote",
+      "Sacrificial Lamb",
+      "Holy Relic",
+      "Field Shrine"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 107,
+     "glory": 4
+    },
+    {
+     "model": "anchorite_shrine",
+     "label": "Anchorite 'Lintel and Doorpost'",
+     "kit": [
+      "Bonebreaker Mace",
+      "Catherine Wheel",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 145,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Miriam",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Warcross",
+      "Standard Armour",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 83,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Zipporah",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Warcross",
+      "Standard Armour",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 83,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Jochebed",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Warcross",
+      "Standard Armour",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 83,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Elisheba",
+     "kit": [
+      "Pistol",
+      "Sword/Axe",
+      "Standard Armour",
+      "Sacrificial Lamb"
+     ],
+     "upgrades": [],
+     "ducats": 80,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Prisoner Pharaoh's Servant (for the Wheel)",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 20,
+     "glory": 0
+    },
+    {
+     "model": "trench_pilgrim",
+     "label": "Pilgrim Hur Pillar-of-Fire",
+     "kit": [
+      "Flamethrower",
+      "Iron Capirote",
+      "Sacrificial Lamb",
+      "Troop Flag"
+     ],
+     "upgrades": [],
+     "ducats": 72,
+     "glory": 1
+    }
+   ]
+  },
+  {
+   "id": "psa_millstone_choir",
+   "name": "The Millstone Choir",
+   "variant": "psa_base",
+   "ducats": 892,
+   "glory": 7,
+   "style": "Current Procession: impervious Holy Icon armour, three Zealot strongmen, Anti-Tank Hammers off the ELITE leash and +2 INJURY DICE on anything knocked Down; a Witchburner bleeds heretics from afar.",
+   "models": [
+    {
+     "model": "lazarist_prophet",
+     "label": "Lazarist Prophet Namaan the Unburnt",
+     "kit": [
+      "Anti-Tank Hammer",
+      "Pistol",
+      "Holy Icon Armour",
+      "Bells of Warding"
+     ],
+     "upgrades": [],
+     "ducats": 161,
+     "glory": 2
+    },
+    {
+     "model": "lazarist_castigator",
+     "label": "Lazarist Castigator Hamath",
+     "kit": [
+      "Punt Gun",
+      "Great Flail/Scourge",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 105,
+     "glory": 0
+    },
+    {
+     "model": "leper_pilgrim",
+     "label": "Leper-Pilgrim Aphrah Tremble-Before-Him",
+     "kit": [
+      "Flail/Scourge",
+      "Holy Icon Shield",
+      "Penitent's Phylactery",
+      "Blessed Millstone"
+     ],
+     "upgrades": [
+      "Wrath of God"
+     ],
+     "ducats": 87,
+     "glory": 0
+    },
+    {
+     "model": "leper_pilgrim",
+     "label": "Leper-Pilgrim Tekle the Mill",
+     "kit": [
+      "Anti-Tank Hammer",
+      "Holy Icon Armour"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 100,
+     "glory": 0
+    },
+    {
+     "model": "leper_pilgrim",
+     "label": "Leper-Pilgrim Abraham Heavy-With-Sin",
+     "kit": [
+      "Great Flail/Scourge",
+      "Standard Armour",
+      "Blessed Millstone"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 70,
+     "glory": 0
+    },
+    {
+     "model": "leper_pilgrim",
+     "label": "Leper-Pilgrim Praise-Him",
+     "kit": [
+      "Flamethrower",
+      "Bayonet",
+      "Gas Mask"
+     ],
+     "upgrades": [],
+     "ducats": 67,
+     "glory": 0
+    },
+    {
+     "model": "leper_pilgrim",
+     "label": "Leper-Pilgrim Joachim Rings-Bells",
+     "kit": [
+      "Musical Instrument",
+      "Sword/Axe",
+      "Trench Shield",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 64,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Witness-His-Fury",
+     "kit": [
+      "Anti-Tank Hammer",
+      "Warcross"
+     ],
+     "upgrades": [],
+     "ducats": 100,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Veronica",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Ragged Vestments",
+      "Medi-kit"
+     ],
+     "upgrades": [],
+     "ducats": 83,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Prisoner Sinner-To-Be-Martyred",
+     "kit": [],
+     "upgrades": [
+      "Martyrdom Device",
+      "Minenhelm"
+     ],
+     "ducats": 55,
+     "glory": 0
+    },
+    {
+     "model": "MERC:witchburner",
+     "label": "Witchburner Konrad Ashfall",
+     "kit": [
+      "Reinforced Armour",
+      "Combat Helmet",
+      "Gavel of Justice"
+     ],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 5
+    }
+   ]
+  },
+  {
+   "id": "psa_lazarite_lances",
+   "name": "Lances of Saint Lazarus",
+   "variant": "psa_knights_of_saint_lazarus",
+   "ducats": 899,
+   "glory": 6,
+   "style": "No retreat, no snipers: three armoured Leper-Knights at Melee +2 DICE and four Stigmatic Nuns with cheap Great Swords charge as one; Knightly Code heals the line with every kill.",
+   "models": [
+    {
+     "model": "lazarist_prophet",
+     "label": "Lazarist Prophet Grand Master Baudouin",
+     "kit": [
+      "Great Sword/Axe",
+      "Automatic Pistol",
+      "Holy Icon Armour",
+      "Holy Relic"
+     ],
+     "upgrades": [],
+     "ducats": 142,
+     "glory": 2
+    },
+    {
+     "model": "leper_knight",
+     "label": "Leper-Knight Sir Odo the Rotting",
+     "kit": [
+      "Great Sword/Axe",
+      "Pistol",
+      "Reinforced Armour"
+     ],
+     "upgrades": [
+      "Zealot Strength"
+     ],
+     "ducats": 108,
+     "glory": 0
+    },
+    {
+     "model": "leper_knight",
+     "label": "Leper-Knight Sir Raymond",
+     "kit": [
+      "Sword/Axe",
+      "Pistol",
+      "Holy Icon Shield",
+      "Holy Icon Armour",
+      "Bells of Warding"
+     ],
+     "upgrades": [],
+     "ducats": 110,
+     "glory": 2
+    },
+    {
+     "model": "leper_knight",
+     "label": "Leper-Knight Sir Gilbert Hammerhand",
+     "kit": [
+      "Anti-Tank Hammer",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 100,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Melisende",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Warcross",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 88,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Sibylla",
+     "kit": [
+      "Great Sword/Axe",
+      "Warcross",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 87,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Hodierna",
+     "kit": [
+      "Automatic Pistol",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 94,
+     "glory": 0
+    },
+    {
+     "model": "stigmatic_nun",
+     "label": "Sister Agnes",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Ragged Vestments",
+      "Medi-kit"
+     ],
+     "upgrades": [],
+     "ducats": 83,
+     "glory": 0
+    },
+    {
+     "model": "leper_pilgrim",
+     "label": "Leper-Pilgrim Squire Tancred",
+     "kit": [
+      "Great Sword/Axe",
+      "Standard Armour",
+      "Musical Instrument"
+     ],
+     "upgrades": [],
+     "ducats": 67,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Prisoner Penitent Hugh",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 20,
+     "glory": 0
+    },
+    {
+     "model": "MERC:sister_of_saint_cosmas",
+     "label": "Sister Clarice of Saint Cosmas",
+     "kit": [
+      "Standard Armour",
+      "Gas Mask",
+      "Medi-kit",
+      "Misericordia"
+     ],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 2
+    }
+   ]
+  },
+  {
+   "id": "psa_shepherds_of_the_lost",
+   "name": "Shepherds of the Lost",
+   "variant": "psa_blessed_flock",
+   "ducats": 892,
+   "glory": 8,
+   "style": "Three hulking Communicants herded by two Castigators: keep the shepherds within 6\" and the giants hit like trucks, while flagellant Prisoners with blunderbusses and a Minenhelm clear the way.",
+   "models": [
+    {
+     "model": "lazarist_prophet",
+     "label": "Lazarist Prophet Mother Salome",
+     "kit": [
+      "Shotgun",
+      "Anti-Tank Hammer",
+      "Holy Icon Armour",
+      "Holy Relic"
+     ],
+     "upgrades": [],
+     "ducats": 165,
+     "glory": 2
+    },
+    {
+     "model": "lazarist_castigator",
+     "label": "Shepherd Castigator Boaz",
+     "kit": [
+      "Punt Gun",
+      "Flail/Scourge",
+      "Standard Armour",
+      "Molotov Cocktail"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 0
+    },
+    {
+     "model": "lazarist_castigator",
+     "label": "Shepherd Castigator Eli",
+     "kit": [
+      "Great Flail/Scourge",
+      "Holy Icon Armour",
+      "Field Shrine",
+      "Troop Flag"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 3
+    },
+    {
+     "model": "lazarist_communicant",
+     "label": "Communicant 'Found-in-the-Shell-Hole'",
+     "kit": [
+      "Anti-Tank Hammer"
+     ],
+     "upgrades": [],
+     "ducats": 135,
+     "glory": 0
+    },
+    {
+     "model": "lazarist_communicant",
+     "label": "Communicant 'Lamb of Ypres'",
+     "kit": [
+      "Great Flail/Scourge"
+     ],
+     "upgrades": [],
+     "ducats": 115,
+     "glory": 0
+    },
+    {
+     "model": "lazarist_communicant",
+     "label": "Communicant 'Gentle Goliath'",
+     "kit": [
+      "Great Sword/Axe"
+     ],
+     "upgrades": [],
+     "ducats": 112,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Prisoner Last-Breath",
+     "kit": [],
+     "upgrades": [
+      "Martyrdom Device",
+      "Minenhelm"
+     ],
+     "ducats": 55,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Flagellant Jonas",
+     "kit": [
+      "Blunderbuss",
+      "Flail/Scourge",
+      "Trench Shield"
+     ],
+     "upgrades": [],
+     "ducats": 40,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Flagellant Magda",
+     "kit": [
+      "Blunderbuss",
+      "Flail/Scourge",
+      "Trench Shield"
+     ],
+     "upgrades": [],
+     "ducats": 40,
+     "glory": 0
+    },
+    {
+     "model": "ecclesiastic_prisoner",
+     "label": "Flagellant Thomas",
+     "kit": [
+      "Musket",
+      "Warcross",
+      "Ragged Vestments"
+     ],
+     "upgrades": [],
+     "ducats": 40,
+     "glory": 0
+    },
+    {
+     "model": "MERC:observer",
+     "label": "Observer of the Temple of the Word",
+     "kit": [
+      "Standard Armour",
+      "Combat Helmet",
+      "Gas Mask",
+      "Medi-kit",
+      "Polearm"
+     ],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 3
+    }
+   ]
+  }
+ ]
+}

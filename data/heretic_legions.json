@@ -1,0 +1,1683 @@
+{
+ "id": "heretic_legions",
+ "name": "Heretic Legions",
+ "alignment": "Fallen",
+ "source": "Warbands of Trench Crusade 1.0.2",
+ "mercenaries": [
+  "goetic_warlock (4 Glory; Knights of Avarice: up to 2, first 110 ducats)",
+  "sin_eater (6 Glory)",
+  "scripture_guardian (7 Glory + its melee weapons in ducats)"
+ ],
+ "variants": [
+  {
+   "id": "heretic_legions_base",
+   "name": "Heretic Legions (base list)",
+   "specialRules": [
+    {
+     "name": "No special rules",
+     "text": "A standard Heretic Legions warband has no faction special rules. Fallen alignment; may hire Fallen Mercenaries (Goetic Warlock, Sin Eater, Scripture Guardian).",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Anti-Materiel Rifle",
+     "cost": 3,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Automatic Rifle",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Automatic Shotgun",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Bolt-Action Rifle",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Flamethrower",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Grenade Launcher",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Heavy Flamethrower",
+     "cost": 55,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Pistol",
+     "cost": 6,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Semi-Automatic Rifle",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Shotgun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Silenced Pistol",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": "ELITE"
+    },
+    {
+     "item": "Submachine Gun",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Bayonet",
+     "cost": 2,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Blasphemous Staff",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": "ELITE"
+    },
+    {
+     "item": "Great Hammer/Maul",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Hellblade",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Polearm",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sacrificial Blade",
+     "cost": 23,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 2,
+     "onlyFor": "ELITE"
+    },
+    {
+     "item": "Sword/Axe",
+     "cost": 4,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Tartarus Claws",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Death Commando only"
+     ],
+     "limit": null,
+     "onlyFor": "death_commando"
+    },
+    {
+     "item": "Trench Club",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Knife",
+     "cost": 1,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Frag Grenades",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Grenades",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Grenades",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Shield",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "Anointed & ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": "anointed_heavy_infantry|ELITE"
+    },
+    {
+     "item": "Standard Armour",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Binoculars",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": "ELITE"
+    },
+    {
+     "item": "Combat Helmet",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Headgear"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Mask",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Hellbound Soul Contract",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Heretic Troopers & Legionnaires only"
+     ],
+     "limit": 3,
+     "onlyFor": "heretic_trooper"
+    },
+    {
+     "item": "Incendiary Ammunition",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Infernal Brand",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Mountaineer Kit",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Musical Instrument",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Shovel",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Troop Flag",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Unholy Relic",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Unholy Trinket",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": null,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "heretic_priest",
+     "name": "Heretic Priest",
+     "min": 1,
+     "max": 1,
+     "cost": 80,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any (Heretic Legions Armoury)",
+     "abilities": [
+      {
+       "name": "Puppet Master ACTION",
+       "text": "Risky roll (Failure ends Activation). On a Success/Crit, move one other model (friend or foe) within 12\" and in LoS up to D6\" in a straight line in any direction; may bring it into melee, retreat, climb or jump, but it never counts as charging.",
+       "sim": {
+        "kind": "action",
+        "effect": "pushModel",
+        "range": 12,
+        "distance": "D6",
+        "roll": "risky"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "death_commando",
+     "name": "Death Commando",
+     "min": 0,
+     "max": 1,
+     "cost": 90,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ELITE",
+      "INFILTRATOR"
+     ],
+     "fixedKit": [],
+     "kitRule": "Heretic Legions Armoury, but its only Ranged Weapons can be Silenced Pistols (or Tormentor Chains, a campaign Glory Item) and its only Grenades Gas Grenades; other types unrestricted.",
+     "abilities": [
+      {
+       "name": "Stealth Generator",
+       "text": "Ranged Attacks targeting this model suffer -1 DICE.",
+       "sim": {
+        "kind": "defence",
+        "vs": "ranged",
+        "value": -1
+       }
+      },
+      {
+       "name": "Hide ACTION",
+       "text": "If touching terrain at least 1/2\" tall: Risky roll with +1 DICE (Failure ends Activation). On a Success the model cannot be targeted by Ranged Attacks or charges until it moves, charges, retreats, shoots, or an enemy comes within 1.5\". BLAST weapons can still catch it.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Infiltrator",
+       "text": "May deploy using the INFILTRATOR keyword.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "chorister",
+     "name": "Chorister",
+     "min": 0,
+     "max": 1,
+     "cost": 65,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ELITE",
+      "FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any (Heretic Legions Armoury)",
+     "abilities": [
+      {
+       "name": "Unholy Hymns",
+       "text": "Enemy models within 8\" of one or more Choristers suffer -1 DICE on all their Success Rolls.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "enemy",
+        "effect": "dice",
+        "value": -1
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "heretic_trooper",
+     "name": "Heretic Trooper",
+     "min": 0,
+     "max": null,
+     "cost": 30,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "HERETIC"
+     ],
+     "fixedKit": [],
+     "kitRule": "any (Heretic Legions Armoury)",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Heretic Legionnaire",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Upgrade to a Legionnaire: raise either Ranged or Melee from +0 to +1 DICE. You may never have more Legionnaires than un-upgraded Heretic Troopers.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ]
+    },
+    {
+     "id": "war_wolf",
+     "name": "War Wolf Assault Beast",
+     "min": 0,
+     "max": 1,
+     "cost": 145,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 2,
+     "armour": -3,
+     "base": 50,
+     "keywords": [
+      "HERETIC",
+      "ARTIFICIAL",
+      "FEAR",
+      "NEGATE DIFFICULT TERRAIN",
+      "TOUGH"
+     ],
+     "fixedKit": [
+      "Chainsaw Mouth",
+      "Shredding Claws"
+     ],
+     "kitRule": "none: only its Chainsaw Mouth and Shredding Claws",
+     "abilities": [
+      {
+       "name": "Assault Beast",
+       "text": "Each Melee Attack may use either weapon, or both in sequence (Mouth first, then Claws with the off-hand modifier). Both are RISKY, so a failed roll with either ends the Activation.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Loping Dash",
+       "text": "+1 DICE to its Risky roll when taking a Dash ACTION.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "wretched",
+     "name": "Wretched",
+     "min": 0,
+     "max": null,
+     "cost": 25,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -1,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "HERETIC"
+     ],
+     "fixedKit": [],
+     "kitRule": "Heretic Legions Armoury items costing up to 10 ducats each; must carry at least 1 Weapon.",
+     "abilities": [
+      {
+       "name": "Chattel",
+       "text": "Campaign only: can be sold for 25 ducats plus half its kit value.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Dark Blessing",
+       "text": "When taken Out of Action, place 1 BLESSING MARKER on the nearest friendly ELITE HERETIC model (your choice if tied).",
+       "sim": {
+        "kind": "onDeath",
+        "effect": "blessNearestElite"
+       }
+      },
+      {
+       "name": "Law of Hell",
+       "text": "If its attack takes an enemy ELITE Out of Action, the Wretched is freed: remove it from the game and the roster; it no longer counts for Morale.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "anointed_heavy_infantry",
+     "name": "Anointed Heavy Infantry",
+     "min": 0,
+     "max": 5,
+     "cost": 95,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": -2,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Reinforced Armour",
+      "Infernal Brand"
+     ],
+     "kitRule": "always Reinforced Armour + Infernal Brand (included, armour already in profile); otherwise any Heretic Legions Armoury kit.",
+     "abilities": [],
+     "upgrades": []
+    },
+    {
+     "id": "artillery_witch",
+     "name": "Artillery Witch",
+     "min": 0,
+     "max": 1,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": -1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ARTIFICIAL",
+      "NEGATE FEAR",
+      "NEGATE GAS"
+     ],
+     "fixedKit": [
+      "Infernal Bomb"
+     ],
+     "kitRule": "always Infernal Bombs; may take Heretic Legions kit except Ranged Weapons and Grenades.",
+     "abilities": [
+      {
+       "name": "Abiotic Life",
+       "text": "-1 INJURY DICE on Injury Rolls against it from GAS attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Artillery Witch Battery",
+       "text": "0-2 Witches allowed only if all other models and kit total 1,000 ducats or more (so 0-1 in a 900-ducat game).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Levitate",
+       "text": "No Risky roll to Climb or Jump and no Injury Roll for Falling.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Blasphemous Staff",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "CRITICAL",
+      "FIRE"
+     ],
+     "text": "Evil Power: the bearer gets +1 DICE on Success and Risky Success Rolls other than Ranged/Melee attack rolls and Dash rolls (e.g. Puppet Master, Hide).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Hellblade",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "FIRE"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Sacrificial Blade",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+2 INJURY MODIFIER",
+      "RISKY"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Tartarus Claws",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "CLEAVE 2",
+      "CRITICAL",
+      "CUMBERSOME"
+     ],
+     "text": "Harrowing Assault: if a Claws attack takes the target Down or Out of Action, the wielder may move up to 3\"; if that brings it within 1\" of another enemy it may make another Fight ACTION. No further 3\" move if that second attack also downs/kills.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Chainsaw Mouth",
+     "type": "Special",
+     "range": "Melee",
+     "keywords": [
+      "+1 DICE",
+      "+1 INJURY DICE",
+      "IGNORE ARMOUR",
+      "RISKY"
+     ],
+     "text": "War Wolf natural weapon; cannot be removed.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Shredding Claws",
+     "type": "Special",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "CUMBERSOME",
+      "RISKY"
+     ],
+     "text": "War Wolf natural weapon; used as the off-hand second attack.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Infernal Bomb",
+     "type": "1H",
+     "range": 36,
+     "keywords": [
+      "BLAST 3",
+      "IGNORE COVER",
+      "IGNORE ELEVATED POSITION",
+      "IGNORE LONG RANGE",
+      "RELOAD",
+      "SCATTER",
+      "SHRAPNEL"
+     ],
+     "text": "Artillery Witch only. Duck: -1 INJURY DICE for a model touching terrain at least 1/2\" tall between it and the target point. Infernal Strike: if the attack roll succeeds (or a miss scatters onto a base) the Injury Roll for that model counts as DEADLY; others in the blast roll normally. Mighty Explosion: any model hit but not taken Out of Action is blown D3\" straight away (target: away from the Witch; blast: away from the target point), stopping at models, Impassable terrain or terrain needing a Climb.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "trench_ghosts",
+   "name": "Trench Ghosts",
+   "inherits": "heretic_legions_base",
+   "changes": "Undead Heretics: no ARTIFICIAL models (no War Wolf or Artillery Witch), no Mercenaries, no Hellbound Soul Contracts or Infernal Brands; may swap the Chorister for a Barbed Wire Banshee; everyone gains FEAR, NEGATE DIFFICULT TERRAIN and NEGATE GAS, shrugs off shooting, but dashes slowly; adds Sarcophagus Mines and the Tank Palanquin.",
+   "removeModels": [
+    "war_wolf",
+    "artillery_witch"
+   ],
+   "removeArmoury": [
+    "Hellbound Soul Contract",
+    "Infernal Brand"
+   ],
+   "specialRules": [
+    {
+     "name": "Barbed Wire Banshee",
+     "text": "May take a Barbed Wire Banshee in place of the Chorister: same profile and cost, but grants +1 INJURY DICE against enemies within 8\" instead of Unholy Hymns.",
+     "sim": {
+      "kind": "aura",
+      "range": 8,
+      "who": "enemy",
+      "effect": "injuryDice",
+      "value": 1
+     }
+    },
+    {
+     "name": "Enemies of All",
+     "text": "Cannot include Mercenaries.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Lost Souls",
+     "text": "No ARTIFICIAL models, no Hellbound Soul Contracts or Infernal Brands. Anointed Heavy Infantry lose their Infernal Brand but still cost 95.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Semi-corporeal",
+     "text": "Injury Rolls caused by Ranged Attacks against models in this warband suffer -1 INJURY DICE.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Slow and Creeping",
+     "text": "Models count as 3\"/Infantry when Dashing, and suffer -1 DICE when attacking an enemy that is Retreating from them.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Undead Horror",
+     "text": "All models gain FEAR, NEGATE DIFFICULT TERRAIN and NEGATE GAS.",
+     "sim": {
+      "kind": "fear"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Sarcophagus Mine",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [
+      "Heretic Troopers only"
+     ],
+     "limit": 2,
+     "onlyFor": "heretic_trooper"
+    },
+    {
+     "item": "Tank Palanquin",
+     "cost": 60,
+     "currency": "ducats",
+     "stip": [
+      "Heretic Priest only"
+     ],
+     "limit": null,
+     "onlyFor": "heretic_priest"
+    }
+   ],
+   "models": [
+    {
+     "id": "barbed_wire_banshee",
+     "name": "Barbed Wire Banshee",
+     "min": 0,
+     "max": 1,
+     "cost": 65,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": -2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ELITE",
+      "FEAR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any (Trench Ghost armoury). Taken instead of a Chorister (0-1 total between them).",
+     "abilities": [
+      {
+       "name": "Barbed Wire Shriek",
+       "text": "Replaces Unholy Hymns: Injury Rolls against enemy models within 8\" of the Banshee get +1 INJURY DICE.",
+       "sim": {
+        "kind": "aura",
+        "range": 8,
+        "who": "enemy",
+        "effect": "injuryDice",
+        "value": 1
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "anointed_heavy_infantry",
+     "name": "Anointed Heavy Infantry",
+     "min": 0,
+     "max": 5,
+     "cost": 95,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": -2,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "STRONG"
+     ],
+     "fixedKit": [
+      "Reinforced Armour"
+     ],
+     "kitRule": "always Reinforced Armour (in profile); no Infernal Brand but still 95 ducats; otherwise any Trench Ghost-legal kit.",
+     "abilities": [],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Sarcophagus Mine",
+     "type": "Armour",
+     "range": null,
+     "keywords": [
+      "-3 INJURY MODIFIER",
+      "BLAST 3"
+     ],
+     "text": "Walking Bomb: bearer can have no other kit. Trigger ACTION: Risky roll with +1 DICE; on Success/Crit it detonates (Failure: nothing, retry later). It may also detonate, interrupting, when an enemy ends a move within 3\". Detonation: every model (friend or foe) within 3\" and in LoS is hit by a SHRAPNEL Ranged Attack, +1 INJURY DICE for those within 1\"; the bearer is then taken Out of Action.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Tank Palanquin",
+     "type": "Armour",
+     "range": null,
+     "keywords": [
+      "-3 INJURY MODIFIER",
+      "STRONG"
+     ],
+     "text": "Bulky: 50mm base, no Shield, Charge Bonus D3\" instead of D6\". Death From On High: counts 3\" taller for Elevated Position when shooting. Standfast: a Down result is treated as a Minor Hit.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "knights_of_avarice",
+   "name": "Knights of Avarice",
+   "inherits": "heretic_legions_base",
+   "changes": "Followers of Mammon: no Death Commandos, no FIRE or SHRAPNEL kit, every model other than a Wretched must cost at least 80 ducats with kit, Priest swaps Puppet Master for Price of Greed, Witches throw Gas Bombs, up to 2 Goetic Warlocks (first one 110 ducats), adds Coin Hammers, Golden Calf Altars, Standard of Mammon and Tarnished Armour.",
+   "removeModels": [
+    "death_commando"
+   ],
+   "removeArmoury": [
+    "Flamethrower",
+    "Heavy Flamethrower",
+    "Hellblade",
+    "Blasphemous Staff",
+    "Frag Grenades",
+    "Incendiary Grenades",
+    "Incendiary Ammunition"
+   ],
+   "specialRules": [
+    {
+     "name": "Corrupt Merchants",
+     "text": "At creation may buy 1 item from the New Antioch Armoury and 1 from the Iron Sultanate Armoury, following their stipulations.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Gas Bombs",
+     "text": "Artillery Witches carry Gas Bombs instead of Infernal Bombs.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Goetic Warlocks",
+     "text": "May hire up to 2 Goetic Warlock Mercenaries; the first costs 110 ducats instead of its Glory cost (the second costs the normal 4 Glory).",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Infernal Rivalry",
+     "text": "Cannot include Death Commandos.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Mammon's Chosen",
+     "text": "No model (except Wretched) may cost less than 80 ducats including its kit.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Preserve the Loot",
+     "text": "No kit that has, or grants, FIRE or SHRAPNEL. Grenade Launchers allowed, but lose SHRAPNEL and gain -1 INJURY DICE, GAS and IGNORE ARMOUR.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Price of Greed",
+     "text": "The Heretic Priest has the Price of Greed ACTION instead of Puppet Master.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Worship Mammon",
+     "text": "Campaign Patron is always Mammon.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Coin Hammer",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Golden Calf Altar",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Standard of Mammon",
+     "cost": 25,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Tarnished Armour",
+     "cost": 25,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "heretic_priest",
+     "name": "Heretic Priest",
+     "min": 1,
+     "max": 1,
+     "cost": 80,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ELITE",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any (Heretic Legions Armoury)",
+     "abilities": [
+      {
+       "name": "Price of Greed ACTION",
+       "text": "Replaces Puppet Master. Risky roll (Failure ends Activation). On a Success/Crit, make an Injury Roll against an enemy within 12\" and in LoS; +1 INJURY DICE on a Crit, plus +1 INJURY DICE for every -1 INJURY MODIFIER the target has (those modifiers still apply).",
+       "sim": {
+        "kind": "action",
+        "effect": "attack",
+        "range": 12,
+        "roll": "risky",
+        "injury": "Injury Roll; +1 INJURY DICE on Crit and +1 INJURY DICE per -1 INJURY MODIFIER on the target"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "artillery_witch",
+     "name": "Artillery Witch",
+     "min": 0,
+     "max": 1,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": -1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "HERETIC",
+      "ARTIFICIAL",
+      "NEGATE FEAR",
+      "NEGATE GAS"
+     ],
+     "fixedKit": [
+      "Gas Bombs"
+     ],
+     "kitRule": "always Gas Bombs (replacing Infernal Bombs); may take Knights of Avarice-legal kit except Ranged Weapons and Grenades.",
+     "abilities": [
+      {
+       "name": "Abiotic Life",
+       "text": "-1 INJURY DICE on Injury Rolls against it from GAS attacks.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Artillery Witch Battery",
+       "text": "0-2 Witches allowed only if all other models and kit total 1,000 ducats or more (so 0-1 in a 900-ducat game).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Levitate",
+       "text": "No Risky roll to Climb or Jump and no Injury Roll for Falling.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Coin Hammer",
+     "type": "2H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY DICE",
+      "HEAVY"
+     ],
+     "text": "Rune of Mammon: if its Injury Roll puts 1+ BLOOD MARKERS on the target, place 1 BLESSING MARKER on the wielder.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Golden Calf Altar",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "DEPLOYABLE",
+      "HEAVY"
+     ],
+     "text": "Illusions: enemies treat all ground within 3\" of the bearer or the deployed altar as Difficult terrain (FLYING too). Place Altar ACTION: deploy it within 1\" (1/2\" high Impassable piece on 25mm base); lost after the game.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Gas Bombs",
+     "type": "1H",
+     "range": 36,
+     "keywords": [
+      "-1 INJURY DICE",
+      "BLAST 3",
+      "GAS",
+      "IGNORE ARMOUR",
+      "IGNORE COVER",
+      "IGNORE ELEVATED POSITION",
+      "IGNORE LONG RANGE",
+      "RELOAD",
+      "SCATTER"
+     ],
+     "text": "Knights of Avarice Artillery Witch only. Choking Gas: a model hit but not taken Out of Action staggers D3\" in a straight line (target: direction chosen by the attacker; blast: away from the target point), stopping at models, Impassable terrain or terrain needing a Climb.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Standard of Mammon",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "HELD",
+      "LEADER"
+     ],
+     "text": "Kneel Before Me: Down enemies within 1\" cannot stand up. Enemies finishing a charge within 1\" of the bearer must pass a Success Roll or be placed Down.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Tarnished Armour",
+     "type": "Armour",
+     "range": null,
+     "keywords": [
+      "-2 INJURY MODIFIER",
+      "NEGATE GAS"
+     ],
+     "text": "Target of Wrath: an enemy that can see the wearer, is not already in melee, and can reach it without climbing, jumping, diving or crossing Dangerous terrain must choose it as its charge target.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "heretic_naval_raiders_old",
+   "name": "Heretic Naval Raiders (old Warbands-book variant)",
+   "inherits": "heretic_legions_base",
+   "changes": "Legacy variant from the Warbands book, superseded by the standalone Heretic Naval Raiders faction: SMGs cost ducats, faster dashes, no War Wolf, at most 2 Anointed and 1 Witch, up to 3 non-ELITE infiltrators. No preset lists here.",
+   "removeModels": [
+    "war_wolf"
+   ],
+   "specialRules": [
+    {
+     "name": "Close Assault Weapons",
+     "text": "Submachine Guns cost 25 ducats instead of Glory.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Fast as Lightning",
+     "text": "+1 DICE to Risky rolls for Dash ACTIONS for all models.",
+     "sim": {
+      "kind": "dashBonus",
+      "value": 1
+     }
+    },
+    {
+     "name": "Let Sleeping Dogs Lie",
+     "text": "Cannot include a War Wolf.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Light Troops",
+     "text": "Max 2 Anointed models and max 1 Artillery Witch, regardless of warband value.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Unseen Advance",
+     "text": "Up to 3 non-ELITE models may gain INFILTRATOR for +10 ducats each.",
+     "sim": {
+      "kind": "deploy",
+      "effect": "infiltrate"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Submachine Gun",
+     "cost": 25,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    }
+   ],
+   "models": [],
+   "uniqueKit": []
+  }
+ ],
+ "lists": [
+  {
+   "id": "hl_hellgate_breach",
+   "name": "The Hellgate Breach",
+   "variant": "heretic_legions_base",
+   "ducats": 887,
+   "glory": 7,
+   "style": "Combined-arms assault: the War Wolf and a flaming Anointed lead the charge, the Death Commando infiltrates, the Chorister's hymns sap the enemy and the Priest flings models where he needs them.",
+   "models": [
+    {
+     "model": "heretic_priest",
+     "label": "Archpriest Malphas",
+     "kit": [
+      "Blasphemous Staff",
+      "Pistol",
+      "Reinforced Armour"
+     ],
+     "upgrades": [],
+     "ducats": 126,
+     "glory": 2
+    },
+    {
+     "model": "death_commando",
+     "label": "Silent Vesh",
+     "kit": [
+      "Tartarus Claws",
+      "Silenced Pistol",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 135,
+     "glory": 0
+    },
+    {
+     "model": "chorister",
+     "label": "The Headless Cantor",
+     "kit": [
+      "Hellblade",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 80,
+     "glory": 1
+    },
+    {
+     "model": "war_wolf",
+     "label": "Gorehound of Dis",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 145,
+     "glory": 0
+    },
+    {
+     "model": "anointed_heavy_infantry",
+     "label": "Anointed Brother Askarel",
+     "kit": [
+      "Heavy Flamethrower",
+      "Great Sword/Axe"
+     ],
+     "upgrades": [],
+     "ducats": 162,
+     "glory": 0
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Legionnaire Kurtz",
+     "kit": [
+      "Automatic Rifle",
+      "Bayonet",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Heretic Legionnaire"
+     ],
+     "ducats": 57,
+     "glory": 2
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Trooper Abel",
+     "kit": [
+      "Automatic Rifle",
+      "Bayonet",
+      "Standard Armour",
+      "Hellbound Soul Contract"
+     ],
+     "upgrades": [],
+     "ducats": 52,
+     "glory": 2
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Trooper Grausam",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 57,
+     "glory": 0
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Trooper Roth",
+     "kit": [
+      "Shotgun",
+      "Trench Shield",
+      "Standard Armour",
+      "Combat Helmet",
+      "Mountaineer Kit"
+     ],
+     "upgrades": [],
+     "ducats": 73,
+     "glory": 0
+    }
+   ]
+  },
+  {
+   "id": "hl_ghosts_of_tannenberg",
+   "name": "Ghosts of Tannenberg",
+   "variant": "trench_ghosts",
+   "ducats": 898,
+   "glory": 4,
+   "style": "Slow, unkillable gunline: a Priest on a Tank Palanquin lobs grenades from on high, Semi-corporeal ghosts soak shooting, and Sarcophagus Mines walk into the enemy line to detonate.",
+   "models": [
+    {
+     "model": "heretic_priest",
+     "label": "Hierophant of Saint Jacob's Ruin",
+     "kit": [
+      "Tank Palanquin",
+      "Grenade Launcher",
+      "Sword/Axe"
+     ],
+     "upgrades": [],
+     "ducats": 174,
+     "glory": 0
+    },
+    {
+     "model": "barbed_wire_banshee",
+     "label": "The Wire Widow",
+     "kit": [
+      "Great Hammer/Maul",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "death_commando",
+     "label": "Shade of the Wire",
+     "kit": [
+      "Tartarus Claws",
+      "Silenced Pistol"
+     ],
+     "upgrades": [],
+     "ducats": 120,
+     "glory": 0
+    },
+    {
+     "model": "anointed_heavy_infantry",
+     "label": "Burnt Revenant",
+     "kit": [
+      "Flamethrower",
+      "Great Sword/Axe"
+     ],
+     "upgrades": [],
+     "ducats": 137,
+     "glory": 0
+    },
+    {
+     "model": "anointed_heavy_infantry",
+     "label": "Hollow Marksman",
+     "kit": [
+      "Anti-Materiel Rifle",
+      "Hellblade"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 4
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Walking Tomb I",
+     "kit": [
+      "Sarcophagus Mine"
+     ],
+     "upgrades": [],
+     "ducats": 60,
+     "glory": 0
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Walking Tomb II",
+     "kit": [
+      "Sarcophagus Mine"
+     ],
+     "upgrades": [],
+     "ducats": 60,
+     "glory": 0
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Ghost Legionnaire Hesse",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Heretic Legionnaire"
+     ],
+     "ducats": 67,
+     "glory": 0
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Ghost Legionnaire Vogt",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Bayonet",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Heretic Legionnaire"
+     ],
+     "ducats": 67,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Chained Revenant",
+     "kit": [
+      "Trench Club"
+     ],
+     "upgrades": [],
+     "ducats": 28,
+     "glory": 0
+    }
+   ]
+  },
+  {
+   "id": "hl_gilded_tithe",
+   "name": "The Gilded Tithe",
+   "variant": "knights_of_avarice",
+   "ducats": 895,
+   "glory": 3,
+   "style": "Elite and few: a Goetic Warlock and coin-hammer bruisers grind through armour, Price of Greed punishes heavily armoured foes, Gas Bombs and gas launchers flush cover, and the Standard of Mammon pins chargers.",
+   "models": [
+    {
+     "model": "heretic_priest",
+     "label": "Usurer-Priest Aurelian",
+     "kit": [
+      "Standard of Mammon",
+      "Sword/Axe",
+      "Reinforced Armour"
+     ],
+     "upgrades": [],
+     "ducats": 149,
+     "glory": 0
+    },
+    {
+     "model": "MERC:goetic_warlock",
+     "label": "Mammon's Bailiff",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 110,
+     "glory": 0,
+     "note": "First Goetic Warlock in a Knights of Avarice warband costs 110 ducats instead of 4 Glory."
+    },
+    {
+     "model": "chorister",
+     "label": "Cantor of the Golden Calf",
+     "kit": [
+      "Coin Hammer",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 100,
+     "glory": 0
+    },
+    {
+     "model": "anointed_heavy_infantry",
+     "label": "Gilded Anointed Severin",
+     "kit": [
+      "Coin Hammer",
+      "Pistol"
+     ],
+     "upgrades": [],
+     "ducats": 121,
+     "glory": 0
+    },
+    {
+     "model": "anointed_heavy_infantry",
+     "label": "Gilded Anointed Mordecai",
+     "kit": [
+      "Anti-Materiel Rifle"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 3
+    },
+    {
+     "model": "artillery_witch",
+     "label": "The Veiled Assayer",
+     "kit": [
+      "Golden Calf Altar"
+     ],
+     "upgrades": [],
+     "ducats": 120,
+     "glory": 0,
+     "note": "Carries Gas Bombs (fixed kit)."
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Tithe-Taker Brandt",
+     "kit": [
+      "Semi-Automatic Rifle",
+      "Bayonet",
+      "Standard Armour",
+      "Gas Grenades",
+      "Combat Helmet",
+      "Gas Mask"
+     ],
+     "upgrades": [],
+     "ducats": 82,
+     "glory": 0
+    },
+    {
+     "model": "heretic_trooper",
+     "label": "Gilded Legionnaire Oswin",
+     "kit": [
+      "Bolt-Action Rifle",
+      "Tarnished Armour",
+      "Combat Helmet",
+      "Gas Grenades"
+     ],
+     "upgrades": [
+      "Heretic Legionnaire"
+     ],
+     "ducats": 90,
+     "glory": 0
+    },
+    {
+     "model": "wretched",
+     "label": "Debtor",
+     "kit": [
+      "Trench Club"
+     ],
+     "upgrades": [],
+     "ducats": 28,
+     "glory": 0
+    }
+   ]
+  }
+ ]
+}

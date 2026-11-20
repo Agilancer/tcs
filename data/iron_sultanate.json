@@ -1,0 +1,2891 @@
+{
+ "id": "iron_sultanate",
+ "name": "The Sultanate of the Iron Wall",
+ "alignment": "Faithful",
+ "source": "Warbands of Trench Crusade 1.0.2",
+ "variants": [
+  {
+   "id": "iron_sultanate_base",
+   "name": "Iron Sultanate (base list)",
+   "specialRules": [
+    {
+     "name": "No special rules",
+     "text": "A standard Iron Sultanate warband has no extra faction rules. Faithful.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Alaybozan",
+     "cost": 9,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "sultanate_sapper",
+      "silahdar"
+     ]
+    },
+    {
+     "item": "Flame Cannon",
+     "cost": 60,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": [
+      "brazen_bull"
+     ]
+    },
+    {
+     "item": "Flamethrower",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 3,
+     "onlyFor": null
+    },
+    {
+     "item": "Jezzail",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Machine Gun",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "M.U.R.A.D. Bombard",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": [
+      "brazen_bull"
+     ]
+    },
+    {
+     "item": "Musket",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Pistol",
+     "cost": 6,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Shotgun",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Bayonet Lug",
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Siege Jezzail",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sniper Rifle",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [
+      "ELITE & Janissaries only"
+     ],
+     "limit": 2,
+     "onlyFor": [
+      "ELITE",
+      "janissary"
+     ]
+    },
+    {
+     "item": "Assassin's Dagger",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "sultanate_assassin",
+      "master_assassin"
+     ]
+    },
+    {
+     "item": "Bayonet",
+     "cost": 2,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Hammer/Maul",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Great Sword/Axe",
+     "cost": 12,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Halberd-Gun",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Polearm",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Sword/Axe",
+     "cost": 4,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Titan Zulfiqar",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "brazen_bull"
+     ]
+    },
+    {
+     "item": "Trench Club",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Trench Knife",
+     "cost": 1,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Frag Grenades",
+     "cost": 7,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Incendiary Grenades",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "jabirean_alchemist"
+     ]
+    },
+    {
+     "item": "Trench Shield",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Alchemist Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Reinforced Armour",
+     "cost": 40,
+     "currency": "ducats",
+     "stip": [
+      "ELITE & Janissaries only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE",
+      "janissary"
+     ]
+    },
+    {
+     "item": "Standard Armour",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Alchemical Ammunition",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Binoculars",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Cloak of Alamut",
+     "cost": 25,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Combat Helmet",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Headgear"
+     ],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Gas Mask",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Holy Relic",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Marid Shovel",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "brazen_bull"
+     ]
+    },
+    {
+     "item": "Medi-kit",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Mountaineer Kit",
+     "cost": 3,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    },
+    {
+     "item": "Musical Instrument",
+     "cost": 15,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Shovel",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": null
+    },
+    {
+     "item": "Takwin Anqa Bird",
+     "cost": 2,
+     "currency": "glory",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Troop Flag",
+     "cost": 1,
+     "currency": "glory",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Wind Amulet",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "yuzbasi",
+     "name": "Yuzbasi",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE",
+      "LEADER",
+      "NEGATE FEAR",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Mubarizun",
+       "text": "+1 INJURY DICE on its attacks against targets with TOUGH.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Counter-Charge (Janissary Veterans only)",
+       "text": "If the first ACTION of the Activation is a Charge, +1 DICE to its Melee Attacks for the rest of the Activation.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "first ACTION this Activation was a Charge"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Janissary Veteran",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains STRONG and the Counter-Charge ability.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "STRONG"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "jabirean_alchemist",
+     "name": "Jabirean Alchemist",
+     "min": 0,
+     "max": 1,
+     "cost": 55,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Mastery of the Elements",
+       "text": "On first deployment all its weapons gain one of FIRE, GAS or SHRAPNEL (same for all).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Elemental Change ACTION",
+       "text": "Risky Success Roll: on success switch the Mastery keyword to one of the other two; on failure Activation ends.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "sultanate_assassin",
+     "name": "Sultanate Assassin",
+     "min": 0,
+     "max": 1,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE",
+      "INFILTRATOR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Temporal Assassin",
+       "text": "When charging (before any Fight that Activation) it may pick a second target, fight the first, then redeploy within 1\" of the second and fight it with the same weapon; no further Fight that Activation.",
+       "sim": {
+        "kind": "meleeCleave",
+        "value": 2
+       }
+      },
+      {
+       "name": "Time Slip",
+       "text": "When an enemy attack against it fails its Success Roll, it may redeploy up to 6\" away and more than 1\" from enemies (ends a Retreat).",
+       "sim": {
+        "kind": "defence",
+        "vs": "all",
+        "value": -1
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "azeb",
+     "name": "Azeb",
+     "min": 0,
+     "max": null,
+     "cost": 25,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "SULTANATE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Light Skirmisher",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the SKIRMISHER Keyword.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "SKIRMISHER"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "sultanate_sapper",
+     "name": "Sultanate Sapper",
+     "min": 0,
+     "max": 2,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "SULTANATE",
+      "NEGATE MINED"
+     ],
+     "fixedKit": [
+      "Shovel"
+     ],
+     "kitRule": "always has a Shovel (cannot be removed); otherwise any Iron Sultanate kit",
+     "abilities": [
+      {
+       "name": "Set Mine ACTION",
+       "text": "Touching a terrain piece up to 8\"x8\": Success Roll with +2 DICE; on success it gains MINED.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Defuse Mine",
+       "text": "On touching a MINED marker/terrain, Risky Success Roll to remove MINED; failure detonates it and ends the Activation. Its own mines defuse automatically.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fortify ACTION",
+       "text": "Risky Success Roll: on success has COVER until it moves; on failure Activation ends.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Forward Positions",
+       "text": "May deploy up to 6\" outside the deployment zone touching terrain at least 1/2\" high.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "lion_of_jabir",
+     "name": "Lion of Jabir",
+     "min": 0,
+     "max": 2,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 1,
+     "armour": 0,
+     "base": 50,
+     "keywords": [
+      "SULTANATE",
+      "ARTIFICIAL"
+     ],
+     "fixedKit": [],
+     "kitRule": "Armour and/or Wind Amulet only; no Shields or other kit",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Artificial Life",
+       "text": "Injury Rolls against this model suffer -1 INJURY DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Teeth and Claws",
+       "text": "Can make Melee Attacks without a Melee Weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Pin",
+       "text": "Down enemies on bases 40mm or less cannot stand up while a Lion is within 1\".",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Fearsome",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the FEAR Keyword.",
+       "sim": {
+        "kind": "fear"
+       },
+       "grants": [
+        "FEAR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "janissary",
+     "name": "Janissary",
+     "min": 0,
+     "max": 6,
+     "cost": 55,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "STRONG"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Counter-Charge",
+       "text": "If the first ACTION of the Activation is a Charge, +1 DICE to its Melee Attacks for the rest of the Activation.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "first ACTION this Activation was a Charge"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "brazen_bull",
+     "name": "Brazen Bull",
+     "min": 0,
+     "max": 1,
+     "cost": 100,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 2,
+     "armour": 0,
+     "base": 60,
+     "keywords": [
+      "SULTANATE",
+      "ARTIFICIAL",
+      "FEAR",
+      "STRONG",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "weapons must have HEAVY; no Shovel except a Marid Shovel; other kit types unrestricted",
+     "abilities": [
+      {
+       "name": "Artificial Life",
+       "text": "Injury Rolls against this model suffer -1 INJURY DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Trample ACTION",
+       "text": "Melee Attack without a weapon against a Down enemy, with IGNORE ARMOUR.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Alaybozan",
+     "type": "2H",
+     "range": 12,
+     "keywords": [
+      "SHRAPNEL"
+     ],
+     "text": "Sapper blunderbuss; Sultanate Sappers only, Shield Combo.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Alchemical Ammunition",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "AMMUNITION (+1 DICE)"
+     ],
+     "text": "Only works with an Alaybozan, Halberd-Gun, Jezzail or Siege Jezzail (Alaybozan allowed despite SHRAPNEL). Cannot be moved to another model in a campaign.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 1,
+      "cond": "with Alaybozan, Halberd-Gun, Jezzail or Siege Jezzail"
+     }
+    },
+    {
+     "name": "Alchemist Armour",
+     "type": "Armour",
+     "range": null,
+     "keywords": [
+      "-2 INJURY MODIFIER",
+      "NEGATE FIRE",
+      "NEGATE GAS"
+     ],
+     "text": "Protection From Harm: FIRE or GAS attacks against the wearer suffer -1 INJURY DICE, even with IGNORE ARMOUR.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Assassin's Dagger",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY MODIFIER",
+      "CRITICAL"
+     ],
+     "text": "Slashing Attack: if it places at least one BLOOD MARKER the Assassin may Dash to Retreat in the same Activation; when the Assassin Retreats that Activation, enemies within 1\" get no free Melee Attack.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Cloak of Alamut",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [],
+     "text": "Blend In: the Cover modifier against the wearer is -2 DICE instead of -1 DICE.",
+     "sim": {
+      "kind": "defence",
+      "vs": "ranged",
+      "value": -1
+     }
+    },
+    {
+     "name": "Flame Cannon",
+     "type": "1H",
+     "range": 12,
+     "keywords": [
+      "FIRE",
+      "HEAVY",
+      "IGNORE ARMOUR"
+     ],
+     "text": "Greek Fire: no Success Roll; trace a 1mm line up to 12\" (stopped by terrain taller than the firer) and make an Injury Roll for every model it touches, friend or foe.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Halberd-Gun",
+     "type": "2H",
+     "range": "24/Melee",
+     "keywords": [
+      "ASSAULT",
+      "BLOCK",
+      "CUMBERSOME"
+     ],
+     "text": "ELITE only.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Jezzail",
+     "type": "2H",
+     "range": 18,
+     "keywords": [],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Marid Shovel",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "HEAVY"
+     ],
+     "text": "Industrial Tool: Brazen Bull starting on Open terrain has COVER until it moves; can also be used as a Trench Club.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "M.U.R.A.D. Bombard",
+     "type": "1H",
+     "range": 36,
+     "keywords": [
+      "BLAST 3",
+      "HEAVY",
+      "SCATTER"
+     ],
+     "text": "Echoing Blast: the hit or scattered-onto model takes a DEADLY Injury Roll; every other model in the blast is taken Down with no Injury Roll.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Siege Jezzail",
+     "type": "2H",
+     "range": 30,
+     "keywords": [
+      "+1 INJURY DICE",
+      "HEAVY"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Takwin Anqa Bird",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [],
+     "text": "Cause Confusion: Melee Attacks against the owner use Risky Success Rolls; an enemy within 1\" must pass a Risky Success Roll to Retreat or its Activation ends.",
+     "sim": {
+      "kind": "defence",
+      "vs": "melee",
+      "value": -1
+     }
+    },
+    {
+     "name": "Titan Zulfiqar",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+2 INJURY MODIFIER",
+      "CRITICAL",
+      "HEAVY"
+     ],
+     "text": "Brazen Bull only.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Wind Amulet",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [],
+     "text": "Gusts of Wind: once per game, at the start of the model's Activation, +3\" Movement for that Activation.",
+     "sim": {
+      "kind": "move",
+      "value": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "fidai_of_alamut",
+   "name": "Fida'i of Alamut",
+   "inherits": "iron_sultanate_base",
+   "removeModels": [
+    "yuzbasi",
+    "jabirean_alchemist",
+    "janissary",
+    "lion_of_jabir",
+    "brazen_bull"
+   ],
+   "changes": "Assassin cabal: Master Assassin leads, 0-2 Assassins with unique Art of Assassination abilities, 0-4 Dervishes, infiltrating Azeb acolytes, one free Fireteam and Alamut weapons.",
+   "specialRules": [
+    {
+     "name": "Alamut Alone",
+     "text": "No Yuzbasi, Jabirean Alchemist, Janissaries, Lions of Jabir or Brazen Bull.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Art of Assassination",
+     "text": "Each Assassin and the Master Assassin may buy one ability; no ability twice in the warband.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Assassin Acolytes",
+     "text": "Up to 3 Azebs may gain INFILTRATOR for +10 ducats each.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Dervishes",
+     "text": "0-4 Dervishes using the Janissary entry: no Reinforced Armour, IGNORE OFF-HAND WEAPON and Whirling Dervish instead of STRONG.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Flock of Assassins",
+     "text": "0-2 Sultanate Assassins plus 1 Master Assassin.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Killing Squad",
+     "text": "One Fireteam of any 2 models, free.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Master Assassin",
+     "text": "Must include 1: Sultanate Assassin entry with LEADER and TOUGH, 95 ducats.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Bow of Alamut",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": [
+      "master_assassin",
+      "sultanate_assassin"
+     ]
+    },
+    {
+     "item": "Golden Khanjar",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": [
+      "master_assassin",
+      "sultanate_assassin"
+     ]
+    },
+    {
+     "item": "Hashashin Leaf",
+     "cost": 5,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 4,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "master_assassin",
+     "name": "Master Assassin",
+     "min": 1,
+     "max": 1,
+     "cost": 95,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE",
+      "INFILTRATOR",
+      "LEADER",
+      "TOUGH"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Temporal Assassin",
+       "text": "When charging (before any Fight that Activation) it may pick a second target, fight the first, then redeploy within 1\" of the second and fight it with the same weapon; no further Fight that Activation.",
+       "sim": {
+        "kind": "meleeCleave",
+        "value": 2
+       }
+      },
+      {
+       "name": "Time Slip",
+       "text": "When an enemy attack against it fails its Success Roll, it may redeploy up to 6\" away and more than 1\" from enemies (ends a Retreat).",
+       "sim": {
+        "kind": "defence",
+        "vs": "all",
+        "value": -1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Hallucinogen Disguise",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "Infiltrating: deploy at least 8\" from enemies but ignore all other INFILTRATOR restrictions.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Mirage of Time",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "-1 DICE to Success Rolls for attacks targeting this Assassin.",
+       "sim": {
+        "kind": "defence",
+        "vs": "all",
+        "value": -1
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Secret Paths",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "May start off the table; from Turn 2 enter touching any battlefield edge more than 8\" from enemies.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "edge"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Thunderbolt of Alamut",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "+2\" Movement and +1 DICE to Dash Risky Success Rolls.",
+       "sim": {
+        "kind": "move",
+        "value": 8
+       },
+       "uniquePerWarband": true
+      }
+     ]
+    },
+    {
+     "id": "sultanate_assassin",
+     "name": "Sultanate Assassin",
+     "min": 0,
+     "max": 2,
+     "cost": 85,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE",
+      "INFILTRATOR"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Temporal Assassin",
+       "text": "When charging (before any Fight that Activation) it may pick a second target, fight the first, then redeploy within 1\" of the second and fight it with the same weapon; no further Fight that Activation.",
+       "sim": {
+        "kind": "meleeCleave",
+        "value": 2
+       }
+      },
+      {
+       "name": "Time Slip",
+       "text": "When an enemy attack against it fails its Success Roll, it may redeploy up to 6\" away and more than 1\" from enemies (ends a Retreat).",
+       "sim": {
+        "kind": "defence",
+        "vs": "all",
+        "value": -1
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Hallucinogen Disguise",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "Infiltrating: deploy at least 8\" from enemies but ignore all other INFILTRATOR restrictions.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Mirage of Time",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "-1 DICE to Success Rolls for attacks targeting this Assassin.",
+       "sim": {
+        "kind": "defence",
+        "vs": "all",
+        "value": -1
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Secret Paths",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "May start off the table; from Turn 2 enter touching any battlefield edge more than 8\" from enemies.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "edge"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Thunderbolt of Alamut",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "+2\" Movement and +1 DICE to Dash Risky Success Rolls.",
+       "sim": {
+        "kind": "move",
+        "value": 8
+       },
+       "uniquePerWarband": true
+      }
+     ]
+    },
+    {
+     "id": "azeb",
+     "name": "Azeb",
+     "min": 0,
+     "max": null,
+     "cost": 25,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "SULTANATE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Light Skirmisher",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the SKIRMISHER Keyword.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "SKIRMISHER"
+       ]
+      },
+      {
+       "name": "Assassin Acolyte",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains INFILTRATOR (max 3 Azebs).",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "grants": [
+        "INFILTRATOR"
+       ],
+       "limit": 3
+      }
+     ]
+    },
+    {
+     "id": "dervish",
+     "name": "Dervish",
+     "min": 0,
+     "max": 4,
+     "cost": 55,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "IGNORE OFF-HAND WEAPON"
+     ],
+     "fixedKit": [],
+     "kitRule": "Janissary entry; cannot wear Reinforced Armour",
+     "abilities": [
+      {
+       "name": "Counter-Charge",
+       "text": "If the first ACTION of the Activation is a Charge, +1 DICE to its Melee Attacks for the rest of the Activation.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "first ACTION this Activation was a Charge"
+       }
+      },
+      {
+       "name": "Whirling Dervish",
+       "text": "-1 DICE to Ranged Attacks targeting a Dervish.",
+       "sim": {
+        "kind": "defence",
+        "vs": "ranged",
+        "value": -1
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Bow of Alamut",
+     "type": "2H",
+     "range": 40,
+     "keywords": [
+      "ASSAULT",
+      "CRITICAL",
+      "IGNORE ARMOUR"
+     ],
+     "text": "Temporal Slipstream: if the shot places BLOOD MARKERS, the shooter may redeploy within 1\" of the target.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Golden Khanjar",
+     "type": "1H",
+     "range": "Melee",
+     "keywords": [
+      "+1 INJURY MODIFIER",
+      "CLEAVE 2"
+     ],
+     "text": "",
+     "sim": {
+      "kind": "meleeCleave",
+      "value": 2
+     }
+    },
+    {
+     "name": "Hashashin Leaf",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "CONSUMABLE"
+     ],
+     "text": "Enhanced Strength: may be eaten on first deployment to gain STRONG for the game.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "house_of_wisdom",
+   "name": "House of Wisdom",
+   "inherits": "iron_sultanate_base",
+   "removeModels": [
+    "yuzbasi",
+    "janissary",
+    "sultanate_assassin"
+   ],
+   "changes": "Alchemist-led expedition: 1-2 Alchemists with House secrets, Takwin Homunculi with Alchemical Formulas, 0-2 ELITE Fris, 0-3 Lions, Kavass Azebs; Alchemist Armour Limit 2.",
+   "specialRules": [
+    {
+     "name": "Alchemists",
+     "text": "Must include 1-2 Jabirean Alchemists; Alchemist Armour is Limit: 2.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Kavasses",
+     "text": "Up to 3 Azebs can have Melee +0 DICE for +5 ducats each, losing Light Skirmisher.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Noble Guardians",
+     "text": "0-2 Fris: Janissary entry with ELITE at no extra cost.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Pride of Jabir",
+     "text": "0-3 Lions of Jabir.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Private Venture",
+     "text": "No Yuzbasi, Janissaries or Sultanate Assassins.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Secrets of the House of Wisdom",
+     "text": "Each Alchemist may buy one different Secret.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Takwin Homunculus",
+     "text": "One Homunculus per Alchemist, bound to it.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Weapon Collections",
+     "text": "At creation may buy 1 item from the New Antioch armoury and 1 from the Trench Pilgrims armoury.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Alchemist Armour",
+     "cost": 50,
+     "currency": "ducats",
+     "stip": [
+      "ELITE only"
+     ],
+     "limit": 2,
+     "onlyFor": [
+      "ELITE"
+     ]
+    },
+    {
+     "item": "Elixir of Al-Khidr",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Fire Shield",
+     "cost": 20,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": 2,
+     "onlyFor": null
+    }
+   ],
+   "models": [
+    {
+     "id": "jabirean_alchemist",
+     "name": "Jabirean Alchemist",
+     "min": 1,
+     "max": 2,
+     "cost": 55,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Mastery of the Elements",
+       "text": "On first deployment all its weapons gain one of FIRE, GAS or SHRAPNEL (same for all).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Elemental Change ACTION",
+       "text": "Risky Success Roll: on success switch the Mastery keyword to one of the other two; on failure Activation ends.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Medicine",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "No Medi-kit; School of Medicine ACTION: Success Roll +1 DICE to remove 2 BLOOD MARKERS or 1 INFECTION MARKER from itself or a friend within 1\", or stand a friend up.",
+       "sim": {
+        "kind": "action",
+        "effect": "heal",
+        "range": 1,
+        "roll": "success",
+        "bonusDice": 1
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Cartography & Geometry",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "Before deployment give up to 2 models on 32mm or smaller bases INFILTRATOR.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Secrets of Takwin",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "When hit within 1\" of its Homunculus, may transfer the hit to the Homunculus.",
+       "sim": {
+        "kind": "none"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Chemistry & Alchemy",
+       "cost": 25,
+       "currency": "ducats",
+       "text": "Before Turn 1 place a 2\"x6\" Elemental Obstacle (DIFFICULT and DANGEROUS TERRAIN of FIRE, GAS or SHRAPNEL).",
+       "sim": {
+        "kind": "none"
+       },
+       "uniquePerWarband": true
+      },
+      {
+       "name": "Philosophy, Poetry and Theology",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "+1 DICE to the warband's Morale Checks while it stands; Shaken does not make rolls Risky; gains NEGATE FEAR.",
+       "sim": {
+        "kind": "none"
+       },
+       "uniquePerWarband": true
+      }
+     ]
+    },
+    {
+     "id": "fris",
+     "name": "Fris",
+     "min": 0,
+     "max": 2,
+     "cost": 55,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE",
+      "STRONG"
+     ],
+     "fixedKit": [],
+     "kitRule": "Janissary entry with ELITE; counts as a Janissary for kit",
+     "abilities": [
+      {
+       "name": "Counter-Charge",
+       "text": "If the first ACTION of the Activation is a Charge, +1 DICE to its Melee Attacks for the rest of the Activation.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "first ACTION this Activation was a Charge"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "lion_of_jabir",
+     "name": "Lion of Jabir",
+     "min": 0,
+     "max": 3,
+     "cost": 60,
+     "currency": "ducats",
+     "move": 8,
+     "moveType": "Infantry",
+     "ranged": null,
+     "melee": 1,
+     "armour": 0,
+     "base": 50,
+     "keywords": [
+      "SULTANATE",
+      "ARTIFICIAL"
+     ],
+     "fixedKit": [],
+     "kitRule": "Armour and/or Wind Amulet only; no Shields or other kit",
+     "abilities": [
+      {
+       "name": "Agile",
+       "text": "+1 DICE to Risky Success Rolls to Climb, Jump, Diving Charge or Dash.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Artificial Life",
+       "text": "Injury Rolls against this model suffer -1 INJURY DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Teeth and Claws",
+       "text": "Can make Melee Attacks without a Melee Weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Pin",
+       "text": "Down enemies on bases 40mm or less cannot stand up while a Lion is within 1\".",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Fearsome",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the FEAR Keyword.",
+       "sim": {
+        "kind": "fear"
+       },
+       "grants": [
+        "FEAR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "azeb",
+     "name": "Azeb",
+     "min": 0,
+     "max": null,
+     "cost": 25,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": -1,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "SULTANATE"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [],
+     "upgrades": [
+      {
+       "name": "Light Skirmisher",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Gains the SKIRMISHER Keyword.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "SKIRMISHER"
+       ]
+      },
+      {
+       "name": "Kavass",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "Melee becomes +0 DICE (max 3 Azebs); loses Light Skirmisher.",
+       "sim": {
+        "kind": "none"
+       },
+       "limit": 3
+      }
+     ]
+    },
+    {
+     "id": "takwin_homunculus",
+     "name": "Takwin Homunculus",
+     "min": 0,
+     "max": 2,
+     "cost": 40,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 0,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "SULTANATE",
+      "ARTIFICIAL"
+     ],
+     "fixedKit": [],
+     "kitRule": "no Battlekit unless given Alchemical Formulas; one per Jabirean Alchemist",
+     "abilities": [
+      {
+       "name": "Artificial Life",
+       "text": "-1 to Injury Rolls against it.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Pummelling Blows",
+       "text": "Can make Melee Attacks without a Melee Weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Re-creation",
+       "text": "Campaign only: can be rebuilt for 40 ducats.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Additional Arm",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Pummelling Blows gain CLEAVE 2.",
+       "sim": {
+        "kind": "meleeCleave",
+        "value": 2
+       }
+      },
+      {
+       "name": "Elemental Resistance",
+       "cost": 40,
+       "currency": "ducats",
+       "text": "Gains NEGATE FIRE and NEGATE GAS; FIRE/GAS attacks against it get -1 INJURY DICE.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Enslaved Mind",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Forms a Fireteam with one other model.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Gargantuan Size",
+       "cost": 20,
+       "currency": "ducats",
+       "text": "Needs Human Hands, Inhuman Strength and Massive Size; may use 1 Brazen Bull weapon; 60mm base.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Hawk Eyes",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Ranged becomes +1 DICE (not with Hypnotic Eyes unless Two Heads).",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Human Hands",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "May take Sultanate Ranged and Melee Weapons and a Trench or Fire Shield (not with Wings); no Pummelling Blows while holding a melee weapon.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Hypnotic Eyes",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "-1 DICE to Melee Attacks against it (not from Sniper Priests or BLACK GRAIL).",
+       "sim": {
+        "kind": "defence",
+        "vs": "melee",
+        "value": -1
+       }
+      },
+      {
+       "name": "Inhuman Strength",
+       "cost": 15,
+       "currency": "ducats",
+       "text": "Gains STRONG, Melee becomes +1 DICE, 32mm base.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "STRONG"
+       ]
+      },
+      {
+       "name": "Massive Size",
+       "cost": 30,
+       "currency": "ducats",
+       "text": "Gains TOUGH and a 50mm base (not with Wings).",
+       "sim": {
+        "kind": "tough"
+       },
+       "grants": [
+        "TOUGH"
+       ]
+      },
+      {
+       "name": "Regenerative Tissue",
+       "cost": 25,
+       "currency": "ducats",
+       "text": "Gains REGENERATE 1.",
+       "sim": {
+        "kind": "regenerate",
+        "value": 1
+       },
+       "grants": [
+        "REGENERATE 1"
+       ]
+      },
+      {
+       "name": "Seal of Solomon",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "May take Equipment from the Sultanate armoury.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Startling Speed",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "+1 DICE to Dash Risky Success Rolls.",
+       "sim": {
+        "kind": "dashBonus",
+        "value": 1
+       }
+      },
+      {
+       "name": "Terrifying Appearance",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains FEAR.",
+       "sim": {
+        "kind": "fear"
+       },
+       "grants": [
+        "FEAR"
+       ]
+      },
+      {
+       "name": "Two Heads",
+       "cost": 5,
+       "currency": "ducats",
+       "text": "May have both Hawk Eyes and Hypnotic Eyes.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Wings",
+       "cost": 30,
+       "currency": "ducats",
+       "text": "Becomes 8\"/Flying with FLYING (not with Human Hands or Massive Size).",
+       "sim": {
+        "kind": "move",
+        "value": 8
+       },
+       "grants": [
+        "FLYING"
+       ]
+      }
+     ]
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Elixir of Al-Khidr",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "CONSUMABLE"
+     ],
+     "text": "Fountain of Life: may be drunk on first deployment to gain TOUGH for the game; not for ARTIFICIAL models.",
+     "sim": {
+      "kind": "tough"
+     }
+    },
+    {
+     "name": "Fire Shield",
+     "type": "Shield",
+     "range": null,
+     "keywords": [
+      "-1 INJURY MODIFIER",
+      "NEGATE FIRE"
+     ],
+     "text": "Flame Repellent: FIRE attacks against the bearer suffer -1 INJURY DICE even with IGNORE ARMOUR.",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ]
+  },
+  {
+   "id": "defenders_of_the_iron_wall",
+   "name": "Defenders of the Iron Wall",
+   "inherits": "iron_sultanate_base",
+   "removeModels": [
+    "yuzbasi",
+    "lion_of_jabir",
+    "sultanate_assassin"
+   ],
+   "removeArmoury": [
+    "Cloak of Alamut",
+    "Wind Amulet"
+   ],
+   "changes": "Siege-line force: Silahdar replaces the Yuzbasi, 0-2 ELITE Janissary officers, 0-4 Sappers, Grand Cannons, a Sipahi, better elevated shooting; no Cloak of Alamut or Wind Amulet.",
+   "specialRules": [
+    {
+     "name": "Far from the Sublime Gate",
+     "text": "No Lions of Jabir, Yuzbasi or Assassins; no Cloak of Alamut or Wind Amulet.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Grand Cannons",
+     "text": "0-2 Sultanate Grand Cannons at 60 ducats: carried by a Brazen Bull (max 1) or fielded as a gun battery.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Janissary Officers",
+     "text": "Up to 2 Janissaries gain ELITE for free.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Marksmanship of the Iron Wall",
+     "text": "Elevated Position gives +2 DICE instead of +1 DICE to Ranged Attacks.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 1,
+      "cond": "attacker has the Elevated Position modifier"
+     }
+    },
+    {
+     "name": "Sappers Corps",
+     "text": "0-4 Sultanate Sappers.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Siege Jezzail Teams",
+     "text": "+1 DICE to Siege Jezzail attacks when a friendly model is within 1\" of the shooter.",
+     "sim": {
+      "kind": "attackBonus",
+      "vs": "ranged",
+      "value": 1,
+      "cond": "Siege Jezzail with a friend within 1\""
+     }
+    },
+    {
+     "name": "Silahdar",
+     "text": "Must include 1: Yuzbasi entry with STRONG instead of Mubarizun; may take Alaybozan, Anqa Guard and Explosive Charges.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Sipahi",
+     "text": "Up to 1 Sipahi Automaton Cavalry for 110 ducats (Mamluk Faris profile, fixed kit).",
+     "sim": {
+      "kind": "none"
+     }
+    }
+   ],
+   "armoury": [
+    {
+     "item": "Anqa Guard",
+     "cost": 10,
+     "currency": "ducats",
+     "stip": [],
+     "limit": null,
+     "onlyFor": [
+      "sultanate_sapper",
+      "silahdar"
+     ]
+    },
+    {
+     "item": "Banner of Desert Wind",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": null
+    },
+    {
+     "item": "Explosive Charges",
+     "cost": 35,
+     "currency": "ducats",
+     "stip": [
+      "Consumable"
+     ],
+     "limit": 1,
+     "onlyFor": [
+      "silahdar",
+      "sultanate_sapper"
+     ]
+    },
+    {
+     "item": "Iron Wall Kalkan",
+     "cost": 30,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 1,
+     "onlyFor": [
+      "brazen_bull"
+     ]
+    },
+    {
+     "item": "Sultanate Grand Cannon",
+     "cost": 60,
+     "currency": "ducats",
+     "stip": [],
+     "limit": 2,
+     "onlyFor": [
+      "brazen_bull"
+     ]
+    },
+    {
+     "item": "Alaybozan",
+     "cost": 9,
+     "currency": "ducats",
+     "stip": [
+      "Shield Combo"
+     ],
+     "limit": null,
+     "onlyFor": [
+      "sultanate_sapper",
+      "silahdar"
+     ]
+    }
+   ],
+   "models": [
+    {
+     "id": "silahdar",
+     "name": "Silahdar",
+     "min": 1,
+     "max": 1,
+     "cost": 70,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 2,
+     "melee": 2,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "ELITE",
+      "LEADER",
+      "NEGATE FEAR",
+      "TOUGH",
+      "STRONG"
+     ],
+     "fixedKit": [],
+     "kitRule": "Yuzbasi entry; may also take an Alaybozan, Anqa Guard and Explosive Charges",
+     "abilities": [
+      {
+       "name": "Counter-Charge (Janissary Veterans only)",
+       "text": "If the first ACTION of the Activation is a Charge, +1 DICE to its Melee Attacks for the rest of the Activation.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "first ACTION this Activation was a Charge"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Janissary Veteran",
+       "cost": 10,
+       "currency": "ducats",
+       "text": "Gains STRONG and the Counter-Charge ability.",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "STRONG"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "janissary",
+     "name": "Janissary",
+     "min": 0,
+     "max": 6,
+     "cost": 55,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": 0,
+     "base": 32,
+     "keywords": [
+      "SULTANATE",
+      "STRONG"
+     ],
+     "fixedKit": [],
+     "kitRule": "any",
+     "abilities": [
+      {
+       "name": "Counter-Charge",
+       "text": "If the first ACTION of the Activation is a Charge, +1 DICE to its Melee Attacks for the rest of the Activation.",
+       "sim": {
+        "kind": "attackBonus",
+        "vs": "melee",
+        "value": 1,
+        "cond": "first ACTION this Activation was a Charge"
+       }
+      }
+     ],
+     "upgrades": [
+      {
+       "name": "Janissary Officer",
+       "cost": 0,
+       "currency": "ducats",
+       "text": "Gains ELITE at no cost (max 2).",
+       "sim": {
+        "kind": "none"
+       },
+       "grants": [
+        "ELITE"
+       ],
+       "limit": 2
+      }
+     ]
+    },
+    {
+     "id": "sultanate_sapper",
+     "name": "Sultanate Sapper",
+     "min": 0,
+     "max": 4,
+     "cost": 50,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 0,
+     "armour": 0,
+     "base": 25,
+     "keywords": [
+      "SULTANATE",
+      "NEGATE MINED"
+     ],
+     "fixedKit": [
+      "Shovel"
+     ],
+     "kitRule": "always has a Shovel (cannot be removed); otherwise any Iron Sultanate kit",
+     "abilities": [
+      {
+       "name": "Set Mine ACTION",
+       "text": "Touching a terrain piece up to 8\"x8\": Success Roll with +2 DICE; on success it gains MINED.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Defuse Mine",
+       "text": "On touching a MINED marker/terrain, Risky Success Roll to remove MINED; failure detonates it and ends the Activation. Its own mines defuse automatically.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Fortify ACTION",
+       "text": "Risky Success Roll: on success has COVER until it moves; on failure Activation ends.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Forward Positions",
+       "text": "May deploy up to 6\" outside the deployment zone touching terrain at least 1/2\" high.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "infiltrate"
+       }
+      }
+     ],
+     "upgrades": []
+    },
+    {
+     "id": "sipahi_automaton_cavalry",
+     "name": "Sipahi Automaton Cavalry",
+     "min": 0,
+     "max": 1,
+     "cost": 110,
+     "currency": "ducats",
+     "move": 6,
+     "moveType": "Infantry",
+     "ranged": 1,
+     "melee": 1,
+     "armour": -2,
+     "base": 32,
+     "keywords": [
+      "FIRETEAM",
+      "IGNORE OFF-HAND WEAPON"
+     ],
+     "fixedKit": [
+      "Reinforced Armour",
+      "Combat Helmet",
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Great Sword/Axe"
+     ],
+     "kitRule": "Mamluk Faris mercenary profile; kit fixed (Great Sword loadout here; armour -3 if the shield loadout is used instead)",
+     "abilities": [
+      {
+       "name": "Automaton Destrier",
+       "text": "If Infiltrators may deploy, may deploy within 1\" of any edge more than 8\" from enemies.",
+       "sim": {
+        "kind": "deploy",
+        "effect": "edge"
+       }
+      },
+      {
+       "name": "Martial Prowess",
+       "text": "Its Great Sword lacks HEAVY; its Jezzail gains ASSAULT and Shield Combo.",
+       "sim": {
+        "kind": "none"
+       }
+      },
+      {
+       "name": "Sworn Brethren",
+       "text": "May form a Fireteam with one ELITE model.",
+       "sim": {
+        "kind": "none"
+       }
+      }
+     ],
+     "upgrades": []
+    }
+   ],
+   "uniqueKit": [
+    {
+     "name": "Anqa Guard",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "DEPLOYABLE",
+      "HEAVY"
+     ],
+     "text": "40mm Impassable wall about 1/2\" high: deploy in your zone after the carrier, or via a Combat Deployment ACTION (Risky Success Roll +2 DICE) within 1\".",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Banner of Desert Wind",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "HELD",
+      "LEADER"
+     ],
+     "text": "Sandstorm: enemies starting an Activation within 24\" of the bearer have -1\" Movement that Activation, unless the bearer is Down.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Explosive Charges",
+     "type": "Equipment",
+     "range": null,
+     "keywords": [
+      "CONSUMABLE"
+     ],
+     "text": "Secretly plant on a terrain piece up to 8\"x8\" outside the enemy zone after deployment; any friendly Activation may detonate: SHRAPNEL Injury Roll for every model on/touching it, terrain removed, models on top Fall.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Iron Wall Kalkan",
+     "type": "Shield",
+     "range": null,
+     "keywords": [
+      "COVER"
+     ],
+     "text": "Othismos: on a Move in contact with one enemy on 40mm or smaller base, the Bull may push it straight ahead; pushing into terrain over 1/2\" high causes an Injury Roll.",
+     "sim": {
+      "kind": "none"
+     }
+    },
+    {
+     "name": "Sultanate Grand Cannon",
+     "type": "1H",
+     "range": 48,
+     "keywords": [
+      "+2 INJURY DICE",
+      "DEPLOYABLE",
+      "HEAVY",
+      "IGNORE ARMOUR"
+     ],
+     "text": "Carried by a Brazen Bull as a 1-Handed weapon, or a 50mm gun battery fired once per Turn by a friend within 1\" that did not move. Unstoppable Object: a target not taken Out of Action is pushed D6\" away.",
+     "sim": {
+      "kind": "action",
+      "effect": "pushModel",
+      "range": 48,
+      "distance": "D6",
+      "roll": "success"
+     }
+    }
+   ]
+  }
+ ],
+ "lists": [
+  {
+   "id": "is_janissary_hammer",
+   "name": "The Lion Padishah's Hammer",
+   "variant": "iron_sultanate_base",
+   "ducats": 889,
+   "glory": 8,
+   "style": "Janissary block with jezzails advances behind a bombard-armed Brazen Bull, then counter-charges with the veteran Yuzbasi and the Mamluk.",
+   "models": [
+    {
+     "model": "yuzbasi",
+     "label": "Yuzbasi Murad Bey",
+     "kit": [
+      "Halberd-Gun",
+      "Frag Grenades",
+      "Reinforced Armour",
+      "Combat Helmet",
+      "Holy Relic"
+     ],
+     "upgrades": [
+      "Janissary Veteran"
+     ],
+     "ducats": 152,
+     "glory": 2
+    },
+    {
+     "model": "jabirean_alchemist",
+     "label": "Alchemist Ibn Hayyan",
+     "kit": [
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Incendiary Grenades",
+      "Standard Armour",
+      "Takwin Anqa Bird"
+     ],
+     "upgrades": [],
+     "ducats": 95,
+     "glory": 2
+    },
+    {
+     "model": "brazen_bull",
+     "label": "Brazen Bull 'Thunder of Names'",
+     "kit": [
+      "M.U.R.A.D. Bombard",
+      "Titan Zulfiqar",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 195,
+     "glory": 0
+    },
+    {
+     "model": "janissary",
+     "label": "Janissary Kemal",
+     "kit": [
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 84,
+     "glory": 0
+    },
+    {
+     "model": "janissary",
+     "label": "Janissary Orhan",
+     "kit": [
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 84,
+     "glory": 0
+    },
+    {
+     "model": "janissary",
+     "label": "Janissary Selim",
+     "kit": [
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 84,
+     "glory": 0
+    },
+    {
+     "model": "janissary",
+     "label": "Janissary Yusuf",
+     "kit": [
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 84,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Azeb Ali",
+     "kit": [
+      "Jezzail"
+     ],
+     "upgrades": [
+      "Light Skirmisher"
+     ],
+     "ducats": 37,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Azeb Hasan",
+     "kit": [
+      "Jezzail"
+     ],
+     "upgrades": [
+      "Light Skirmisher"
+     ],
+     "ducats": 37,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Azeb Omar",
+     "kit": [
+      "Jezzail"
+     ],
+     "upgrades": [
+      "Light Skirmisher"
+     ],
+     "ducats": 37,
+     "glory": 0
+    },
+    {
+     "model": "MERC:mamluk_faris",
+     "label": "Mamluk Faris Baybars",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  },
+  {
+   "id": "is_fidai_knives",
+   "name": "Knives of the Old Man",
+   "variant": "fidai_of_alamut",
+   "ducats": 896,
+   "glory": 8,
+   "style": "Everything infiltrates or arrives from the edges; time-slipping assassins pick off key models while whirling Dervishes tie up the line.",
+   "models": [
+    {
+     "model": "master_assassin",
+     "label": "Master Rashid",
+     "kit": [
+      "Golden Khanjar",
+      "Assassin's Dagger",
+      "Standard Armour",
+      "Hashashin Leaf",
+      "Holy Relic"
+     ],
+     "upgrades": [
+      "Thunderbolt of Alamut"
+     ],
+     "ducats": 170,
+     "glory": 2
+    },
+    {
+     "model": "sultanate_assassin",
+     "label": "Fida'i of the Bow",
+     "kit": [
+      "Bow of Alamut",
+      "Assassin's Dagger",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Mirage of Time"
+     ],
+     "ducats": 180,
+     "glory": 0
+    },
+    {
+     "model": "sultanate_assassin",
+     "label": "Fida'i of the Hidden Path",
+     "kit": [
+      "Golden Khanjar",
+      "Assassin's Dagger",
+      "Standard Armour",
+      "Hashashin Leaf",
+      "Takwin Anqa Bird"
+     ],
+     "upgrades": [
+      "Secret Paths"
+     ],
+     "ducats": 150,
+     "glory": 2
+    },
+    {
+     "model": "dervish",
+     "label": "Dervish Jalal",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 78,
+     "glory": 0
+    },
+    {
+     "model": "dervish",
+     "label": "Dervish Shams",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 78,
+     "glory": 0
+    },
+    {
+     "model": "dervish",
+     "label": "Dervish Rumi",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 78,
+     "glory": 0
+    },
+    {
+     "model": "dervish",
+     "label": "Dervish Attar",
+     "kit": [
+      "Sword/Axe",
+      "Sword/Axe",
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 78,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Acolyte Nasir",
+     "kit": [
+      "Jezzail"
+     ],
+     "upgrades": [
+      "Assassin Acolyte"
+     ],
+     "ducats": 42,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Acolyte Zayd",
+     "kit": [
+      "Jezzail"
+     ],
+     "upgrades": [
+      "Assassin Acolyte"
+     ],
+     "ducats": 42,
+     "glory": 0
+    },
+    {
+     "model": "MERC:mamluk_faris",
+     "label": "Mamluk Faris Qutuz",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  },
+  {
+   "id": "is_house_of_wisdom",
+   "name": "Expedition of the Porphyry Halls",
+   "variant": "house_of_wisdom",
+   "ducats": 900,
+   "glory": 8,
+   "style": "Two armoured Alchemists and Fris siege-gunners shoot from range while three Lions and a four-armed Homunculus hunt the flanks.",
+   "models": [
+    {
+     "model": "jabirean_alchemist",
+     "label": "Alchemist Al-Razi",
+     "kit": [
+      "Jezzail",
+      "Alchemical Ammunition",
+      "Incendiary Grenades",
+      "Alchemist Armour"
+     ],
+     "upgrades": [
+      "Medicine"
+     ],
+     "ducats": 145,
+     "glory": 0
+    },
+    {
+     "model": "jabirean_alchemist",
+     "label": "Alchemist Al-Kindi",
+     "kit": [
+      "Halberd-Gun",
+      "Alchemical Ammunition",
+      "Incendiary Grenades",
+      "Alchemist Armour",
+      "Takwin Anqa Bird"
+     ],
+     "upgrades": [
+      "Philosophy, Poetry and Theology"
+     ],
+     "ducats": 163,
+     "glory": 2
+    },
+    {
+     "model": "fris",
+     "label": "Fris Tariq",
+     "kit": [
+      "Siege Jezzail",
+      "Alchemical Ammunition",
+      "Reinforced Armour",
+      "Holy Relic"
+     ],
+     "upgrades": [],
+     "ducats": 128,
+     "glory": 2
+    },
+    {
+     "model": "fris",
+     "label": "Fris Khalid",
+     "kit": [
+      "Siege Jezzail",
+      "Reinforced Armour"
+     ],
+     "upgrades": [],
+     "ducats": 125,
+     "glory": 0
+    },
+    {
+     "model": "lion_of_jabir",
+     "label": "Lion of Jabir Asad",
+     "kit": [
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Fearsome"
+     ],
+     "ducats": 80,
+     "glory": 0
+    },
+    {
+     "model": "lion_of_jabir",
+     "label": "Lion of Jabir Haydar",
+     "kit": [
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Fearsome"
+     ],
+     "ducats": 80,
+     "glory": 0
+    },
+    {
+     "model": "lion_of_jabir",
+     "label": "Lion of Jabir Ghadanfar",
+     "kit": [
+      "Standard Armour"
+     ],
+     "upgrades": [],
+     "ducats": 75,
+     "glory": 0
+    },
+    {
+     "model": "takwin_homunculus",
+     "label": "Homunculus of Al-Razi",
+     "kit": [],
+     "upgrades": [
+      "Inhuman Strength",
+      "Additional Arm"
+     ],
+     "ducats": 70,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Kavass Bilal",
+     "kit": [
+      "Sword/Axe",
+      "Troop Flag"
+     ],
+     "upgrades": [
+      "Kavass"
+     ],
+     "ducats": 34,
+     "glory": 1
+    },
+    {
+     "model": "MERC:combat_biologist",
+     "label": "Combat Biologist of the Ninety-Nine Names",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 3
+    }
+   ]
+  },
+  {
+   "id": "is_iron_wall_line",
+   "name": "The Wall Walks",
+   "variant": "defenders_of_the_iron_wall",
+   "ducats": 894,
+   "glory": 8,
+   "style": "Static siege line: Siege Jezzail pairs on high ground, sappers mine and wall off lanes, a Grand-Cannon Bull with a Kalkan holds the centre.",
+   "models": [
+    {
+     "model": "silahdar",
+     "label": "Silahdar Mehmed",
+     "kit": [
+      "Siege Jezzail",
+      "Reinforced Armour",
+      "Combat Helmet",
+      "Holy Relic"
+     ],
+     "upgrades": [],
+     "ducats": 145,
+     "glory": 2
+    },
+    {
+     "model": "janissary",
+     "label": "Janissary Officer Iskander",
+     "kit": [
+      "Sniper Rifle",
+      "Alchemical Ammunition",
+      "Reinforced Armour",
+      "Takwin Anqa Bird"
+     ],
+     "upgrades": [
+      "Janissary Officer"
+     ],
+     "ducats": 133,
+     "glory": 2
+    },
+    {
+     "model": "janissary",
+     "label": "Janissary Officer Davud",
+     "kit": [
+      "Siege Jezzail",
+      "Alchemical Ammunition",
+      "Standard Armour"
+     ],
+     "upgrades": [
+      "Janissary Officer"
+     ],
+     "ducats": 103,
+     "glory": 0
+    },
+    {
+     "model": "brazen_bull",
+     "label": "Brazen Bull 'Gate of Iron'",
+     "kit": [
+      "Sultanate Grand Cannon",
+      "Titan Zulfiqar",
+      "Iron Wall Kalkan"
+     ],
+     "upgrades": [],
+     "ducats": 220,
+     "glory": 0
+    },
+    {
+     "model": "sultanate_sapper",
+     "label": "Sapper Ahmet",
+     "kit": [
+      "Alaybozan",
+      "Explosive Charges"
+     ],
+     "upgrades": [],
+     "ducats": 94,
+     "glory": 0
+    },
+    {
+     "model": "sultanate_sapper",
+     "label": "Sapper Bekir",
+     "kit": [
+      "Alaybozan",
+      "Anqa Guard"
+     ],
+     "upgrades": [],
+     "ducats": 69,
+     "glory": 0
+    },
+    {
+     "model": "sultanate_sapper",
+     "label": "Sapper Cemal",
+     "kit": [
+      "Alaybozan",
+      "Anqa Guard"
+     ],
+     "upgrades": [],
+     "ducats": 69,
+     "glory": 0
+    },
+    {
+     "model": "azeb",
+     "label": "Standard-bearer Faruk",
+     "kit": [
+      "Pistol",
+      "Banner of Desert Wind"
+     ],
+     "upgrades": [],
+     "ducats": 61,
+     "glory": 0
+    },
+    {
+     "model": "MERC:mamluk_faris",
+     "label": "Mamluk Faris Aybak",
+     "kit": [],
+     "upgrades": [],
+     "ducats": 0,
+     "glory": 4
+    }
+   ]
+  }
+ ]
+}
