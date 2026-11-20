@@ -4,6 +4,7 @@
 <meta name="claude:viewport-fit-sides" content="true">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
 <style>
 :root{
   --bg:#0f0d0c; --panel:#1a1614; --panel2:#221d1a; --line:#3a312a; --ink:#e9e1d0; --mut:#9d9283; --brass:#c9a253; --blood:#e2283a;
@@ -20,7 +21,9 @@ select,input{font-family:var(--body);font-size:14px;background:#120f0e;color:var
 .mut{color:var(--mut)} .sm{font-size:12.5px} .bad{color:var(--bad)} .ok{color:var(--ok)} .warn{color:var(--warn)}
 #app{display:grid;grid-template-rows:auto 1fr;height:100vh;padding:0 max(10px,env(safe-area-inset-right)) 0 max(10px,env(safe-area-inset-left))}
 header{display:flex;align-items:center;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
-header h1{font-family:var(--head);font-weight:400;font-size:22px;margin:0;color:var(--brass);letter-spacing:.03em;white-space:nowrap}
+header h1{font-family:var(--head);font-weight:400;font-size:22px;margin:0;color:var(--brass);letter-spacing:.03em;white-space:nowrap;display:flex;flex-direction:column;line-height:1}
+#scn{font-family:var(--body);font-size:12px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+.ctl label{display:flex;align-items:center;gap:3px;font-size:13px;cursor:pointer}
 #vp{display:flex;gap:14px;align-items:center;font-size:16px;flex:1;justify-content:center;min-width:240px}
 #vp b{font-size:20px} #vp .tn{color:var(--mut);font-family:var(--head)}
 .ctl{display:flex;gap:8px;align-items:center}
@@ -38,8 +41,12 @@ main{display:grid;grid-template-columns:250px 1fr 360px;gap:10px;min-height:0;pa
 .hint{color:var(--mut);font-size:13px;padding:6px}
 #center{display:flex;flex-direction:column;min-height:0;min-width:0;gap:6px}
 #board-wrap{position:relative;flex:1;min-height:300px;background:#0b0a09;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
-#board{position:absolute;inset:0;touch-action:none}
-#dice-layer{position:absolute;inset:0;pointer-events:none;perspective:700px;overflow:hidden}
+#board{position:absolute;inset:0;width:100%;height:100%;touch-action:none;display:block;cursor:grab}
+#labels,#dice-layer{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.plate{position:absolute;left:0;top:0;white-space:nowrap;font-size:11px;font-weight:600;letter-spacing:.03em;color:#efe7d6;background:rgba(12,10,9,.6);border-bottom:2px solid;padding:0 5px 1px;border-radius:3px 3px 0 0;text-shadow:0 1px 2px #000;will-change:transform}
+.plate.done{color:#a39a8a;background:rgba(12,10,9,.42)}.plate.hot{background:rgba(34,26,20,.94);font-size:12.5px;color:#fff}.plate.tgt{border-color:#ff4d4d !important}
+.plate i{font-style:normal;margin-left:4px;font-size:9.5px}.plate .dn{color:#ffcf7a}.plate .hi{color:#e8e0c8}.plate .ld{color:#ffd36b;margin:0 3px 0 0;font-size:11px}.plate .ti{color:#ffd0c0;background:#6a1a12;border-radius:3px;padding:0 4px;font-size:10.5px}
+#cam-hint{position:absolute;left:10px;bottom:8px;font-size:12px;color:rgba(233,225,208,.55);pointer-events:none;text-shadow:0 1px 2px #000}
 #banner{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%) scale(.8);font-family:var(--head);font-size:clamp(26px,4vw,56px);color:#f1e3c0;text-shadow:0 0 18px #000,0 0 30px #a33;opacity:0;pointer-events:none;transition:opacity .3s,transform .4s;width:88%;text-align:center;line-height:1.1}
 #banner.show{opacity:1;transform:translate(-50%,-50%) scale(1)}
 #ctl-actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:36px}
@@ -60,18 +67,6 @@ main{display:grid;grid-template-columns:250px 1fr 360px;gap:10px;min-height:0;pa
 .cd{font-size:22px;line-height:1;color:#efe6d2}.cd.x{opacity:.3}.cd.inj{color:#ff9a9a}.cd.k{text-shadow:0 0 6px #ffd36b}
 .risky{font-size:10px;background:#5a1a12;color:#ffb3a3;border-radius:3px;padding:0 4px}
 /* dice */
-.dice-group{position:absolute;inset:0;transition:opacity .35s}.dice-group.fade{opacity:0}
-.die{position:absolute;left:0;top:0;transform-style:preserve-3d;transition:filter .3s,opacity .3s}
-.die .cube{position:absolute;inset:0;transform-style:preserve-3d}
-.die .face{position:absolute;inset:0;border-radius:18%;display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr);padding:14%;background:radial-gradient(circle at 30% 25%,#fffaf0,#e8dcc4 60%,#c9b998);box-shadow:inset 0 0 6px rgba(0,0,0,.35);backface-visibility:hidden}
-.die.inj .face{background:radial-gradient(circle at 30% 25%,#ff7a7a,#b3121e 60%,#6e0911)}
-.die.plain .face{background:radial-gradient(circle at 30% 25%,#e9e9e9,#9aa2a8 60%,#5d656b)}
-.die .face span{display:block}.die .pip{width:72%;height:72%;margin:auto;border-radius:50%;background:#1d1410;box-shadow:inset 0 1px 2px #000}
-.die.inj .pip{background:#fff1e0}
-.die .front{transform:translateZ(calc(var(--s)/2))}.die .back{transform:rotateY(180deg) translateZ(calc(var(--s)/2))}
-.die .right{transform:rotateY(90deg) translateZ(calc(var(--s)/2))}.die .left{transform:rotateY(-90deg) translateZ(calc(var(--s)/2))}
-.die .top{transform:rotateX(90deg) translateZ(calc(var(--s)/2))}.die .bottom{transform:rotateX(-90deg) translateZ(calc(var(--s)/2))}
-.die.kept{filter:drop-shadow(0 0 8px #ffd36b) drop-shadow(0 0 3px #ffd36b)}.die.dropped{opacity:.35;filter:grayscale(.6)}
 .dice-label{position:absolute;width:260px;background:rgba(18,14,12,.92);border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:13px;opacity:0;transform:translateY(6px);transition:opacity .25s,transform .25s;box-shadow:0 6px 20px rgba(0,0,0,.6)}
 .dice-label.show{opacity:1;transform:none}.dice-label .dl-title{color:#efe4cf}.dice-label .dl-mods{color:var(--mut);font-size:12px}
 .dl-res{font-family:var(--head);font-size:20px;margin-top:2px}.r-crit,.r-success{color:var(--ok)}.r-crit{text-shadow:0 0 10px #8fd67a}.r-fail,.r-down,.r-ooa{color:var(--bad)}.r-ooa{text-shadow:0 0 10px #ff2a2a}.r-minor{color:var(--warn)}.r-none{color:var(--mut)}
@@ -97,15 +92,16 @@ main{display:grid;grid-template-columns:250px 1fr 360px;gap:10px;min-height:0;pa
 .ups{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:13px}
 #b-errs{font-size:13px;color:var(--warn);margin:6px 0}.okline{color:var(--ok)}
 .res-body p{font-size:16px}
-@media (max-width:1100px){main{grid-template-columns:1fr;grid-template-rows:auto auto auto}.side{max-height:none}#board-wrap{height:92vw;max-height:80vh;flex:none}#chat{max-height:50vh}#left{order:2}#center{order:1}#right{order:3}}
+@media (max-width:1100px){main{grid-template-columns:1fr;grid-template-rows:auto auto auto}.side{max-height:none}#board-wrap{height:92vw;max-height:80vh;flex:none}#chat{max-height:50vh}#left{order:2}#center{order:1}#chat-card{order:3}}
 @media (max-width:700px){.pick,.bgrid{grid-template-columns:1fr}header h1{font-size:18px}#banner{font-size:36px}}
 </style>
 
 <div id="app">
   <header>
-    <h1>No Man's Land</h1>
+    <h1>No Man's Land<span id="scn"></span></h1>
     <div id="vp"></div>
     <div class="ctl"><span class="mut">Speed</span><input id="speed" type="range" min="0" max="6" step="1"><b id="speed-v"></b></div>
+    <div class="ctl"><button id="cam-table" title="Angled view of the whole table">Table</button><button id="cam-top" title="Straight down, like a map">Top</button><label title="When nobody is steering, the camera drifts toward the model that is acting"><input type="checkbox" id="opt-follow" checked> Follow</label><label title="Name plates above the models"><input type="checkbox" id="opt-names" checked> Names</label></div>
     <div class="ctl"><button id="btn-pause">❚❚ Pause</button><button id="btn-new" class="primary">New game</button></div>
   </header>
   <main>
@@ -115,7 +111,7 @@ main{display:grid;grid-template-columns:250px 1fr 360px;gap:10px;min-height:0;pa
       <div class="card" id="inspect"></div>
     </div>
     <div id="center">
-      <div id="board-wrap"><canvas id="board"></canvas><div id="dice-layer"></div><div id="banner"></div></div>
+      <div id="board-wrap"><canvas id="board"></canvas><div id="labels"></div><div id="dice-layer"></div><div id="banner"></div><div id="cam-hint">Drag to orbit · right-drag to pan · wheel to zoom</div></div>
       <div id="ctl-actions"></div>
       <div id="deeds"></div>
     </div>
@@ -127,7 +123,9 @@ main{display:grid;grid-template-columns:250px 1fr 360px;gap:10px;min-height:0;pa
 </div>
 
 <div class="modal" id="setup"><div class="sheet">
-  <h2>Claim No Man's Land · 900 ducats · 8 Glory</h2>
+  <h2>New battle · 900 ducats · 8 Glory</h2>
+  <div class="opts" style="margin-top:0"><label>Scenario <select id="sel-sc"></select></label><label>Battlefield <select id="sel-fd"></select></label></div>
+  <div id="sc-blurb" class="lp-style" style="margin:0 0 12px;font-style:normal"></div>
   <div class="pick">
     <div class="col" style="border-color:var(--a)"><b style="color:var(--a)">Side A</b> <select id="ctl-a" style="width:auto"><option value="human">You play</option><option value="ai">AI plays</option></select><select id="sel-a"></select><div id="pv-a"></div></div>
     <div class="col" style="border-color:var(--b)"><b style="color:var(--b)">Side B</b> <select id="ctl-b" style="width:auto"><option value="ai">AI plays</option><option value="human">You play</option></select><select id="sel-b"></select><div id="pv-b"></div></div>
@@ -148,4 +146,4 @@ main{display:grid;grid-template-columns:250px 1fr 360px;gap:10px;min-height:0;pa
 <script src="core.js"></script>
 <script src="factions.js"></script>
 <script src="engine.js"></script>
-<script src="ui.js"></script>
+<script type="module" src="ui.js"></script>

@@ -173,14 +173,63 @@ TC.buildModel = buildModel;
 // list cost check (used by builder + presets)
 TC.listTotals = function (list) { let d = 0, g = 0; for (const e of list.models) { d += +e.ducats || 0; g += +e.glory || 0; } return { d, g }; };
 
+// ---------- scenarios & battlefields ----------
+// A scenario decides where the warbands deploy and what they fight over.
+// A battlefield decides what the ground between them is made of.
+const EDGES = [{ x: 0, y: 0, w: 6, h: BOARD }, { x: BOARD - 6, y: 0, w: 6, h: BOARD }];
+const CORNERS = [{ x: 0, y: 0, w: 12, h: 12 }, { x: BOARD - 12, y: BOARD - 12, w: 12, h: 12 }];
+const SCENARIOS = [
+  { id: 'claim', name: "Claim No Man's Land", official: true,
+    blurb: 'The rulebook one-off scenario. Five ruins stand between the lines, and each one you control at the end of a turn is worth 2 VP.',
+    deployText: 'Both warbands deploy in their 6" strips on opposite edges.', zones: EDGES,
+    fields: ['mud', 'mud', 'trench', 'city', 'snow', 'desert', 'hell'],
+    objectives: [{ x: 12, y: 6 }, { x: 24, y: 6 }, { x: 18, y: 18, upper: true }, { x: 12, y: 30 }, { x: 24, y: 30 }] },
+  { id: 'line', name: 'Break the Line',
+    blurb: 'Simulator scenario. Three strongpoints sit on the centre line, and each one you control at the end of a turn is worth 3 VP.',
+    deployText: 'Both warbands deploy in their 6" strips on opposite edges, facing the strongpoints on the centre line.', zones: EDGES,
+    fields: ['trench', 'trench', 'trench', 'mud', 'snow'],
+    objectives: [{ x: 18, y: 6.5, w: 5, h: 4, vp: 3 }, { x: 18, y: 18, w: 6, h: 5, vp: 3, upper: true }, { x: 18, y: 29.5, w: 5, h: 4, vp: 3 }] },
+  { id: 'reliquary', name: 'The Reliquary',
+    blurb: 'Simulator scenario. A great ruined chapel in the centre is worth 4 VP a turn, and the two wayside relics on the flanks are worth 2 VP each.',
+    deployText: 'Both warbands deploy in their 6" strips on opposite edges, with the chapel between them.', zones: EDGES,
+    fields: ['city', 'city', 'desert', 'hell', 'mud', 'snow'],
+    objectives: [{ x: 18, y: 18, w: 8, h: 7, vp: 4, upper: true }, { x: 18, y: 5, vp: 2, kind: 'relic' }, { x: 18, y: 31, vp: 2, kind: 'relic' }] },
+  { id: 'crossfire', name: 'Crossfire',
+    blurb: 'Simulator scenario. The warbands start in opposite corners. Four ruins ring a central relic: 2 VP a turn for each ruin, 3 VP for the relic.',
+    deployText: 'Both warbands deploy in 12" squares in opposite corners.', zones: CORNERS,
+    fields: ['hell', 'city', 'mud', 'desert', 'snow'],
+    objectives: [{ x: 18, y: 8.5 }, { x: 27.5, y: 18 }, { x: 18, y: 27.5 }, { x: 8.5, y: 18 }, { x: 18, y: 18, vp: 3, kind: 'relic' }] },
+];
+const FIELDS = [
+  { id: 'mud', name: "No Man's Land", blurb: 'Churned mud, shell craters and wire under a jaundiced sky.', craters: 5, landmarks: 2, wire: 3, walls: 5, ruins: 0, lm: ['tank', 'statue'] },
+  { id: 'trench', name: 'The Trench Lines', blurb: 'Two zig-zag trench lines with sandbag parapets, and wire strung between them.', craters: 4, landmarks: 1, wire: 4, walls: 2, ruins: 0, trenches: true, lm: ['tank'] },
+  { id: 'city', name: 'The Shattered City', blurb: 'Gutted buildings, rubble heaps and broken saints, lit by the fires still burning.', craters: 3, landmarks: 3, wire: 1, walls: 4, ruins: 3, lm: ['statue'] },
+  { id: 'hell', name: 'The Mouth of Hell', blurb: 'Ash, basalt spikes and burning fissures on the threshold of the Gate.', craters: 4, landmarks: 4, wire: 4, walls: 3, ruins: 0, lm: ['spike'] },
+  { id: 'desert', name: 'The Iron Wall Marches', blurb: 'Wind-scoured sand, mudbrick walls and fallen obelisks in the shadow of the Iron Wall.', craters: 3, landmarks: 3, wire: 2, walls: 6, ruins: 1, lm: ['obelisk'] },
+  { id: 'snow', name: 'The Frozen Front', blurb: 'Frozen shell-holes, dead trees and drifting snow.', craters: 5, landmarks: 2, wire: 3, walls: 5, ruins: 0, lm: ['tank', 'tree'] },
+];
+const FIELD_LEAN = { iron_sultanate: 'desert', court: 'hell', heretic_legions: 'hell', naval_raiders: 'trench', black_grail: 'mud', new_antioch: 'trench', trench_pilgrims: 'city' };
+// Auto battlefield: drawn from the ones that suit the scenario, leaning toward the home ground of the warbands.
+function pickField(rng, sc, lists) {
+  const pool = [...sc.fields];
+  for (const l of lists || []) { const lean = FIELD_LEAN[l.faction]; if (lean && sc.fields.includes(lean)) pool.push(lean); }
+  const id = pool[Math.floor(rng() * pool.length)]; return FIELDS.find(f => f.id === id) || FIELDS[0];
+}
+TC.SCENARIOS = SCENARIOS; TC.FIELDS = FIELDS;
+
+// For a deployment zone: the unit vector toward the table centre, its perpendicular, and how far its front edge is from the centre.
+function zoneFrame(z) {
+  const C = BOARD / 2; let dx = C - (z.x + z.w / 2), dy = C - (z.y + z.h / 2); const L = Math.hypot(dx, dy) || 1; dx /= L; dy /= L;
+  const front = Math.max(...[[z.x, z.y], [z.x + z.w, z.y], [z.x, z.y + z.h], [z.x + z.w, z.y + z.h]].map(([x, y]) => (x - C) * dx + (y - C) * dy));
+  return { dx, dy, px: -dy, py: dx, front };
+}
+
 // ---------- terrain ----------
-function genTerrain(rng) {
-  const T = { ruins: [], walls: [], craters: [], wire: [], landmarks: [], objectives: [] };
-  const objPts = [{ x: 12, y: 6 }, { x: 24, y: 6 }, { x: 18, y: 18 }, { x: 12, y: 30 }, { x: 24, y: 30 }];
-  const jitter = (v) => v + (rng() - 0.5) * 1.2;
-  objPts.forEach((p, i) => {
-    const w = 5 + Math.round(rng() * 2), h = 4 + Math.round(rng() * 2);
-    const R = { id: 'ruin' + i, x: jitter(p.x) - w / 2, y: jitter(p.y) - h / 2, w, h, segs: [] };
+function genTerrain(rng, sc = SCENARIOS[0], F = FIELDS[0]) {
+  const T = { scenario: sc.id, field: F.id, zones: sc.zones, ruins: [], walls: [], craters: [], wire: [], landmarks: [], objectives: [], trenches: [] };
+  const C = BOARD / 2; const jitter = (v) => v + (rng() - 0.5) * 1.2;
+  const ruin = (cx, cy, w, h, id, forceUpper) => {
+    const R = { id, x: cx - w / 2, y: cy - h / 2, w, h, segs: [] };
     R.x = Math.max(0.5, Math.min(BOARD - w - 0.5, R.x)); R.y = Math.max(0.5, Math.min(BOARD - h - 0.5, R.y));
     // walls with gaps (doors/windows): split each side into pieces, randomly open some
     const corners = [{ x: R.x, y: R.y }, { x: R.x + w, y: R.y }, { x: R.x + w, y: R.y + h }, { x: R.x, y: R.y + h }];
@@ -195,24 +244,56 @@ function genTerrain(rng) {
     }
     // upper floor over half the footprint
     const horiz = rng() < 0.5; R.upper = horiz ? { x: R.x + 0.3, y: R.y + 0.3, w: w / 2 - 0.3, h: h - 0.6 } : { x: R.x + 0.3, y: R.y + 0.3, w: w - 0.6, h: h / 2 - 0.3 };
-    if (i === 2 || rng() < 0.6) R.hasUpper = true;
-    R.objective = true; T.ruins.push(R); T.objectives.push(R);
+    if (forceUpper || rng() < 0.6) R.hasUpper = true;
+    T.ruins.push(R); return R;
+  };
+  // objectives: walled ruins, or open ground around a relic
+  sc.objectives.forEach((p, i) => {
+    if (p.kind === 'relic') {
+      T.objectives.push({ id: 'relic' + i, x: p.x - 2, y: p.y - 2, w: 4, h: 4, segs: [], marker: true, objective: true, vp: p.vp || 2 });
+      T.landmarks.push({ x: p.x, y: p.y, r: 0.55, kind: 'relic' }); return;
+    }
+    const w = p.w || 5 + Math.round(rng() * 2), h = p.h || 4 + Math.round(rng() * 2);
+    const R = ruin(jitter(p.x), jitter(p.y), w, h, 'ruin' + i, p.upper); R.objective = true; R.vp = p.vp || 2; T.objectives.push(R);
   });
+  const rects = () => [...T.ruins, ...T.objectives.filter(o => o.marker)];
   const free = (x, y, rad) => {
     if (x < 1 || y < 1 || x > BOARD - 1 || y > BOARD - 1) return false;
-    for (const R of T.ruins) if (inRect({ x, y }, R, rad + 2)) return false;
+    for (const R of rects()) if (inRect({ x, y }, R, rad + 2)) return false;
     for (const c of [...T.craters, ...T.landmarks]) if (Math.hypot(c.x - x, c.y - y) < c.r + rad + 2.5) return false;
-    for (const w of [...T.walls, ...T.wire]) if (segDist({ x, y }, w.a, w.b) < rad + 2.5) return false;
+    for (const w of [...T.walls, ...T.wire, ...T.trenches]) if (segDist({ x, y }, w.a, w.b) < rad + 2.5) return false;
     return true;
   };
-  const place = (fn, n, rad, zone) => { let tries = 0, c = 0; while (c < n && tries++ < 400) { const x = zone ? zone[0] + rng() * (zone[1] - zone[0]) : 2 + rng() * (BOARD - 4); const y = 2 + rng() * (BOARD - 4); if (free(x, y, rad)) { fn(x, y); c++; } } };
-  place((x, y) => T.craters.push({ x, y, r: 1.3 + rng() * 1.1 }), 5, 2.2, [8, 28]);
-  place((x, y) => T.landmarks.push({ x, y, r: 0.8 + rng() * 0.5 }), 2, 1.3, [9, 27]);
-  place((x, y) => { const ang = rng() * Math.PI; const L = 2 + rng() * 1.5; T.wire.push({ a: { x: x - Math.cos(ang) * L, y: y - Math.sin(ang) * L }, b: { x: x + Math.cos(ang) * L, y: y + Math.sin(ang) * L }, wd: 0.7 }); }, 3, 2.5, [9, 27]);
-  // low walls / sandbags: some in no man's land, two in each deployment zone
-  const wall = (x, y, vertical, L) => T.walls.push({ a: { x: vertical ? x : x - L / 2, y: vertical ? y - L / 2 : y }, b: { x: vertical ? x : x + L / 2, y: vertical ? y + L / 2 : y }, h: 1 });
-  place((x, y) => wall(x, y, rng() < 0.6, 3 + rng() * 1.5), 5, 2, [8, 28]);
-  [[4.5, 10], [4.5, 26], [31.5, 10], [31.5, 26]].forEach(([x, y]) => { y += (rng() - 0.5) * 4; if (free(x, y, 1)) wall(x, y, true, 3.5); });
+  const midfield = (x, y) => !T.zones.some(z => inRect({ x, y }, z, 2));
+  const place = (fn, n, rad, mid) => { let tries = 0, c = 0; while (c < n && tries++ < 400) { const x = 2 + rng() * (BOARD - 4), y = 2 + rng() * (BOARD - 4); if (mid && !midfield(x, y)) continue; if (free(x, y, rad)) { fn(x, y); c++; } } };
+  // extra buildings that are not objectives
+  let extra = 0; place((x, y) => ruin(x, y, 4 + Math.round(rng() * 2), 3 + Math.round(rng() * 2), 'bldg' + extra++, false), F.ruins, 4.5, true);
+  // trench lines: a sunken zig-zag in front of each deployment zone, with a sandbag parapet on the lip facing the enemy
+  if (F.trenches) for (const z of T.zones) {
+    const f = zoneFrame(z); const s = f.front + 2.2; let prev = null, k = 0;
+    const blocked = (a, b) => { for (let i = 0; i <= 4; i++) { const p = { x: a.x + (b.x - a.x) * i / 4, y: a.y + (b.y - a.y) * i / 4 }; if (rects().some(R => inRect(p, R, 1.4))) return true; } return false; };
+    for (let t = -27; t <= 27; t += 3, k++) {
+      const off = (k % 2 ? 0.7 : -0.7) + (rng() - 0.5) * 0.5;
+      const p = { x: C + f.dx * (s + off) + f.px * t, y: C + f.dy * (s + off) + f.py * t };
+      const ok = p.x > 1.2 && p.y > 1.2 && p.x < BOARD - 1.2 && p.y < BOARD - 1.2;
+      if (ok && prev && !blocked(prev, p) && rng() > 0.1) {
+        T.trenches.push({ a: prev, b: p, wd: 1.5 });
+        T.walls.push({ a: { x: prev.x + f.dx, y: prev.y + f.dy }, b: { x: p.x + f.dx, y: p.y + f.dy }, h: 1, parapet: true });
+      }
+      prev = ok ? p : null;
+    }
+  }
+  place((x, y) => T.craters.push({ x, y, r: 1.3 + rng() * 1.1 }), F.craters, 2.2, true);
+  place((x, y) => T.landmarks.push({ x, y, r: 0.8 + rng() * 0.5, kind: F.lm[Math.floor(rng() * F.lm.length)] }), F.landmarks, 1.3, true);
+  place((x, y) => { const ang = rng() * Math.PI; const L = 2 + rng() * 1.5; T.wire.push({ a: { x: x - Math.cos(ang) * L, y: y - Math.sin(ang) * L }, b: { x: x + Math.cos(ang) * L, y: y + Math.sin(ang) * L }, wd: 0.7 }); }, F.wire, 2.5, true);
+  // low walls / sandbags: some in the midfield, two in front of each deployment zone
+  const wall = (x, y, ang, L) => T.walls.push({ a: { x: x - Math.cos(ang) * L / 2, y: y - Math.sin(ang) * L / 2 }, b: { x: x + Math.cos(ang) * L / 2, y: y + Math.sin(ang) * L / 2 }, h: 1 });
+  const f0 = zoneFrame(T.zones[0]); const across = Math.atan2(f0.py, f0.px);
+  place((x, y) => wall(x, y, rng() < 0.6 ? across : across + Math.PI / 2, 3 + rng() * 1.5), F.walls, 2, true);
+  if (!F.trenches) for (const z of T.zones) {
+    const f = zoneFrame(z);
+    for (const off of [-8, 8]) { const o = off + (rng() - 0.5) * 4; const x = C + f.dx * (f.front - 1.5) + f.px * o, y = C + f.dy * (f.front - 1.5) + f.py * o; if (free(x, y, 1)) wall(x, y, Math.atan2(f.py, f.px), 3.5); }
+  }
   return T;
 }
 TC.genTerrain = genTerrain;
@@ -223,7 +304,9 @@ class Game {
     this.opts = opts; this.seed = opts.seed || (Date.now() % 1e9); this.rng = mulberry(this.seed);
     this.ui = opts.ui; this.turn = 0; this.maxTurns = 4; this.vp = [0, 0]; this.deeds = {}; this.shaken = [false, false]; this.fled = -1;
     this.lists = opts.lists; this.ctrl = opts.ctrl || ['ai', 'ai']; this.allowInfiltrate = !!opts.allowInfiltrate;
-    this.terrain = genTerrain(this.rng);
+    this.scenario = SCENARIOS.find(s => s.id === opts.scenario) || SCENARIOS[0];
+    this.battlefield = FIELDS.find(f => f.id === opts.field) || pickField(this.rng, this.scenario, this.lists);
+    this.terrain = genTerrain(this.rng, this.scenario, this.battlefield);
     this.models = []; this.lists.forEach((l, side) => l.models.forEach(e => { const m = buildModel(e, l, side); if (m) this.models.push(m); }));
     this.startCount = [0, 1].map(s => this.models.filter(m => m.side === s).length);
     this.buildGrid(); this.firstDeploySide = 0; this.over = false; this.winner = null;
@@ -724,7 +807,7 @@ class Game {
   }
   async scoreTurn() {
     const c = this.terrain.objectives.map(R => this.control(R)); const add = [0, 0];
-    c.forEach(s => { if (s >= 0) add[s] += 2; }); this.vp[0] += add[0]; this.vp[1] += add[1];
+    c.forEach((s, i) => { if (s >= 0) add[s] += this.terrain.objectives[i].vp || 2; }); this.vp[0] += add[0]; this.vp[1] += add[1];
     this.ui.log('phase', `Objectives: ${this.sideName(0)} holds ${c.filter(x => x === 0).length}, ${this.sideName(1)} holds ${c.filter(x => x === 1).length}. VP ${this.vp[0]} - ${this.vp[1]}.`);
     this.ui.update();
   }
@@ -748,26 +831,32 @@ class Game {
 
   // ----- deployment -----
   deploy() {
-    const zones = [[0.6, 5.6], [30.4, 35.4]];
+    const zones = this.terrain.zones;
     const order = []; const lists = [0, 1].map(s => this.models.filter(m => m.side === s && !(this.allowInfiltrate && m.kw.has('INFILTRATOR'))).sort((a, b) => b.value - a.value));
     let s = lists[0].length >= lists[1].length ? 0 : 1; this.firstDeploySide = s;
     while (lists[0].length || lists[1].length) { if (lists[s].length) order.push(lists[s].shift()); else { s = 1 - s; continue; } s = lists[1 - s].length ? 1 - s : s; }
     for (const m of order) this.placeInZone(m, zones[m.side]);
     for (const m of this.models.filter(m => this.allowInfiltrate && m.kw.has('INFILTRATOR'))) this.placeInfiltrator(m);
   }
-  placeInZone(m, zone) {
-    let best = null, bs = -1e9;
+  // lanes: where the objectives sit across the width of a deployment zone, so a warband spreads out to face them
+  lanesFor(f) {
+    const lat = this.terrain.objectives.map(R => (R.x + R.w / 2 - BOARD / 2) * f.px + (R.y + R.h / 2 - BOARD / 2) * f.py).sort((a, b) => a - b);
+    const lanes = []; for (const v of lat) { if (lanes.length && v - lanes[lanes.length - 1] < 4) continue; lanes.push(v); } return lanes.length ? lanes : [0];
+  }
+  placeInZone(m, z) {
+    const f = zoneFrame(z); const lanes = this.lanesFor(f); const lane = lanes[(m.uid * 7) % lanes.length]; const C = BOARD / 2;
+    const pad = m.r + 0.5; let best = null, bs = -1e9;
     for (let k = 0; k < 140; k++) {
-      const p = { x: zone[0] + m.r + this.rng() * (zone[1] - zone[0] - 2 * m.r), y: m.r + 0.5 + this.rng() * (BOARD - 2 * m.r - 1) };
+      const p = { x: z.x + pad + this.rng() * Math.max(0.1, z.w - 2 * pad), y: z.y + pad + this.rng() * Math.max(0.1, z.h - 2 * pad) };
       if (!this.canEndAt(m, p) || this.wallAt(p, m.r)) continue;
       let sc = 0; for (const o of this.models) if (o !== m && !o.ooa && o.x) { const d = Math.hypot(o.x - p.x, o.y - p.y); if (o.side === m.side) sc -= Math.max(0, 2.2 - d) * 3; }
       if (this.coverSegs.some(s => segDist(p, s.a, s.b) < m.r + 0.6)) sc += 2;
-      // spread toward objectives rows
-      const rows = [6, 18, 30]; const ri = ((m.uid * 7) % 3); sc -= Math.abs(p.y - rows[ri]) * 0.25 * (m.role === 'melee' ? 1 : 0.5);
-      if (m.role === 'artillery' || m.role === 'shooter') sc -= Math.abs(p.y - 18) * 0.05;
+      // spread across the zone toward the lanes the objectives are in
+      const lat = (p.x - C) * f.px + (p.y - C) * f.py; sc -= Math.abs(lat - lane) * 0.25 * (m.role === 'melee' ? 1 : 0.5);
+      if (m.role === 'artillery' || m.role === 'shooter') sc -= Math.abs(lat) * 0.05;
       if (sc > bs) { bs = sc; best = p; }
     }
-    if (!best) best = { x: (zone[0] + zone[1]) / 2, y: 18 };
+    if (!best) best = { x: z.x + z.w / 2, y: z.y + z.h / 2 };
     m.x = best.x; m.y = best.y; m.h = 0;
   }
   placeInfiltrator(m) {
@@ -775,12 +864,12 @@ class Game {
     for (let k = 0; k < 400; k++) { const p = { x: 1 + this.rng() * 34, y: 1 + this.rng() * 34, r: m.r, h: 0 };
       if (!this.canEndAt(m, p) || this.wallAt(p, m.r)) continue; if (foes.some(f => Math.hypot(f.x - p.x, f.y - p.y) - f.r - m.r < 8)) continue; if (foes.some(f => this.los(f, Object.assign({}, m, p)).vis)) continue;
       const sc = -Math.min(...foes.map(f => Math.hypot(f.x - p.x, f.y - p.y))) + (this.coverSegs.some(s => segDist(p, s.a, s.b) < m.r + 0.6) ? 3 : 0); if (sc > bs) { bs = sc; best = p; } }
-    if (best) { m.x = best.x; m.y = best.y; this.ui.log('action', `${m.label} infiltrates forward.`); } else this.placeInZone(m, m.side ? [30.4, 35.4] : [0.6, 5.6]);
+    if (best) { m.x = best.x; m.y = best.y; this.ui.log('action', `${m.label} infiltrates forward.`); } else this.placeInZone(m, this.terrain.zones[m.side]);
   }
 
   // ----- turn loop -----
   async run() {
-    this.ui.log('phase', `<b>Claim No Man's Land</b> - ${this.lists[0].name} vs ${this.lists[1].name}. Seed ${this.seed}.`);
+    this.ui.log('phase', `<b>${this.scenario.name}</b> on ${this.battlefield.name} - ${this.lists[0].name} vs ${this.lists[1].name}. Seed ${this.seed}.`);
     this.ui.log('rule', this.allowInfiltrate ? 'House rule: Infiltrators may use their special deployment.' : 'Scenario rule: Infiltrators deploy normally in their deployment zone.');
     this.deploy(); this.ui.update(); await this.ui.afterDeploy(this);
     for (this.turn = 1; this.turn <= this.maxTurns && !this.over; this.turn++) {
@@ -892,7 +981,7 @@ class Game {
       const near = inRect(p, R, m.r + 0.95);
       const mine = this.alive(m.side).filter(o => o !== m && inRect(o, R, o.r + 1)).length; const theirs = this.enemiesOf(m).filter(o => inRect(o, R, o.r + 1)).length;
       let w = c === m.side ? (mine > theirs + 1 ? 0.3 : 1.2) : (c < 0 ? 2.2 : 2.6);
-      w *= (this.turn >= 2 ? 1.3 : 1) * (m.role === 'artillery' ? 0.35 : 1);
+      w *= (this.turn >= 2 ? 1.3 : 1) * (m.role === 'artillery' ? 0.35 : 1) * (R.vp || 2) / 2;
       if (near) v += w * (inRect(p, R) ? 1.15 : 1);
       else v += w * Math.max(0, 1 - dIn / 14) * 0.5;
     }
